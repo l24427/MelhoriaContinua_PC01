@@ -1,8 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+        font-family: Arial, sans-serif;
     background: linear-gradient(90deg, rgb(218, 227, 245) 16.62%, #5C95FF 200%);
     margin: 0;
-    padding: 0;
+    padding: 0
 }
 
 .header {
