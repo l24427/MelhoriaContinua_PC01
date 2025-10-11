@@ -692,6 +692,11 @@
             "href": "https://brsza022/PIVision/#/Displays/11886/AF16"
         },
         {
+            "categoria": "PRODUTIVIDADE",
+            "texto": "Custo Waste",
+            "href": "https://brsza022/PIVision/#/Displays/11886/AF16"
+        },
+        {
             "categoria": "PESSOAS",
             "texto": "Acessar PI Vision",
             "href": "https://brsza022/PIVision/#/Displays/11594/PRODUCTION-AFC"
