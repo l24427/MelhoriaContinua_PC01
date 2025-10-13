@@ -1322,6 +1322,11 @@
         },
         {
             "categoria": "Produtividade",
+            "texto": "Troca de fase",
+            "href": "https://brsza022/PIVision/#/Displays/11883/PC02"
+        },
+        {
+            "categoria": "Produtividade",
             "texto": "Quadro de Desempenho",
             "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B95B9BCB7-239C-4DAA-8991-44C706ECAB02%7D&file=QUADRO.xlsx&action=default&mobileredirect=true"
         },
@@ -1395,11 +1400,7 @@
             "texto": "Troca de turno",
             "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/8dae408e-7fd8-4291-8ae9-8256bff014f9/ReportSection8e87dcf0544abae52be3?experience=power-bi"
         },
-        {
-            "categoria": "Produtividade",
-            "texto": "Troca de fase",
-            "href": "https://brsza022/PIVision/#/Displays/11883/PC02"
-        },
+        
         {
             "categoria": "PESSOAS",
             "texto": "Reconhecer um Colega",
@@ -3287,6 +3288,7 @@
         }
     ]
 }
+
 
 
 
