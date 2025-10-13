@@ -2472,14 +2472,10 @@
         },
         {
             "categoria": "Produtividade",
-            "texto": "Troca de fase",
-            "href": "https://brsza022/PIVision/#/Displays/11885/L06"
-        },
-        {
-            "categoria": "Produtividade",
             "texto": "Troca de Fase",
-            "href": "https://brsza022/PIVision/#/Displays/1086/CM01---Troca-de-fase"
+            "href": "https://brsza022/PIVision/#/Displays/11892/Troca-de-Fase-CM1"
         },
+              
         {
             "categoria": "Qualidade",
             "texto": "Especificação de M.P",
@@ -3290,6 +3286,7 @@
         }
     ]
 }
+
 
 
 
