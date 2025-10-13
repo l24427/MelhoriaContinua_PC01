@@ -1655,11 +1655,7 @@
             "texto": "Lista de Presença",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FQuadro%20Interativo%2FBCM%2FLP&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&OR=Teams%2DHL&CT=1682000822834&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzAzMDUwMTExMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
         },
-        {
-            "categoria": "Produtividade",
-            "texto": "Troca de fase",
-            "href": "https://google.com"
-        },
+     
         {
             "categoria": "Qualidade",
             "texto": "Especificação de Produto",
@@ -1704,6 +1700,11 @@
             "categoria": "Qualidade",
             "texto": "AMR",
             "href": "https://kimberlyclark-my.sharepoint.com/personal/robert_bispo_kcc_com/Lists/AMR%20%20Formulrio/AllItems.aspx?viewid=2a500470-5285-4667-bebc-d637bc75e776&env=WebViewList&xsdata=MDV8MDJ8fDRlNTJjYjRiZjgxNDQ2OWZmNTFhMDhkZGIzZjgyOTVjfGZlZTIxODBiNjliNjRhZmU5ZjE0Y2NkNzBiZDRjNzM3fDB8MHw2Mzg4NjQ2MDA1ODM2OTc2OTB8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKRFFTSTZJbFJsWVcxelgwRlVVRk5sY25acFkyVmZVMUJQVEU5R0lpd2lWaUk2SWpBdU1DNHdNREF3SWl3aVVDSTZJbGRwYmpNeUlpd2lRVTRpT2lKUGRHaGxjaUlzSWxkVUlqb3hNWDA9fDF8TDJOb1lYUnpMekU1T2pKa05HSTNaRFpqTFdFMVl6TXROR0l5WlMxaU5HWmlMVGsxTXpSak5HTm1NalUwWTE4NU1tSmpaV0UyT0MweE1UQTNMVFF6TldJdFlXRmhZUzAwWWpGak1XTTVaRFUwWXpaQWRXNXhMbWRpYkM1emNHRmpaWE12YldWemMyRm5aWE12TVRjMU1EZzJNekkxTXpJM05RPT18OTEwZTc0ZjVhMDcxNDE5MGY1MWEwOGRkYjNmODI5NWN8NDEyNDcyNzk5MjY5NDQzOWFiZDk5YTIyOWJhOGMxZjA%3D&sdata=ZEt3T0lnVU96dzk3YVZpNVkrY2duZm1TT04vazljTmRnSHllMmJyRjJhUT0%3D&ovuser=fee2180b-69b6-4afe-9f14-ccd70bd4c737%2Cpaulo.junior3%40kcc.com&OR=Teams-HL&CT=1750940690859&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNTA2MDIwNjYxNCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
+        },
+        {
+            "categoria": "Produtividade",
+            "texto": "Troca de fase",
+            "href": "https://brsza022/PIVision/#/Displays/11878/FB12"
         },
         {
             "categoria": "Produtividade",
@@ -3288,6 +3289,7 @@
         }
     ]
 }
+
 
 
 
