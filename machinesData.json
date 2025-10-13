@@ -2655,7 +2655,7 @@
             "categoria": "Custos",
             "texto": "Consumo de MP",
             "href": ""
-        },
+        }
       
     ],
     "PC04":  [
@@ -3463,6 +3463,7 @@
         }
     ]
 }
+
 
 
 
