@@ -626,7 +626,7 @@
         {
             "categoria": "Produtividade",
             "texto": "Troca de Fase",
-            "href": "https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=826376&ETQ$ORIGINAL_DOC_ID=826376"
+            "href": "https://brsza022/PIVision/#/Displays/11886/Troca-de-Fase-AF16"
         },
         {
             "categoria": "Produtividade",
@@ -2651,16 +2651,7 @@
             "texto": "Consumo de MP",
             "href": ""
         },
-        {
-            "categoria": "Custos",
-            "texto": "Conta 5301",
-            "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/f3790613-dcf0-4181-a043-a15d89f62940/ReportSectione7387e1bf575bf112d0f?ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737&experience=power-bi"
-        },
-        {
-            "categoria": "Custos",
-            "texto": "Custo Prod x Consumo",
-            "href": ""
-        }
+      
     ],
     "PC04": [
         {
@@ -3286,6 +3277,7 @@
         }
     ]
 }
+
 
 
 
