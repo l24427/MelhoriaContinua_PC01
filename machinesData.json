@@ -2434,7 +2434,7 @@
             "href": "https://brsza022/PIVision/#/Displays/11722/FB14---Other-Waste"
         }
     ],
-    "CM": [
+    "CM01": [
         {
             "categoria": "EHS",
             "texto": "Lançar Safe",
@@ -2470,12 +2470,7 @@
             "texto": "Lista de Presença",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FQuadro%20Interativo%2FBCM%2FLP&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&OR=Teams%2DHL&CT=1682000822834&clickparams=eyJBcHBOYW1eIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzAzMDUwMTExMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
         },
-        {
-            "categoria": "Produtividade",
-            "texto": "Troca de Fase",
-            "href": "https://brsza022/PIVision/#/Displays/11892/Troca-de-Fase-CM1"
-        },
-              
+                  
         {
             "categoria": "Qualidade",
             "texto": "Especificação de M.P",
@@ -2525,6 +2520,11 @@
             "categoria": "Qualidade",
             "texto": "CI / TI",
             "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/c88550a3-4103-4833-9e7e-376ef5d1868f/ReportSection7c344e23d1210edc0156?experience=power-bi"
+        },
+           {
+            "categoria": "Produtividade",
+            "texto": "Troca de Fase",
+            "href": "https://brsza022/PIVision/#/Displays/11892/Troca-de-Fase-CM1"
         },
         {
             "categoria": "Produtividade",
@@ -3286,6 +3286,7 @@
         }
     ]
 }
+
 
 
 
