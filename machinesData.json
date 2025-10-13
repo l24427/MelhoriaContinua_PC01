@@ -78,7 +78,7 @@
         {
             "categoria": "Produtividade",
             "texto": "Troca de Fase",
-            "href": "https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=827012&ETQ$ORIGINAL_DOC_ID=827012"
+            "href": "https://brsza022/PIVision/#/Displays/11889/Troca-de-Fase-AC20"
         },
         {
             "categoria": "Produtividade",
@@ -3277,6 +3277,7 @@
         }
     ]
 }
+
 
 
 
