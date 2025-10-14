@@ -135,11 +135,7 @@
             "texto": "Troca de Turno",
             "href": "https://brsza022/PIVision/#/Displays/11558/Agenda-troca-de-turno-AC20"
         },
-        {
-            "categoria": "Produtividade",
-            "texto": "Troca de fase",
-            "href": "https://brsza022/PIVision/#/Displays/11889/AC20"
-        },
+        
         {
             "categoria": "PESSOAS",
             "texto": "Acessar PI Vision",
@@ -3463,6 +3459,7 @@
         }
     ]
 }
+
 
 
 
