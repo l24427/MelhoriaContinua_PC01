@@ -457,6 +457,11 @@
         },
         {
             "categoria": "Produtividade",
+            "texto": "Abrir Ação Facilities",
+            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/15fb6751-0ede-491d-9171-3f3a9508690c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&sourcetime=1728389406219&source=portal&local=predial"
+        },
+        {
+            "categoria": "Produtividade",
             "texto": "Cartão Autonomous",
             "href": "https://brsza022/PIVision/#/Displays/633/AUTONOMOS-CARE-CART%25C3%2595ES"
         },
@@ -3468,6 +3473,7 @@
         }
     ]
 }
+
 
 
 
