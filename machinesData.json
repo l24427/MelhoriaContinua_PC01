@@ -82,6 +82,11 @@
         },
         {
             "categoria": "Produtividade",
+            "texto": "Troca de Turno",
+            "href": "https://brsza022/PIVision/#/Displays/11558/Agenda-troca-de-turno-AC20"
+        },
+        {
+            "categoria": "Produtividade",
             "texto": "Portal 5S",
             "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
         },
@@ -135,11 +140,7 @@
             "texto": "Quadro de Desempenho",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Quadro%20de%20Desempenho%20AC20/Padro.aspx"
         },
-        {
-            "categoria": "Produtividade",
-            "texto": "Troca de Turno",
-            "href": "https://brsza022/PIVision/#/Displays/11558/Agenda-troca-de-turno-AC20"
-        },
+       
         
         {
             "categoria": "PESSOAS",
@@ -268,6 +269,11 @@
             "texto": "Troca de Fase",
             "href": "https://brsza022/PIVision/#/Displays/11891/Troca-de-Fase-AC21"
         },
+          {
+            "categoria": "Produtividade",
+            "texto": "Troca de fase",
+            "href": "https://brsza022/PIVision/#/Displays/11891/AC21"
+        },
         {
             "categoria": "Produtividade",
             "texto": "Portal 5S",
@@ -328,11 +334,7 @@
             "texto": "Troca de Turno",
             "href": "https://brsza022/PIVision/#/Displays/11559/Agenda-troca-de-turno-AC21"
         },
-        {
-            "categoria": "Produtividade",
-            "texto": "Troca de fase",
-            "href": "https://brsza022/PIVision/#/Displays/11891/AC21"
-        },
+      
         {
             "categoria": "PESSOAS",
             "texto": "Acessar PI Vision",
@@ -452,6 +454,11 @@
         },
          {
             "categoria": "Produtividade",
+            "texto": "Troca de Turno",
+            "href": "https://brsza022/PIVision/#/Displays/11560/Agenda-troca-de-turno-AC22"
+        },
+         {
+            "categoria": "Produtividade",
             "texto": "Portal 5S",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FOPC%2F5S%2FAuditorias&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&FolderCTID=0x012000C0A16D111EFF8E4BB692C43F71313AAC"
         },
@@ -505,11 +512,7 @@
             "texto": "Quadro de Desempenho",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Quadro%20de%20Desempenho%20AC22/Padr%C3%A3o.aspx"
         },
-        {
-            "categoria": "Produtividade",
-            "texto": "Troca de Turno",
-            "href": "https://brsza022/PIVision/#/Displays/11560/Agenda-troca-de-turno-AC22"
-        },
+       
         
              
         {
@@ -634,6 +637,16 @@
             "texto": "SAC",
             "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/9c37360c-2552-40ab-b7b3-9cbb93b08cb5/ReportSection329259d58d0bf1fc4185?experience=power-bi"
         },
+          {
+            "categoria": "Produtividade",
+            "texto": "Troca de fase",
+            "href": "https://brsza022/PIVision/#/Displays/11886/Troca-de-Fase-AF16"
+        },
+        {
+            "categoria": "Produtividade",
+            "texto": "Troca de Turno",
+            "href": "https://brsza022/PIVision/#/Displays/11532/Agenda-troca-de-turno-AF16"
+        },
         
         {
             "categoria": "Produtividade",
@@ -690,16 +703,8 @@
             "texto": "Quadro de Desempenho",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Quadro%20de%20Desempenho%20AF16/Padr%C3%A3o.aspx"
         },
-        {
-            "categoria": "Produtividade",
-            "texto": "Troca de Turno",
-            "href": "https://brsza022/PIVision/#/Displays/11532/Agenda-troca-de-turno-AF16"
-        },
-        {
-            "categoria": "Produtividade",
-            "texto": "Troca de fase",
-            "href": "https://brsza022/PIVision/#/Displays/11886/AF16"
-        },
+     
+      
         {
             "categoria": "Produtividade",
             "texto": "Custo Waste",
@@ -3479,6 +3484,7 @@
         }
     ]
 }
+
 
 
 
