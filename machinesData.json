@@ -653,16 +653,17 @@
             "texto": "Portal 5S",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FOPC%2F5S%2FAuditorias&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&FolderCTID=0x012000C0A16D111EFF8E4BB692C43F71313AAC"
         },
+          {
+            "categoria": "Produtividade",
+            "texto": "Abrir Ação Facilities",
+            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/15fb6751-0ede-491d-9171-3f3a9508690c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&sourcetime=1728389406219&source=portal&local=predial"
+        },
         {
             "categoria": "Produtividade",
             "texto": "Cartão Autonomous",
             "href": "https://brsza022/PIVision/#/Displays/633/AUTONOMOS-CARE-CART%25C3%2595ES"
         },
-        {
-            "categoria": "Produtividade",
-            "texto": "Abrir Ação Facilities",
-            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/15fb6751-0ede-491d-9171-3f3a9508690c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&sourcetime=1728389406219&source=portal&local=predial"
-        },
+      
         {
             "categoria": "Produtividade",
             "texto": "Instrução de Trabalho",
@@ -827,7 +828,12 @@
             "texto": "Troca de fase",
             "href": "https://brsza022/PIVision/#/Displays/11887/Troca-de-Fase-AF17"
         },
-          {
+        {
+            "categoria": "Produtividade",
+            "texto": "Troca de Turno",
+            "href": "https://brsza022/PIVision/#/Displays/11556/Agenda-troca-de-turno-AF17"
+        },
+        {
             "categoria": "Produtividade",
             "texto": "Portal 5S",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FOPC%2F5S%2FAuditorias&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&FolderCTID=0x012000C0A16D111EFF8E4BB692C43F71313AAC"
@@ -884,11 +890,7 @@
             "texto": "Quadro de Desempenho",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Quadro%20de%20Desempenho%20AF17/Padr%C3%A3o.aspx"
         },
-        {
-            "categoria": "Produtividade",
-            "texto": "Troca de Turno",
-            "href": "https://brsza022/PIVision/#/Displays/11556/Agenda-troca-de-turno-AF17"
-        },
+        
              
         {
             "categoria": "PESSOAS",
@@ -3484,6 +3486,7 @@
         }
     ]
 }
+
 
 
 
