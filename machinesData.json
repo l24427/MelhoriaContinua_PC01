@@ -1011,8 +1011,18 @@
         },
         {
             "categoria": "Produtividade",
-            "texto": "5S",
+            "texto": "Troca de Turno",
+            "href": "https://brsza022/PIVision/#/Displays/11557/Agenda-troca-de-turno-AF19"
+        },
+        {
+            "categoria": "Produtividade",
+            "texto": "Portal 5S",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FOPC%2F5S%2FAuditorias&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&FolderCTID=0x012000C0A16D111EFF8E4BB692C43F71313AAC"
+        },
+        {
+            "categoria": "Produtividade",
+            "texto": "Abrir Ação Facilities",
+            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/15fb6751-0ede-491d-9171-3f3a9508690c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&sourcetime=1728389406219&source=portal&local=predial"
         },
         {
             "categoria": "Produtividade",
@@ -1059,11 +1069,7 @@
             "texto": "Quadro de Desempenho",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Quadro%20de%20Desempenho%20AF19/Padr%C3%A3o.aspx"
         },
-        {
-            "categoria": "Produtividade",
-            "texto": "Troca de Turno",
-            "href": "https://brsza022/PIVision/#/Displays/11557/Agenda-troca-de-turno-AF19"
-        },
+        
       
         {
             "categoria": "PESSOAS",
@@ -1348,8 +1354,24 @@
         {
             "categoria": "Produtividade",
             "texto": "Troca de fase",
-            "href": "https://brsza022/PIVision/#/Displays/11883/PC02"
+            "href": "https://brsza022/PIVision/#/Displays/11883/Troca-de-Fase-PC02"
         },
+        {
+            "categoria": "Produtividade",
+            "texto": "Troca de turno",
+            "href": "https://brsza022/PIVision/#/Displays/11900/Troca-de-Turno-PC02-(Tier-1)"
+        },
+         {
+            "categoria": "Produtividade",
+            "texto": "Portal 5S",
+            "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FOPC%2F5S%2FAuditorias&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&FolderCTID=0x012000C0A16D111EFF8E4BB692C43F71313AAC"
+        },
+        {
+            "categoria": "Produtividade",
+            "texto": "Abrir Ação Facilities",
+            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/15fb6751-0ede-491d-9171-3f3a9508690c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&sourcetime=1728389406219&source=portal&local=predial"
+        },
+        
         {
             "categoria": "Produtividade",
             "texto": "Quadro de Desempenho",
@@ -1405,11 +1427,7 @@
             "texto": "CI / TI",
             "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/c88550a3-4103-4833-9e7e-376ef5d1868f/ReportSection7c344e23d1210edc0156?experience=power-bi"
         },
-        {
-            "categoria": "Produtividade",
-            "texto": "5S",
-            "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FOPC%2F5S%2FAuditorias&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&FolderCTID=0x012000C0A16D111EFF8E4BB692C43F71313AAC"
-        },
+       
         {
             "categoria": "Produtividade",
             "texto": "Manutenção",
@@ -1420,11 +1438,7 @@
             "texto": "Produção MES",
             "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/6776a6e0-09f8-4f71-957c-f9b790782b31/ReportSection7e263fa3e5d30acbb6eb?experience=power-bi"
         },
-        {
-            "categoria": "Produtividade",
-            "texto": "Troca de turno",
-            "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/8dae408e-7fd8-4291-8ae9-8256bff014f9/ReportSection8e87dcf0544abae52be3?experience=power-bi"
-        },
+       
         
         {
             "categoria": "PESSOAS",
@@ -3486,6 +3500,7 @@
         }
     ]
 }
+
 
 
 
