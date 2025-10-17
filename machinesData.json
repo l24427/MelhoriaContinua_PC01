@@ -2062,11 +2062,7 @@
             "texto": "Lista de Presença",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FQuadro%20Interativo%2FBCM%2FLP&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&OR=Teams%2DHL&CT=1682000822834&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzAzMDUwMTExMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
         },
-        {
-            "categoria": "Produtividade",
-            "texto": "Troca de fase",
-            "href": "https://brsza022/PIVision/#/Displays/11882/FB17"
-        },
+       
         {
             "categoria": "Qualidade",
             "texto": "Especificação de Produto",
@@ -2116,6 +2112,11 @@
             "categoria": "Produtividade",
             "texto": "Troca de fase",
             "href": "https://brsza022/PIVision/#/Displays/11882/Troca-de-fase-FB17"
+        },
+         {
+            "categoria": "Produtividade",
+            "texto": "Portal 5s",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
         },
         {
             "categoria": "Produtividade",
@@ -2172,11 +2173,7 @@
             "texto": "Metas Blue Collar",
             "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/Suzano/Produtividade/METAS%20BLUE%20COLLAR%202025%20-%20BCM.xlsx?d=w51f6206f062141f490f3191844532aa2&csf=1&web=1&e=zFZrsa"
         },
-        {
-            "categoria": "Produtividade",
-            "texto": "Portal 5s",
-            "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-        },
+       
         {
             "categoria": "Pessoas",
             "texto": "Matriz Responsabi",
@@ -3459,6 +3456,7 @@
         }
     ]
 }
+
 
 
 
