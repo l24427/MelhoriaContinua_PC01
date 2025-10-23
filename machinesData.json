@@ -2991,12 +2991,7 @@
             "texto": "Lista de Presença",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FQuadro%20Interativo%2FBCM%2FLP&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&OR=Teams%2DHL&CT=1682000822834&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzAzMDUwMTExMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
         },
-        {
-            "categoria": "Produtividade",
-            "texto": "Troca de fase",
-            "href": "https://brsza022/PIVision/#/Displays/11871/PH01"
-        },
-        {
+               {
             "categoria": "Qualidade",
             "texto": "Especificação de M.P",
             "href": ""
@@ -3043,6 +3038,31 @@
         },
         {
             "categoria": "Produtividade",
+            "texto": "Troca de Fase",
+            "href": "https://brsza022/PIVision/#/Displays/11871/Troca-de-Fase-PH01"
+        },
+        {
+            "categoria": "Produtividade",
+            "texto": "Troca de Turno",
+            "href": "hhttps://brsza022/PIVision/#/Displays/1462/Agenda-Troca-de-Turno-BCC---PH01"
+        },
+        {
+            "categoria": "Produtividade",
+            "texto": "Portal 5S",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+        },
+        {
+            "categoria": "Produtividade",
+            "texto": "Abrir Ação Facilities",
+            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/15fb6751-0ede-491d-9171-3f3a9508690c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&sourcetime=1728389406219&source=portal&local=predial"
+        },
+          {
+            "categoria": "Produtividade",
+            "texto": "Portal 5s",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+        },
+        {
+            "categoria": "Produtividade",
             "texto": "Especificação de M.P",
             "href": ""
         },
@@ -3066,11 +3086,7 @@
             "texto": "Kpi de Máquina",
             "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B44B2C8FE-4F79-4D98-9C59-55D6ABFC326E%7D&file=OEEWaste%20Planta%202025.xlsx&action=default&mobileredirect=true"
         },
-        {
-            "categoria": "Produtividade",
-            "texto": "Portal 5s",
-            "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-        },
+      
         {
             "categoria": "Pessoas",
             "texto": "Matriz Responsabi",
@@ -3173,11 +3189,7 @@
             "texto": "Lista de Presença",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FQuadro%20Interativo%2FBCM%2FLP&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&OR=Teams%2DHL&CT=1682000822834&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzAzMDUwMTExMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
         },
-        {
-            "categoria": "Produtividade",
-            "texto": "Troca de fase",
-            "href": "https://brsza022/PIVision/#/Displays/11877/PH02"
-        },
+     
         {
             "categoria": "Qualidade",
             "texto": "Especificação de M.P",
@@ -3222,6 +3234,26 @@
             "categoria": "Qualidade",
             "texto": "Medição de Embalagem",
             "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B8ede105c-5f37-44d1-ac7f-e9f2438b6c09%7D&action=edit&wdinitialsession=3adc9c78-9803-e83e-cb37-5199261a17be&wdrldsc=3&wdrldc=1&wdrldr=ContinueInExcel"
+        },
+          {
+            "categoria": "Produtividade",
+            "texto": "Troca de Fase",
+            "href": "https://brsza022/PIVision/#/Displays/11877/Troca-de-Fase-PH02"
+        },
+        {
+            "categoria": "Produtividade",
+            "texto": "Troca de Turno",
+            "href": "https://brsza022/PIVision/#/Displays/1463/Agenda-Troca-de-Turno-BCC---PH02"
+        },
+        {
+            "categoria": "Produtividade",
+            "texto": "Portal 5S",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+        },
+        {
+            "categoria": "Produtividade",
+            "texto": "Abrir Ação Facilities",
+            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/15fb6751-0ede-491d-9171-3f3a9508690c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&sourcetime=1728389406219&source=portal&local=predial"
         },
         {
             "categoria": "Produtividade",
@@ -3567,6 +3599,7 @@
         }
     ]
 }
+
 
 
 
