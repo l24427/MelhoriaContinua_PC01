@@ -1551,6 +1551,11 @@
             "texto": "teste",
             "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7BE60FD8E2-442F-4ABD-879E-31AF0690FC6B%7D&file=L-06%20%20Lista%20de%20Presen%C3%A7a%20Eletr%C3%B4nica_DDS%20(version%201).xlsb.xlsm&action=default&mobileredirect=true"
         },
+         {
+            "categoria": "QUALIDADE",
+            "texto": "Especificação de Produto",
+            "href": "https://brsza022/PIVision/#/Displays/11908/Especifica%C3%A7%C3%A3o-Produto-WW"
+        },
         {
             "categoria": "QUALIDADE",
             "texto": "Plano de Controle",
@@ -3599,6 +3604,7 @@
         }
     ]
 }
+
 
 
 
