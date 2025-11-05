@@ -145,8 +145,6 @@
             "texto": "Quadro de Desempenho",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Quadro%20de%20Desempenho%20AC20/Padro.aspx"
         },
-       
-        
         {
             "categoria": "PESSOAS",
             "texto": "Acessar PI Vision",
@@ -191,6 +189,11 @@
             "categoria": "CUSTOS",
             "texto": "Custo de ManutençãoOther WasteInventário",
             "href": "https://app.powerbi.com/reportEmbed?reportId=d9f2e11f-9b01-4a2d-b234-4d6d5b1d86a7&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+        },
+        {
+            "categoria": "EHS",
+            "texto": "botao tester",
+            "href": "https://www.google.com/"
         }
     ],
     "AC21": [
@@ -279,7 +282,7 @@
             "texto": "Troca de Fase",
             "href": "https://brsza022/PIVision/#/Displays/11891/Troca-de-Fase-AC21"
         },
-          {
+        {
             "categoria": "Produtividade",
             "texto": "Troca de fase",
             "href": "https://brsza022/PIVision/#/Displays/11891/AC21"
@@ -344,7 +347,6 @@
             "texto": "Troca de Turno",
             "href": "https://brsza022/PIVision/#/Displays/11559/Agenda-troca-de-turno-AC21"
         },
-      
         {
             "categoria": "PESSOAS",
             "texto": "Acessar PI Vision",
@@ -462,17 +464,17 @@
             "texto": "SAC",
             "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/9c37360c-2552-40ab-b7b3-9cbb93b08cb5/ReportSection329259d58d0bf1fc4185?experience=power-bi"
         },
-         {
+        {
             "categoria": "Produtividade",
             "texto": "Troca de fase",
             "href": "https://brsza022/PIVision/#/Displays/11890/Troca-de-fase-AC22"
         },
-         {
+        {
             "categoria": "Produtividade",
             "texto": "Troca de Turno",
             "href": "https://brsza022/PIVision/#/Displays/11560/Agenda-troca-de-turno-AC22"
         },
-         {
+        {
             "categoria": "Produtividade",
             "texto": "Portal 5S",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FOPC%2F5S%2FAuditorias&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&FolderCTID=0x012000C0A16D111EFF8E4BB692C43F71313AAC"
@@ -527,8 +529,6 @@
             "texto": "Quadro de Desempenho",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Quadro%20de%20Desempenho%20AC22/Padr%C3%A3o.aspx"
         },
-             
-             
         {
             "categoria": "PESSOAS",
             "texto": "5S",
@@ -656,7 +656,7 @@
             "texto": "SAC",
             "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/9c37360c-2552-40ab-b7b3-9cbb93b08cb5/ReportSection329259d58d0bf1fc4185?experience=power-bi"
         },
-          {
+        {
             "categoria": "Produtividade",
             "texto": "Troca de fase",
             "href": "https://brsza022/PIVision/#/Displays/11886/Troca-de-Fase-AF16"
@@ -666,13 +666,12 @@
             "texto": "Troca de Turno",
             "href": "https://brsza022/PIVision/#/Displays/11532/Agenda-troca-de-turno-AF16"
         },
-        
         {
             "categoria": "Produtividade",
             "texto": "Portal 5S",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FOPC%2F5S%2FAuditorias&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&FolderCTID=0x012000C0A16D111EFF8E4BB692C43F71313AAC"
         },
-          {
+        {
             "categoria": "Produtividade",
             "texto": "Abrir Ação Facilities",
             "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/15fb6751-0ede-491d-9171-3f3a9508690c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&sourcetime=1728389406219&source=portal&local=predial"
@@ -682,7 +681,6 @@
             "texto": "Cartão Autonomous",
             "href": "https://brsza022/PIVision/#/Displays/633/AUTONOMOS-CARE-CART%25C3%2595ES"
         },
-      
         {
             "categoria": "Produtividade",
             "texto": "Instrução de Trabalho",
@@ -723,8 +721,6 @@
             "texto": "Quadro de Desempenho",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Quadro%20de%20Desempenho%20AF16/Padr%C3%A3o.aspx"
         },
-     
-      
         {
             "categoria": "Produtividade",
             "texto": "Custo Waste",
@@ -847,7 +843,7 @@
             "texto": "SAC",
             "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/9c37360c-2552-40ab-b7b3-9cbb93b08cb5/ReportSection329259d58d0bf1fc4185?experience=power-bi"
         },
-         {
+        {
             "categoria": "Produtividade",
             "texto": "Troca de fase",
             "href": "https://brsza022/PIVision/#/Displays/11887/Troca-de-Fase-AF17"
@@ -862,13 +858,11 @@
             "texto": "Portal 5S",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FOPC%2F5S%2FAuditorias&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&FolderCTID=0x012000C0A16D111EFF8E4BB692C43F71313AAC"
         },
-        
-         {
+        {
             "categoria": "Produtividade",
             "texto": "Abrir Ação Facilities",
             "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/15fb6751-0ede-491d-9171-3f3a9508690c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&sourcetime=1728389406219&source=portal&local=predial"
         },
-        
         {
             "categoria": "Produtividade",
             "texto": "Cartão Autonomous",
@@ -914,8 +908,6 @@
             "texto": "Quadro de Desempenho",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Quadro%20de%20Desempenho%20AF17/Padr%C3%A3o.aspx"
         },
-        
-             
         {
             "categoria": "PESSOAS",
             "texto": "Acessar PI Vision",
@@ -1033,7 +1025,7 @@
             "texto": "SAC",
             "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/9c37360c-2552-40ab-b7b3-9cbb93b08cb5/ReportSection329259d58d0bf1fc4185?experience=power-bi"
         },
-          {
+        {
             "categoria": "Produtividade",
             "texto": "Troca de fase",
             "href": "https://brsza022/PIVision/#/Displays/11888/Troca-de-Fase-AF19"
@@ -1098,8 +1090,6 @@
             "texto": "Quadro de Desempenho",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Quadro%20de%20Desempenho%20AF19/Padr%C3%A3o.aspx"
         },
-        
-      
         {
             "categoria": "PESSOAS",
             "texto": "Acessar PI Vision",
@@ -1141,7 +1131,6 @@
             "href": "https://app.powerbi.com/groups/da55c46c-50ef-48c9-8143-c36079041cde/reports/b813c4a4-4b2c-40b9-b5e5-d62a3953a86f/cc17cc6b8c8c65b590bc?experience=power-bi"
         }
     ],
-   
     "PC01": [
         {
             "categoria": "EHS",
@@ -1400,7 +1389,7 @@
             "texto": "Troca de turno",
             "href": "https://brsza022/PIVision/#/Displays/11900/Troca-de-Turno-PC02-(Tier-1)"
         },
-         {
+        {
             "categoria": "Produtividade",
             "texto": "Portal 5S",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FOPC%2F5S%2FAuditorias&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&FolderCTID=0x012000C0A16D111EFF8E4BB692C43F71313AAC"
@@ -1410,7 +1399,6 @@
             "texto": "Abrir Ação Facilities",
             "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/15fb6751-0ede-491d-9171-3f3a9508690c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&sourcetime=1728389406219&source=portal&local=predial"
         },
-        
         {
             "categoria": "Produtividade",
             "texto": "Quadro de Desempenho",
@@ -1466,7 +1454,6 @@
             "texto": "CI / TI",
             "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/c88550a3-4103-4833-9e7e-376ef5d1868f/ReportSection7c344e23d1210edc0156?experience=power-bi"
         },
-       
         {
             "categoria": "Produtividade",
             "texto": "Manutenção",
@@ -1477,8 +1464,6 @@
             "texto": "Produção MES",
             "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/6776a6e0-09f8-4f71-957c-f9b790782b31/ReportSection7e263fa3e5d30acbb6eb?experience=power-bi"
         },
-       
-        
         {
             "categoria": "PESSOAS",
             "texto": "Reconhecer um Colega",
@@ -1551,7 +1536,7 @@
             "texto": "Lista de Presença",
             "href": "https://kimberlyclark.sharepoint.com/:f:/r/Sites/H945/Suzano/Quadro%20Interativo/BCM/LP?csf=1&web=1&e=Zz6FIf"
         },
-         {
+        {
             "categoria": "QUALIDADE",
             "texto": "Especificação de Produto",
             "href": "https://brsza022/PIVision/#/Displays/11908/Especifica%C3%A7%C3%A3o-Produto-WW"
@@ -1591,12 +1576,12 @@
             "texto": "Troca de fase",
             "href": "https://brsza022/PIVision/#/Displays/11885/Troca-de-Fase-L06"
         },
-         {
+        {
             "categoria": "Produtividade",
             "texto": "Troca de turno",
             "href": "https://brsza022/PIVision/#/Displays/11612/Troca-de-Turno-(Tier-1)---L06"
         },
-         {
+        {
             "categoria": "Produtividade",
             "texto": "Portal 5S",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FOPC%2F5S%2FAuditorias&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&FolderCTID=0x012000C0A16D111EFF8E4BB692C43F71313AAC"
@@ -1753,7 +1738,6 @@
             "texto": "Lista de Presença",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FQuadro%20Interativo%2FBCM%2FLP&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&OR=Teams%2DHL&CT=1682000822834&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzAzMDUwMTExMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
         },
-     
         {
             "categoria": "Qualidade",
             "texto": "Especificação de Produto",
@@ -1804,7 +1788,7 @@
             "texto": "Troca de fase",
             "href": "https://brsza022/PIVision/#/Displays/11878/Troca-de-Fase-FB12"
         },
-         {
+        {
             "categoria": "Produtividade",
             "texto": "Portal 5s",
             "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
@@ -1874,7 +1858,6 @@
             "texto": "Apresentação Produtos",
             "href": "https://kimberlyclark.sharepoint.com/:p:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B70806CE8-7D02-4674-98D5-B6C4A6B8E676%7D&file=Apresenta%C3%A7%C3%A3o%20Produtos.pptx&action=edit&mobileredirect=true"
         },
-       
         {
             "categoria": "Pessoas",
             "texto": "Reconhecer um Colega",
@@ -1952,7 +1935,6 @@
             "texto": "Lista de Presença",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FQuadro%20Interativo%2FBCM%2FLP&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&OR=Teams%2DHL&CT=1682000822834&clickparams=eyJBcHBOYW1eIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzAzMDUwMTExMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
         },
-       
         {
             "categoria": "Qualidade",
             "texto": "Especificação de Produto",
@@ -1998,7 +1980,7 @@
             "texto": "AMR",
             "href": "https://kimberlyclark-my.sharepoint.com/personal/robert_bispo_kcc_com/Lists/AMR%20%20Formulrio/AllItems.aspx?viewid=2a500470-5285-4667-bebc-d637bc75e776&env=WebViewList&xsdata=MDV8MDJ8fDRlNTJjYjRiZjgxNDQ2OWZmNTFhMDhkZGIzZjgyOTVjfGZlZTIxODBiNjliNjRhZmU5ZjE0Y2NkNzBiZDRjNzM3fDB8MHw2Mzg4NjQ2MDA1ODM2OTc2OTB8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKRFFTSTZJbFJsWVcxelgwRlVVRk5sY25acFkyVmZVMUJQVEU5R0lpd2lWaUk2SWpBdU1DNHdNREF3SWl3aVVDSTZJbGRwYmpNeUlpd2lRVTRpT2lKUGRHaGxjaUlzSWxkVUlqb3hNWDA9fDF8TDJOb1lYUnpMekU1T2pKa05HSTNaRFpqTFdFMVl6TXROR0l5WlMxaU5HWmlMVGsxTXpSak5HTm1NalUwWTE4NU1tSmpaV0UyT0MweE1UQTNMVFF6TldJdFlXRmhZUzAwWWpGak1XTTVaRFUwWXpaQWRXNXhMbWRpYkM1emNHRmpaWE12YldWemMyRm5aWE12TVRjMU1EZzJNekkxTXpJM05RPT18OTEwZTc0ZjVhMDcxNDE5MGY1MWEwOGRkYjNmODI5NWN8NDEyNDcyNzk5MjY5NDQzOWFiZDk5YTIyOWJhOGMxZjA%3D&sdata=ZEt3T0lnVU96dzk3YVZpNVkrY2duZm1TT04vazljTmRnSHllMmJyRjJhUT0%3D&ovuser=fee2180b-69b6-4afe-9f14-ccd70bd4c737%2Cpaulo.junior3%40kcc.com&OR=Teams-HL&CT=1750940690859&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNTA2MDIwNjYxNCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
         },
-         {
+        {
             "categoria": "Produtividade",
             "texto": "Troca de fase",
             "href": "https://brsza022/PIVision/#/Displays/11893/Troca-de-Fase-FB15"
@@ -2165,7 +2147,6 @@
             "texto": "Lista de Presença",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FQuadro%20Interativo%2FBCM%2FLP&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&OR=Teams%2DHL&CT=1682000822834&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzAzMDUwMTExMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
         },
-       
         {
             "categoria": "Qualidade",
             "texto": "Especificação de Produto",
@@ -2211,12 +2192,12 @@
             "texto": "AMR",
             "href": "https://kimberlyclark-my.sharepoint.com/personal/robert_bispo_kcc_com/Lists/AMR%20%20Formulrio/AllItems.aspx?viewid=2a500470-5285-4667-bebc-d637bc75e776&env=WebViewList&xsdata=MDV8MDJ8fDRlNTJjYjRiZjgxNDQ2OWZmNTFhMDhkZGIzZjgyOTVjfGZlZTIxODBiNjliNjRhZmU5ZjE0Y2NkNzBiZDRjNzM3fDB8MHw2Mzg4NjQ2MDA1ODM2OTc2OTB8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKRFFTSTZJbFJsWVcxelgwRlVVRk5sY25acFkyVmZVMUJQVEU5R0lpd2lWaUk2SWpBdU1DNHdNREF3SWl3aVVDSTZJbGRwYmpNeUlpd2lRVTRpT2lKUGRHaGxjaUlzSWxkVUlqb3hNWDA9fDF8TDJOb1lYUnpMekU1T2pKa05HSTNaRFpqTFdFMVl6TXROR0l5WlMxaU5HWmlMVGsxTXpSak5HTm1NalUwWTE4NU1tSmpaV0UyT0MweE1UQTNMVFF6TldJdFlXRmhZUzAwWWpGak1XTTVaRFUwWXpaQWRXNXhMbWRpYkM1emNHRmpaWE12YldWemMyRm5aWE12TVRjMU1EZzJNekkxTXpJM05RPT18OTEwZTc0ZjVhMDcxNDE5MGY1MWEwOGRkYjNmODI5NWN8NDEyNDcyNzk5MjY5NDQzOWFiZDk5YTIyOWJhOGMxZjA%3D&sdata=ZEt3T0lnVU96dzk3YVZpNVkrY2duZm1TT04vazljTmRnSHllMmJyRjJhUT0%3D&ovuser=fee2180b-69b6-4afe-9f14-ccd70bd4c737%2Cpaulo.junior3%40kcc.com&OR=Teams-HL&CT=1750940690859&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNTA2MDIwNjYxNCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
         },
-         {
+        {
             "categoria": "Produtividade",
             "texto": "Troca de fase",
             "href": "https://brsza022/PIVision/#/Displays/11882/Troca-de-fase-FB17"
         },
-         {
+        {
             "categoria": "Produtividade",
             "texto": "Portal 5s",
             "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
@@ -2276,7 +2257,6 @@
             "texto": "Metas Blue Collar",
             "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/Suzano/Produtividade/METAS%20BLUE%20COLLAR%202025%20-%20BCM.xlsx?d=w51f6206f062141f490f3191844532aa2&csf=1&web=1&e=zFZrsa"
         },
-       
         {
             "categoria": "Pessoas",
             "texto": "Matriz Responsabi",
@@ -2364,7 +2344,6 @@
             "texto": "Lista de Presença",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FQuadro%20Interativo%2FBCM%2FLP&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&OR=Teams%2DHL&CT=1682000822834&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzAzMDUwMTExMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
         },
-       
         {
             "categoria": "Qualidade",
             "texto": "Especificação de Produto",
@@ -2410,12 +2389,12 @@
             "texto": "AMR",
             "href": "https://kimberlyclark-my.sharepoint.com/personal/robert_bispo_kcc_com/Lists/AMR%20%20Formulrio/AllItems.aspx?viewid=2a500470-5285-4667-bebc-d637bc75e776&env=WebViewList&xsdata=MDV8MDJ8fDRlNTJjYjRiZjgxNDQ2OWZmNTFhMDhkZGIzZjgyOTVjfGZlZTIxODBiNjliNjRhZmU5ZjE0Y2NkNzBiZDRjNzM3fDB8MHw2Mzg4NjQ2MDA1ODM2OTc2OTB8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKRFFTSTZJbFJsWVcxelgwRlVVRk5sY25acFkyVmZVMUJQVEU5R0lpd2lWaUk2SWpBdU1DNHdNREF3SWl3aVVDSTZJbGRwYmpNeUlpd2lRVTRpT2lKUGRHaGxjaUlzSWxkVUlqb3hNWDA9fDF8TDJOb1lYUnpMekU1T2pKa05HSTNaRFpqTFdFMVl6TXROR0l5WlMxaU5HWmlMVGsxTXpSak5HTm1NalUwWTE4NU1tSmpaV0UyT0MweE1UQTNMVFF6TldJdFlXRmhZUzAwWWpGak1XTTVaRFUwWXpaQWRXNXhMbWRpYkM1emNHRmpaWE12YldWemMyRm5aWE12TVRjMU1EZzJNekkxTXpJM05RPT18OTEwZTc0ZjVhMDcxNDE5MGY1MWEwOGRkYjNmODI5NWN8NDEyNDcyNzk5MjY5NDQzOWFiZDk5YTIyOWJhOGMxZjA%3D&sdata=ZEt3T0lnVU96dzk3YVZpNVkrY2duZm1TT04vazljTmRnSHllMmJyRjJhUT0%3D&ovuser=fee2180b-69b6-4afe-9f14-ccd70bd4c737%2Cpaulo.junior3%40kcc.com&OR=Teams-HL&CT=1750940690859&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNTA2MDIwNjYxNCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
         },
-         {
+        {
             "categoria": "Produtividade",
             "texto": "Troca de fase",
             "href": "https://brsza022/PIVision/#/Displays/11879/Troca-de-fase-FB14"
         },
-            {
+        {
             "categoria": "Produtividade",
             "texto": "Troca de Turno",
             "href": "https://brsza022/PIVision/#/Displays/11506/Troca-de-Turno-(Tier-1)---FB14"
@@ -2430,8 +2409,7 @@
             "texto": "Abrir Ação Facilities",
             "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/15fb6751-0ede-491d-9171-3f3a9508690c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&sourcetime=1728389406219&source=portal&local=predial"
         },
-        
-              {
+        {
             "categoria": "Produtividade",
             "texto": "Especificação de Produto",
             "href": "https://brsza022/PIVision/#/Displays/11793/Especificacao_Produto_BCM"
@@ -2496,7 +2474,6 @@
             "texto": "Apresentação Produtos",
             "href": "https://kimberlyclark.sharepoint.com/:p:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B70806CE8-7D02-4674-98D5-B6C4A6B8E676%7D&file=Apresenta%C3%A7%C3%A3o%20Produtos.pptx&action=edit&mobileredirect=true"
         },
-        
         {
             "categoria": "Pessoas",
             "texto": "Matriz Responsabi",
@@ -2584,7 +2561,6 @@
             "texto": "Lista de Presença",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FQuadro%20Interativo%2FBCM%2FLP&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&OR=Teams%2DHL&CT=1682000822834&clickparams=eyJBcHBOYW1eIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzAzMDUwMTExMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
         },
-                  
         {
             "categoria": "Qualidade",
             "texto": "Especificação de M.P",
@@ -2635,7 +2611,7 @@
             "texto": "CI / TI",
             "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/c88550a3-4103-4833-9e7e-376ef5d1868f/ReportSection7c344e23d1210edc0156?experience=power-bi"
         },
-           {
+        {
             "categoria": "Produtividade",
             "texto": "Troca de Fase",
             "href": "https://brsza022/PIVision/#/Displays/11892/Troca-de-Fase-CM1"
@@ -2765,9 +2741,8 @@
             "texto": "Consumo de MP",
             "href": ""
         }
-      
     ],
-    "PC04":  [
+    "PC04": [
         {
             "categoria": "EHS",
             "texto": "IPS",
@@ -2913,7 +2888,6 @@
             "texto": "Troca de turno",
             "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/8dae408e-7fd8-4291-8ae9-8256bff014f9/ReportSection8e87dcf0544abae52be3?experience=power-bi"
         },
-        
         {
             "categoria": "PESSOAS",
             "texto": "Reconhecer um Colega",
@@ -2996,7 +2970,7 @@
             "texto": "Lista de Presença",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FQuadro%20Interativo%2FBCM%2FLP&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&OR=Teams%2DHL&CT=1682000822834&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzAzMDUwMTExMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
         },
-               {
+        {
             "categoria": "Qualidade",
             "texto": "Especificação de M.P",
             "href": ""
@@ -3061,7 +3035,7 @@
             "texto": "Abrir Ação Facilities",
             "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/15fb6751-0ede-491d-9171-3f3a9508690c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&sourcetime=1728389406219&source=portal&local=predial"
         },
-          {
+        {
             "categoria": "Produtividade",
             "texto": "Portal 5s",
             "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
@@ -3091,7 +3065,6 @@
             "texto": "Kpi de Máquina",
             "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B44B2C8FE-4F79-4D98-9C59-55D6ABFC326E%7D&file=OEEWaste%20Planta%202025.xlsx&action=default&mobileredirect=true"
         },
-      
         {
             "categoria": "Pessoas",
             "texto": "Matriz Responsabi",
@@ -3194,7 +3167,6 @@
             "texto": "Lista de Presença",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FQuadro%20Interativo%2FBCM%2FLP&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&OR=Teams%2DHL&CT=1682000822834&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzAzMDUwMTExMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
         },
-     
         {
             "categoria": "Qualidade",
             "texto": "Especificação de M.P",
@@ -3240,7 +3212,7 @@
             "texto": "Medição de Embalagem",
             "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B8ede105c-5f37-44d1-ac7f-e9f2438b6c09%7D&action=edit&wdinitialsession=3adc9c78-9803-e83e-cb37-5199261a17be&wdrldsc=3&wdrldc=1&wdrldr=ContinueInExcel"
         },
-          {
+        {
             "categoria": "Produtividade",
             "texto": "Troca de Fase",
             "href": "https://brsza022/PIVision/#/Displays/11877/Troca-de-Fase-PH02"
@@ -3604,42 +3576,3 @@
         }
     ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
