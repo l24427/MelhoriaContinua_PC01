@@ -2311,6 +2311,11 @@
             "categoria": "CUSTOS",
             "texto": "Total Waste PI Vision",
             "href": "https://brsza022/PIVision/#/Displays/11711/FB17---Other-Waste"
+        },
+        {
+            "categoria": "CUSTOS",
+            "texto": "Calculadora Final de Bobina",
+            "href": "https://l24427.github.io/Butt-roll/"
         }
     ],
     "FB14": [
@@ -2538,6 +2543,11 @@
             "categoria": "CUSTOS",
             "texto": "Total Waste PI Vision",
             "href": "https://brsza022/PIVision/#/Displays/11722/FB14---Other-Waste"
+        },
+        {
+            "categoria": "CUSTOS",
+            "texto": "Calculadora Final de Bobina",
+            "href": "https://l24427.github.io/Butt-roll/"
         }
     ],
     "CM01": [
@@ -3144,6 +3154,11 @@
             "categoria": "CUSTOS",
             "texto": "Custo Prod x Consumo",
             "href": ""
+        },
+        {
+            "categoria": "CUSTOS",
+            "texto": "Calculadora Final de Bobina",
+            "href": "https://l24427.github.io/Butt-roll/"
         }
     ],
     "PH02": [
@@ -3396,6 +3411,11 @@
             "categoria": "CUSTOS",
             "texto": "Custo Prod x Consumo",
             "href": ""
+        },
+        {
+            "categoria": "CUSTOS",
+            "texto": "Calculadora Final de Bobina",
+            "href": "https://l24427.github.io/Butt-roll/"
         }
     ],
     "FB16": [
@@ -3598,6 +3618,11 @@
             "categoria": "CUSTOS",
             "texto": "Total Waste PI Vision",
             "href": "https://brsza022/PIVision/#/Displays/11712/FB16---Other-Waste"
+        },
+        {
+            "categoria": "CUSTOS",
+            "texto": "Calculadora Final de Bobina",
+            "href": "https://l24427.github.io/Butt-roll/"
         }
     ]
 }
