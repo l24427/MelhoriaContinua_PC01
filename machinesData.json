@@ -1246,8 +1246,28 @@
         },
         {
             "categoria": "QUALIDADE",
+            "texto": "Plano de Controle - ETQ",
+            "href": "",
+        },
+        {
+            "categoria": "QUALIDADE",
             "texto": "AMR",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/AMR%20Adult%20Care%20Acompanhamento/AllItems.aspx?env=WebViewList&npsAction=createList&isSPOFile=1&xsdata=MDV8MDJ8fDYzN2ZkNGNlYWEyZTRlYTVhYWI5MDhkZTkwZDUxZWE3fGZlZTIxODBiNjliNjRhZmU5ZjE0Y2NkNzBiZDRjNzM3fDB8MHw2MzkxMDc0NDIxNDk5Mjc2MDl8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKRFFTSTZJbFJsWVcxelgwRlVVRk5sY25acFkyVmZVMUJQVEU5R0lpd2lWaUk2SWpBdU1DNHdNREF3SWl3aVVDSTZJbGRwYmpNeUlpd2lRVTRpT2lKUGRHaGxjaUlzSWxkVUlqb3hNWDA9fDF8TDJOb1lYUnpMekU1T21FM04yTXhNVGt4TFdKa09HTXROR0ptWVMxaFl6VTNMVGRtT1RVME56QXlNamsxWTE5ak5UaGtaREpsTUMweU9XWXdMVFJsT0dFdFlXSTRNUzFqWkdJeVpHRmtaRFppTURKQWRXNXhMbWRpYkM1emNHRmpaWE12YldWemMyRm5aWE12TVRjM05URTBOelF4TXpneE5RPT18ZWQxYzE2NGFlYjMyNDhmODEyNjMwOGRlOTBkNTFlYTd8NDg4NGM4MWRjZWZmNGJjMThiZjA3MGExZDRjN2M4ZTg%3D&sdata=ZFFIM3hWWW91UTVnVVVvMXprbThNektzSkxqVk5IbHZOalZkUXA4cHJEST0%3D&ovuser=fee2180b-69b6-4afe-9f14-ccd70bd4c737%2Cjulio.maciel%40kcc.com&OR=Teams-HL&CT=1775152857163&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNjAyMjcwNDIxNSJ9"
+        },
+        {
+            "categoria": "PRODUTIVIDADE",
+            "texto": "Troca de turno",
+            "href": ""
+        },
+        {
+            "categoria": "PRODUTIVIDADE",
+            "texto": "PIT STOP",
+            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/f3ef644d-3c37-4964-bd64-20f108e89a4c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&hint=06d768f1-5be8-49ef-950b-11c5f1093db2&sourcetime=1764940866189&source=portal#"
+        },
+        {
+            "categoria": "PRODUTIVIDADE",
+            "texto": "Portal 5S",
+            "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FOPC%2F5S%2FAuditorias&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&FolderCTID=0x012000C0A16D111EFF8E4BB692C43F71313AAC"
         },
         {
             "categoria": "PRODUTIVIDADE",
@@ -1258,16 +1278,6 @@
             "categoria": "PRODUTIVIDADE",
             "texto": "Lançar Plano de Ação",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Reunio%20Diria%20%20ADULT/AllItems.aspx"
-        },
-        {
-            "categoria": "PRODUTIVIDADE",
-            "texto": "PIT STOP",
-            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/f3ef644d-3c37-4964-bd64-20f108e89a4c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&hint=06d768f1-5be8-49ef-950b-11c5f1093db2&sourcetime=1764940866189&source=portal#"
-        },
-        {
-            "categoria": "PRODUTIVIDADE",
-            "texto": "Acessar PI Vision",
-            "href": "https://brsza022/PIVision/#/Displays/196/Adult-Care--%C2%A0Production"
         },
         {
             "categoria": "PRODUTIVIDADE",
@@ -1306,18 +1316,13 @@
         },
         {
             "categoria": "PRODUTIVIDADE",
-            "texto": "5S",
-            "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FOPC%2F5S%2FAuditorias&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&FolderCTID=0x012000C0A16D111EFF8E4BB692C43F71313AAC"
+            "texto": "Controle de Processos - PI Vision",
+            "href": "https://brsza022/PIVision/#/Displays/42/Suzano-Mill?starttime=-8h&endtime=*&asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20AFC%3Fa5f9ba42-167a-11f1-a0b9-7486e2f94287;%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20BCC%5CFB14%3Fdfa65144-131a-11f1-a0b9-7486e2f94287"
         },
         {
             "categoria": "PRODUTIVIDADE",
             "texto": "Manutenção",
             "href": "https://l24427.github.io/MelhoriaContinua_Manutencao/"
-        },
-        {
-            "categoria": "PRODUTIVIDADE",
-            "texto": "Troca de turno",
-            "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/8dae408e-7fd8-4291-8ae9-8256bff014f9/ReportSectionbdcd8ab68949bb05e889?experience=power-bi"
         },
         {
             "categoria": "PESSOAS",
@@ -1333,16 +1338,6 @@
             "categoria": "PESSOAS",
             "texto": "Escala de Folga",
             "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/Suzano/Quadro%20Interativo/ESCALA%202020-2028.xlsx?d=w069550dec2634102a6224d59a8b1bf23&csf=1&web=1&e=RJfGbC"
-        },
-        {
-            "categoria": "PESSOAS",
-            "texto": "LSW",
-            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/5498a537-9523-4485-8c12-e4b41fe9e227?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&source=portal#"
-        },
-        {
-            "categoria": "PESSOAS",
-            "texto": "Monitoramento LSW",
-            "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/9a676cde-bc6c-4494-a91f-bb49825f3f12/2b7d34700ce16774ea6b?experience=power-bi"
         },
         {
             "categoria": "PESSOAS",
@@ -1418,7 +1413,7 @@
         },
         {
             "categoria": "QUALIDADE",
-            "texto": "Plano de Controle",
+            "texto": "Plano de Controle - ETQ",
             "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7BA817C8CA-B61A-4F8E-A5D8-A62D6BACB26E%7D&file=PLANO%20DE%20CONTROLE.xlsx&action=default&mobileredirect=true"
         },
         {
@@ -1481,10 +1476,10 @@
             "texto": "Lançar Plano de Ação",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Reunio%20Diria%20%20ADULT/AllItems.aspx"
         },
-        {
+      {
             "categoria": "PRODUTIVIDADE",
-            "texto": "Acessar PI Vision",
-            "href": "https://brsza022/PIVision/#/Displays/196/Adult-Care--%C2%A0Production"
+            "texto": "Controle de Processos - PI Vision",
+            "href": "https://brsza022/PIVision/#/Displays/42/Suzano-Mill?starttime=-8h&endtime=*&asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20AFC%3Fa5f9ba42-167a-11f1-a0b9-7486e2f94287;%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20BCC%5CFB14%3Fdfa65144-131a-11f1-a0b9-7486e2f94287"
         },
         {
             "categoria": "PRODUTIVIDADE",
@@ -1545,11 +1540,6 @@
             "categoria": "PESSOAS",
             "texto": "Escala de Folga",
             "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/Suzano/Quadro%20Interativo/ESCALA%202020-2028.xlsx?d=w069550dec2634102a6224d59a8b1bf23&csf=1&web=1&e=RJfGbC"
-        },
-        {
-            "categoria": "PESSOAS",
-            "texto": "LSW",
-            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/5498a537-9523-4485-8c12-e4b41fe9e227?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&source=portal#"
         },
         {
             "categoria": "PESSOAS",
@@ -2917,7 +2907,7 @@
         },
         {
             "categoria": "QUALIDADE",
-            "texto": "Plano de Controle",
+            "texto": "Plano de Controle - ETQ",
             "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7BA817C8CA-B61A-4F8E-A5D8-A62D6BACB26E%7D&file=PLANO%20DE%20CONTROLE.xlsx&action=default&mobileredirect=true"
         },
         {
@@ -2957,6 +2947,11 @@
         },
         {
             "categoria": "PRODUTIVIDADE",
+            "texto": "Troca de turno",
+            "href": "https://brsza022/PIVision/#/Displays/11801/Troca-de-Turno-PC04-(Tier-1)"
+        },
+        {
+            "categoria": "PRODUTIVIDADE",
             "texto": "PIT STOP",
             "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/f3ef644d-3c37-4964-bd64-20f108e89a4c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&hint=06d768f1-5be8-49ef-950b-11c5f1093db2&sourcetime=1764940866189&source=portal#"
         },
@@ -2969,11 +2964,6 @@
             "categoria": "PRODUTIVIDADE",
             "texto": "Lançar Plano de Ação",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Reunio%20Diria%20%20ADULT/AllItems.aspx"
-        },
-        {
-            "categoria": "PRODUTIVIDADE",
-            "texto": "Acessar PI Vision",
-            "href": "https://brsza022/PIVision/#/Displays/196/Adult-Care--%C2%A0Production"
         },
         {
             "categoria": "PRODUTIVIDADE",
@@ -3017,6 +3007,11 @@
         },
         {
             "categoria": "PRODUTIVIDADE",
+            "texto": "Controle de Processos - PI Vision",
+            "href": "https://brsza022/PIVision/#/Displays/42/Suzano-Mill?starttime=-8h&endtime=*&asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20AFC%3Fa5f9ba42-167a-11f1-a0b9-7486e2f94287;%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20BCC%5CFB14%3Fdfa65144-131a-11f1-a0b9-7486e2f94287"
+        },
+        {
+            "categoria": "PRODUTIVIDADE",
             "texto": "Manutenção",
             "href": "https://l24427.github.io/MelhoriaContinua_Manutencao/"
         },
@@ -3024,11 +3019,6 @@
             "categoria": "PRODUTIVIDADE",
             "texto": "Produção MES",
             "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/6776a6e0-09f8-4f71-957c-f9b790782b31/ReportSection7e263fa3e5d30acbb6eb?experience=power-bi"
-        },
-        {
-            "categoria": "PRODUTIVIDADE",
-            "texto": "Troca de turno",
-            "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/8dae408e-7fd8-4291-8ae9-8256bff014f9/ReportSection8e87dcf0544abae52be3?experience=power-bi"
         },
         {
             "categoria": "PESSOAS",
