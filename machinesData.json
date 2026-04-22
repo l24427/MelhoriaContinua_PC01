@@ -2,7 +2,7 @@
     "AC20": [
         {
             "categoria": "EHS",
-            "texto": "Lançar Safe.",
+            "texto": "Lançar Safe",
             "href": "http://proact.kcc.com/Login.aspx?acc=kcc&auth=unpw"
         },
         {
@@ -167,7 +167,7 @@
         },
         {
             "categoria": "PESSOAS",
-            "texto": "Matriz Responsabi",
+            "texto": "Matriz Responsabilidades",
             "href": "http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=660909&ETQ$ORIGINAL_DOC_ID=660149"
         },
         {
@@ -361,13 +361,8 @@
         },
         {
             "categoria": "PRODUTIVIDADE",
-            "texto": "Troca de Turno",
-            "href": "https://brsza022/PIVision/#/Displays/11559/Agenda-troca-de-turno-AC21"
-        },
-        {
-            "categoria": "PRODUTIVIDADE",
             "texto": "Controle de Processos - PI Vision",
-            "href": "https://brsza022/PIVision/#/Displays/11594/PRODUCTION-AFC"
+            "href": "https://brsza022/PIVision/#/Displays/42/Suzano-Mill?starttime=-8h&endtime=*&asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20AFC%3Fa5f9ba42-167a-11f1-a0b9-7486e2f94287;%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20BCC%5CFB14%3Fdfa65144-131a-11f1-a0b9-7486e2f94287"
         },
         {
             "categoria": "PESSOAS",
@@ -376,12 +371,7 @@
         },
         {
             "categoria": "PESSOAS",
-            "texto": "LSW",
-            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/5498a537-9523-4485-8c12-e4b41fe9e227?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&source=portal#&var=2"
-        },
-        {
-            "categoria": "PESSOAS",
-            "texto": "Matriz Responsabi",
+            "texto": "Matriz Responsabilidades",
             "href": "http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=660909&ETQ$ORIGINAL_DOC_ID=660149"
         },
         {
@@ -396,7 +386,7 @@
         },
         {
             "categoria": "CUSTOS",
-            "texto": "Custo de ManutençãoOther WasteInventário",
+            "texto": "Custo de Manutenção Other Waste Inventário",
             "href": "https://app.powerbi.com/reportEmbed?reportId=d9f2e11f-9b01-4a2d-b234-4d6d5b1d86a7&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
         },
         {
@@ -486,6 +476,11 @@
             "texto": "SAC",
             "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/9c37360c-2552-40ab-b7b3-9cbb93b08cb5/ReportSection329259d58d0bf1fc4185?experience=power-bi"
         },
+         {
+            "categoria": "QUALIDADE",
+            "texto": "Plano de Controle - ETQ",
+            "href": "https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_ATTACHMENT_LAST_REV&ETQ$FILE_NAME=PC_BR_SZ_FC_AC-22.pdf&ETQ$APPLICATION_ID=7&ETQ$FORM_ID=37&ETQ$KEY_VALUE=1120375&ETQ$SOURCE_FIELD_ID=22423&ETQ$ORIGINAL_DOC_ID=506844"
+        },
         {
             "categoria": "QUALIDADE",
             "texto": "AMR",
@@ -553,11 +548,6 @@
         },
         {
             "categoria": "PRODUTIVIDADE",
-            "texto": "Plano de Controle",
-            "href": "https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_ATTACHMENT_LAST_REV&ETQ$FILE_NAME=PC_BR_SZ_FC_AC-22.pdf&ETQ$APPLICATION_ID=7&ETQ$FORM_ID=37&ETQ$KEY_VALUE=1120375&ETQ$SOURCE_FIELD_ID=22423&ETQ$ORIGINAL_DOC_ID=506844"
-        },
-        {
-            "categoria": "PRODUTIVIDADE",
             "texto": "Quadro de Desempenho",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Quadro%20de%20Desempenho%20AC22/Padr%C3%A3o.aspx"
         },
@@ -567,9 +557,9 @@
             "href": "https://brsza022/PIVision/#/Displays/1385/5S"
         },
         {
-            "categoria": "PESSOAS",
-            "texto": "Acessar PI Vision",
-            "href": "https://brsza022/PIVision/#/Displays/11594/PRODUCTION-AFC"
+            "categoria": "PRODUTIVIDADE",
+            "texto": "Controle de Processos - PI Vision",
+            "href": "https://brsza022/PIVision/#/Displays/42/Suzano-Mill?starttime=-8h&endtime=*&asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20AFC%3Fa5f9ba42-167a-11f1-a0b9-7486e2f94287;%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20BCC%5CFB14%3Fdfa65144-131a-11f1-a0b9-7486e2f94287"
         },
         {
             "categoria": "PESSOAS",
@@ -578,12 +568,7 @@
         },
         {
             "categoria": "PESSOAS",
-            "texto": "LSW",
-            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/5498a537-9523-4485-8c12-e4b41fe9e227?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&source=portal#"
-        },
-        {
-            "categoria": "PESSOAS",
-            "texto": "Matriz Responsabi",
+            "texto": "Matriz Responsabilidades",
             "href": "http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=660909&ETQ$ORIGINAL_DOC_ID=660149"
         },
         {
@@ -598,7 +583,7 @@
         },
         {
             "categoria": "CUSTOS",
-            "texto": "Custo de ManutençãoOther WasteInventário",
+            "texto": "Custo de Manutenção Other Waste Inventário",
             "href": "https://app.powerbi.com/reportEmbed?reportId=d9f2e11f-9b01-4a2d-b234-4d6d5b1d86a7&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
         },
         {
@@ -645,11 +630,6 @@
         },
         {
             "categoria": "EHS",
-            "texto": "PRFA Operadores",
-            "href": "#"
-        },
-        {
-            "categoria": "EHS",
             "texto": "DEHS",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FSEGURAN%C3%87A%2FDialogo%20de%20Seguran%C3%A7a%20e%20Meio%20Ambiente%2F2026%5FDEHS%20Reestruturado%2F1%2E1%20DEHS%5FABS&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&ovuser=fee2180b%2D69b6%2D4afe%2D9f14%2Dccd70bd4c737%2Cpaulo%2Ejunior3%40kcc%2Ecom&OR=Teams%2DHL&CT=1743445613509&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNTAzMDIwMTAxMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
         },
@@ -692,6 +672,11 @@
             "categoria": "QUALIDADE",
             "texto": "SAC",
             "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/9c37360c-2552-40ab-b7b3-9cbb93b08cb5/ReportSection329259d58d0bf1fc4185?experience=power-bi"
+        },
+         {
+            "categoria": "QUALIDADE",
+            "texto": "Plano de Controle - ETQ",
+            "href": "https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=1125961&ETQ$ORIGINAL_DOC_ID=225322"
         },
         {
             "categoria": "QUALIDADE",
@@ -758,12 +743,7 @@
             "texto": "Plano de Produção",
             "href": "https://kimberlyclark.sharepoint.com/sites/C83/Planos%20de%20Produo/Forms/AllItems.aspx?InitialTabId=Ribbon%2ERead&VisibilityContext=WSSTabPersistence"
         },
-        {
-            "categoria": "PRODUTIVIDADE",
-            "texto": "Plano de Controle",
-            "href": "https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=1125961&ETQ$ORIGINAL_DOC_ID=225322"
-        },
-        {
+               {
             "categoria": "PRODUTIVIDADE",
             "texto": "Quadro de Desempenho",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Quadro%20de%20Desempenho%20AF16/Padr%C3%A3o.aspx"
@@ -774,9 +754,9 @@
             "href": "https://brsza022/PIVision/#/Displays/11886/AF16"
         },
         {
-            "categoria": "PESSOAS",
-            "texto": "Acessar PI Vision",
-            "href": "https://brsza022/PIVision/#/Displays/11594/PRODUCTION-AFC"
+            "categoria": "PRODUTIVIDADE",
+            "texto": "Controle de Processos - PI Vision",
+            "href": "https://brsza022/PIVision/#/Displays/42/Suzano-Mill?starttime=-8h&endtime=*&asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20AFC%3Fa5f9ba42-167a-11f1-a0b9-7486e2f94287;%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20BCC%5CFB14%3Fdfa65144-131a-11f1-a0b9-7486e2f94287"
         },
         {
             "categoria": "PESSOAS",
@@ -785,12 +765,7 @@
         },
         {
             "categoria": "PESSOAS",
-            "texto": "LSW",
-            "href": "\thttps://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/5498a537-9523-4485-8c12-e4b41fe9e227?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&source=portal#&var=2"
-        },
-        {
-            "categoria": "PESSOAS",
-            "texto": "Matriz Responsabi",
+            "texto": "Matriz Responsabilidades",
             "href": "http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=660909&ETQ$ORIGINAL_DOC_ID=660149"
         },
         {
@@ -805,7 +780,7 @@
         },
         {
             "categoria": "CUSTOS",
-            "texto": "Custo de ManutençãoOther WasteInventário",
+            "texto": "Custo de Manutenção Other Waste Inventário",
             "href": "https://app.powerbi.com/reportEmbed?reportId=d9f2e11f-9b01-4a2d-b234-4d6d5b1d86a7&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
         },
         {
@@ -829,11 +804,6 @@
             "categoria": "EHS",
             "texto": "Lançar Safe",
             "href": "http://proact.kcc.com/Login.aspx?acc=kcc&auth=unpw"
-        },
-        {
-            "categoria": "EHS",
-            "texto": "PRFA Operadores",
-            "href": "#"
         },
         {
             "categoria": "EHS",
@@ -894,6 +864,11 @@
             "categoria": "QUALIDADE",
             "texto": "SAC",
             "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/9c37360c-2552-40ab-b7b3-9cbb93b08cb5/ReportSection329259d58d0bf1fc4185?experience=power-bi"
+        },
+        {
+            "categoria": "QUALIDADE",
+            "texto": "Plano de Controle - ETQ",
+            "href": "https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=1114590&ETQ$ORIGINAL_DOC_ID=225321"
         },
         {
             "categoria": "QUALIDADE",
@@ -962,18 +937,13 @@
         },
         {
             "categoria": "PRODUTIVIDADE",
-            "texto": "Plano de Controle",
-            "href": "https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=1114590&ETQ$ORIGINAL_DOC_ID=225321"
-        },
-        {
-            "categoria": "PRODUTIVIDADE",
             "texto": "Quadro de Desempenho",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Quadro%20de%20Desempenho%20AF17/Padr%C3%A3o.aspx"
         },
         {
-            "categoria": "PESSOAS",
-            "texto": "Acessar PI Vision",
-            "href": "https://brsza022/PIVision/#/Displays/11594/PRODUCTION-AFC"
+            "categoria": "PRODUTIVIDADE",
+            "texto": "Controle de Processos - PI Vision",
+            "href": "https://brsza022/PIVision/#/Displays/42/Suzano-Mill?starttime=-8h&endtime=*&asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20AFC%3Fa5f9ba42-167a-11f1-a0b9-7486e2f94287;%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20BCC%5CFB14%3Fdfa65144-131a-11f1-a0b9-7486e2f94287"
         },
         {
             "categoria": "PESSOAS",
@@ -982,12 +952,7 @@
         },
         {
             "categoria": "PESSOAS",
-            "texto": "LSW",
-            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/5498a537-9523-4485-8c12-e4b41fe9e227?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&source=portal#"
-        },
-        {
-            "categoria": "PESSOAS",
-            "texto": "Matriz Responsabi",
+            "texto": "Matriz Responsabilidades",
             "href": "http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=660909&ETQ$ORIGINAL_DOC_ID=660149"
         },
         {
@@ -1002,7 +967,7 @@
         },
         {
             "categoria": "CUSTOS",
-            "texto": "Custo de ManutençãoOther WasteInventário",
+            "texto": "Custo de Manutenção Other Waste Inventário",
             "href": "https://app.powerbi.com/reportEmbed?reportId=d9f2e11f-9b01-4a2d-b234-4d6d5b1d86a7&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
         },
         {
@@ -1089,6 +1054,11 @@
         },
         {
             "categoria": "QUALIDADE",
+            "texto": "Plano de Controle - ETQ",
+            "href": "https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=1124446&ETQ$ORIGINAL_DOC_ID=225323"
+        },
+        {
+            "categoria": "QUALIDADE",
             "texto": "SAC",
             "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/9c37360c-2552-40ab-b7b3-9cbb93b08cb5/ReportSection329259d58d0bf1fc4185?experience=power-bi"
         },
@@ -1159,18 +1129,13 @@
         },
         {
             "categoria": "PRODUTIVIDADE",
-            "texto": "Plano de Controle",
-            "href": "https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=1124446&ETQ$ORIGINAL_DOC_ID=225323"
-        },
-        {
-            "categoria": "PRODUTIVIDADE",
             "texto": "Quadro de Desempenho",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Quadro%20de%20Desempenho%20AF19/Padr%C3%A3o.aspx"
         },
         {
-            "categoria": "PESSOAS",
-            "texto": "Acessar PI Vision",
-            "href": "https://brsza022/PIVision/#/Displays/11594/PRODUCTION-AFC"
+            "categoria": "PRODUTIVIDADE",
+            "texto": "Controle de Processos - PI Vision",
+            "href": "https://brsza022/PIVision/#/Displays/42/Suzano-Mill?starttime=-8h&endtime=*&asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20AFC%3Fa5f9ba42-167a-11f1-a0b9-7486e2f94287;%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20BCC%5CFB14%3Fdfa65144-131a-11f1-a0b9-7486e2f94287"
         },
         {
             "categoria": "PESSOAS",
@@ -1179,12 +1144,7 @@
         },
         {
             "categoria": "PESSOAS",
-            "texto": "LSW",
-            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/5498a537-9523-4485-8c12-e4b41fe9e227?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&source=portal#"
-        },
-        {
-            "categoria": "PESSOAS",
-            "texto": "Matriz Responsabi",
+            "texto": "Matriz Responsabilidades",
             "href": "http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=660909&ETQ$ORIGINAL_DOC_ID=660149"
         },
         {
@@ -1199,7 +1159,7 @@
         },
         {
             "categoria": "CUSTOS",
-            "texto": "Custo de ManutençãoOther WasteInventário",
+            "texto": "Custo de Manutenção/ Other Waste/ Inventário",
             "href": "https://app.powerbi.com/reportEmbed?reportId=d9f2e11f-9b01-4a2d-b234-4d6d5b1d86a7&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
         },
         {
