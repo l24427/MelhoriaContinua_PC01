@@ -245,6 +245,11 @@
         },
         {
             "categoria": "QUALIDADE",
+            "texto": "CI TI/ RFT",
+            "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/5cdbbfd6-5c3f-44d3-a197-bb844eb2077f/ReportSection7c344e23d1210edc0156?experience=power-bi"
+        },
+        {
+            "categoria": "QUALIDADE",
             "texto": "Consulta Ações SisAcr",
             "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/a8a14356-b6ea-4dac-b6cd-77ba34277171/ReportSection21f352bc2dba2883e2ea"
         },
@@ -279,9 +284,9 @@
             "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/9c37360c-2552-40ab-b7b3-9cbb93b08cb5/ReportSection329259d58d0bf1fc4185?experience=power-bi"
         },
         {
-            "categoria": "QUALIDADE",
-            "texto": "CI TI/ RFT",
-            "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/5cdbbfd6-5c3f-44d3-a197-bb844eb2077f/ReportSection7c344e23d1210edc0156?experience=power-bi"
+            "categoria": "PRODUTIVIDADE",
+            "texto": "Plano de Controle",
+            "href": "https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=1132326&ETQ$ORIGINAL_DOC_ID=515816"
         },
         {
             "categoria": "QUALIDADE",
@@ -343,11 +348,7 @@
             "texto": "MES",
             "href": "https://reports.kcc.com/reports/report/SMOM/Prod/Reports/BRSZ/Production%20Tracking/Shift%20Operation%20Summary%20Report"
         },
-        {
-            "categoria": "PRODUTIVIDADE",
-            "texto": "Plano de Controle",
-            "href": "https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=1132326&ETQ$ORIGINAL_DOC_ID=515816"
-        },
+        
         {
             "categoria": "PRODUTIVIDADE",
             "texto": "Plano de Produção",
@@ -364,8 +365,8 @@
             "href": "https://brsza022/PIVision/#/Displays/11559/Agenda-troca-de-turno-AC21"
         },
         {
-            "categoria": "PESSOAS",
-            "texto": "Acessar PI Vision",
+            "categoria": "PRODUTIVIDADE",
+            "texto": "Controle de Processos - PI Vision",
             "href": "https://brsza022/PIVision/#/Displays/11594/PRODUCTION-AFC"
         },
         {
