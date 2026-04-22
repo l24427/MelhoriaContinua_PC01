@@ -80,6 +80,11 @@
             "texto": "SAC",
             "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/9c37360c-2552-40ab-b7b3-9cbb93b08cb5/ReportSection329259d58d0bf1fc4185?experience=power-bi"
         },
+         {
+            "categoria": "QUALIDADE",
+            "texto": "Plano de Controle - ETQ",
+            "href": "https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=1118724&ETQ$ORIGINAL_DOC_ID=445327"
+        },
         {
             "categoria": "QUALIDADE",
             "texto": "AMR",
@@ -147,18 +152,13 @@
         },
         {
             "categoria": "PRODUTIVIDADE",
-            "texto": "Plano de Controle",
-            "href": "https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=1118724&ETQ$ORIGINAL_DOC_ID=445327"
-        },
-        {
-            "categoria": "PRODUTIVIDADE",
             "texto": "Quadro de Desempenho",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Quadro%20de%20Desempenho%20AC20/Padro.aspx"
         },
         {
-            "categoria": "PESSOAS",
-            "texto": "Acessar PI Vision",
-            "href": "https://brsza022/PIVision/#/Displays/11594/PRODUCTION-AFC"
+            "categoria": "PRODUTIVIDADE",
+            "texto": "Controle de Processos - PI Vision",
+            "href": "https://brsza022/PIVision/#/Displays/42/Suzano-Mill?starttime=-8h&endtime=*&asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20AFC%3Fa5f9ba42-167a-11f1-a0b9-7486e2f94287;%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20BCC%5CFB14%3Fdfa65144-131a-11f1-a0b9-7486e2f94287"
         },
         {
             "categoria": "PESSOAS",
@@ -181,11 +181,6 @@
             "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/b851353d-d70d-42a3-9200-2d794535b7a7/a5d2a35ebdabf993d8c9?experience=power-bi"
         },
         {
-            "categoria": "PESSOAS",
-            "texto": "App LSW",
-            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/5498a537-9523-4485-8c12-e4b41fe9e227?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&source=portal#&var=2"
-        },
-        {
             "categoria": "CUSTOS",
             "texto": "Custo de Manutenção",
             "href": "https://app.powerbi.com/reportEmbed?reportId=d9f2e11f-9b01-4a2d-b234-4d6d5b1d86a7&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
@@ -200,11 +195,7 @@
             "texto": "Custo de ManutençãoOther WasteInventário",
             "href": "https://app.powerbi.com/reportEmbed?reportId=d9f2e11f-9b01-4a2d-b234-4d6d5b1d86a7&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
         },
-        {
-            "categoria": "EHS",
-            "texto": "botao tester",
-            "href": "https://www.google.com/"
-        },
+       
         {
             "categoria": "PRODUTIVIDADE",
             "texto": "Lançar Ação / Power Apps",
