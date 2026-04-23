@@ -204,10 +204,6 @@
       "categoria": "PRODUTIVIDADE",
       "texto": "5S",
       "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Plano de Controle"
     }
   ],
   "AC21": [
@@ -410,10 +406,6 @@
       "categoria": "PRODUTIVIDADE",
       "texto": "5S",
       "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Plano de Controle"
     }
   ],
   "AC22": [
@@ -611,10 +603,6 @@
       "categoria": "PRODUTIVIDADE",
       "texto": "Lançar Ação / Power Apps",
       "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/0061b360-08b4-4f09-9ab7-0c68d2eaa8ab?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Plano de Controle"
     }
   ],
   "AF16": [
@@ -817,10 +805,6 @@
       "categoria": "PRODUTIVIDADE",
       "texto": "5S",
       "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Plano de Controle"
     }
   ],
   "AF17": [
@@ -1013,10 +997,6 @@
       "categoria": "PRODUTIVIDADE",
       "texto": "5S",
       "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Plano de Controle"
     }
   ],
   "AF19": [
@@ -1214,10 +1194,6 @@
       "categoria": "PRODUTIVIDADE",
       "texto": "5S",
       "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Plano de Controle"
     }
   ],
   "PC01": [
@@ -1260,10 +1236,6 @@
       "categoria": "QUALIDADE",
       "texto": "Especificação de Produto",
       "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B05E9E14F-3327-44F6-A9D5-CFCF9441098B%7D&file=ESPECIFICA%C3%87%C3%95ES%20DE%20PRODUTO.xlsx&action=default&mobileredirect=true"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Plano de Controle"
     },
     {
       "categoria": "QUALIDADE",
@@ -1621,10 +1593,6 @@
       "categoria": "PRODUTIVIDADE",
       "texto": "5S",
       "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Plano de Controle"
     }
   ],
   "L06": [
@@ -1665,7 +1633,8 @@
     },
     {
       "categoria": "QUALIDADE",
-      "texto": "Plano de Controle"
+      "texto": "Plano de Controle - ETQ",
+      "href": ""
     },
     {
       "categoria": "QUALIDADE",
@@ -1881,7 +1850,8 @@
     },
     {
       "categoria": "QUALIDADE",
-      "texto": "Plano de Controle"
+      "texto": "Plano de Controle",
+      "href": "https://brsza022/PIVision/#/Displays/711/Plano_de_Controle_BCM"
     },
     {
       "categoria": "QUALIDADE",
@@ -2087,7 +2057,8 @@
     },
     {
       "categoria": "QUALIDADE",
-      "texto": "Plano de Controle"
+      "texto": "Plano de Controle - ETQ",
+      "href": "https://brsza022/PIVision/#/Displays/711/Plano_de_Controle_BCM"
     },
     {
       "categoria": "QUALIDADE",
@@ -2495,10 +2466,6 @@
       "categoria": "PRODUTIVIDADE",
       "texto": "5S",
       "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Plano de Controle"
     }
   ],
   "FB16": [
@@ -2711,10 +2678,6 @@
       "categoria": "PRODUTIVIDADE",
       "texto": "5S",
       "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Plano de Controle"
     }
   ],
   "FB17": [
@@ -2917,10 +2880,6 @@
       "categoria": "PRODUTIVIDADE",
       "texto": "5S",
       "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Plano de Controle"
     }
   ],
   "CM01": [
@@ -2971,7 +2930,8 @@
     },
     {
       "categoria": "QUALIDADE",
-      "texto": "Plano de Controle"
+      "texto": "Plano de Controle - ETQ",
+      "href": "https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=1298961&ETQ$ORIGINAL_DOC_ID=547185"
     },
     {
       "categoria": "QUALIDADE",
@@ -3329,10 +3289,6 @@
       "categoria": "PRODUTIVIDADE",
       "texto": "5S",
       "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Plano de Controle"
     }
   ],
   "PH01": [
@@ -3465,10 +3421,6 @@
       "categoria": "PRODUTIVIDADE",
       "texto": "Especificação de M.P",
       "href": ""
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Plano de Controle"
     },
     {
       "categoria": "PRODUTIVIDADE",
@@ -3776,10 +3728,6 @@
       "categoria": "PRODUTIVIDADE",
       "texto": "5S",
       "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Plano de Controle"
     }
   ]
 }
