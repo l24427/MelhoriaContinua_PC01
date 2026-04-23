@@ -1892,8 +1892,8 @@
         },
         {
             "categoria": "PRODUTIVIDADE",
-            "texto": "Acessar PI Vision",
-            "href": "https://brsza022/PIVision/#/Displays/299/FB12---Overview"
+            "texto": "Controle de Processos - PI Vision",
+            "href": "https://brsza022/PIVision/#/Displays/42/Suzano-Mill?starttime=-8h&endtime=*&asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20AFC%3Fa5f9ba42-167a-11f1-a0b9-7486e2f94287;%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20BCC%5CFB14%3Fdfa65144-131a-11f1-a0b9-7486e2f94287"
         },
         {
             "categoria": "PRODUTIVIDADE",
@@ -1947,12 +1947,7 @@
         },
         {
             "categoria": "PESSOAS",
-            "texto": "LSW",
-            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/5498a537-9523-4485-8c12-e4b41fe9e227?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&source=portal#"
-        },
-        {
-            "categoria": "PESSOAS",
-            "texto": "Matriz de Habilidades",
+            "texto": "Matriz de Responsabilidades",
             "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/5064449e-4f21-4263-97b7-4e3910f5d3b5/ReportSection04c142c0d68ee0b2b34c?experience=power-bi"
         },
         {
@@ -2109,8 +2104,8 @@
         },
         {
             "categoria": "PRODUTIVIDADE",
-            "texto": "Acessar PI Vision",
-            "href": "https://brsza022/PIVision/#/Displays/304/FB14---Overview?starttime=*-8h&endtime=*"
+            "texto": "Controle de Processos - PI Vision",
+            "href": "https://brsza022/PIVision/#/Displays/42/Suzano-Mill?starttime=-8h&endtime=*&asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20AFC%3Fa5f9ba42-167a-11f1-a0b9-7486e2f94287;%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20BCC%5CFB14%3Fdfa65144-131a-11f1-a0b9-7486e2f94287"
         },
         {
             "categoria": "PRODUTIVIDADE",
@@ -2154,7 +2149,7 @@
         },
         {
             "categoria": "PESSOAS",
-            "texto": "Matriz Responsabi",
+            "texto": "Matriz Responsabilidades",
             "href": "http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=660909&ETQ$ORIGINAL_DOC_ID=660149"
         },
         {
@@ -2256,7 +2251,7 @@
         },
         {
             "categoria": "QUALIDADE",
-            "texto": "Plano de Controle",
+            "texto": "Plano de Controle - ETQ",
             "href": "https://brsza022/PIVision/#/Displays/711/Plano_de_Controle_BCM"
         },
         {
@@ -2321,8 +2316,8 @@
         },
         {
             "categoria": "PRODUTIVIDADE",
-            "texto": "Acessar PI Vision",
-            "href": "https://brsza022/PIVision/#/Displays/303/FB15---Overview?starttime=*-8h&endtime=*"
+            "texto": "Controle de Processos - PI Vision",
+            "href": "https://brsza022/PIVision/#/Displays/42/Suzano-Mill?starttime=-8h&endtime=*&asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20AFC%3Fa5f9ba42-167a-11f1-a0b9-7486e2f94287;%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20BCC%5CFB14%3Fdfa65144-131a-11f1-a0b9-7486e2f94287"
         },
         {
             "categoria": "PRODUTIVIDADE",
@@ -2376,7 +2371,7 @@
         },
         {
             "categoria": "PESSOAS",
-            "texto": "Matriz Responsabi",
+            "texto": "Matriz Responsabilidades",
             "href": "http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=660909&ETQ$ORIGINAL_DOC_ID=660149"
         },
         {
@@ -2403,11 +2398,6 @@
             "categoria": "PESSOAS",
             "texto": "Escala de Folga",
             "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/Suzano/Quadro%20Interativo/ESCALA%202020-2028.xlsx?d=w069550dec2634102a6224d59a8b1bf23&csf=1&web=1&e=RJfGbC"
-        },
-        {
-            "categoria": "PESSOAS",
-            "texto": "LSW",
-            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/5498a537-9523-4485-8c12-e4b41fe9e227?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&source=portal#"
         },
         {
             "categoria": "PESSOAS",
@@ -2478,7 +2468,7 @@
         },
         {
             "categoria": "QUALIDADE",
-            "texto": "Plano de Controle",
+            "texto": "Plano de Controle - ETQ",
             "href": "https://brsza022/PIVision/#/Displays/711/Plano_de_Controle_BCM"
         },
         {
@@ -2533,6 +2523,11 @@
         },
         {
             "categoria": "PRODUTIVIDADE",
+            "texto": "Portal 5s",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+        },
+        {
+            "categoria": "PRODUTIVIDADE",
             "texto": "Lançar Plano de Ação",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Reunio%20Diria%20%20BCM/AllItems.aspx?useFiltersInViewXml=1&FilterField1=STATUS&FilterValue1=ANDAMENTO&FilterType1=Choice&FilterOp1=In&viewid=d8a9d722%2D2cf0%2D40ee%2D8cba%2D96622d53a9ba&FilterField2=MAQUINA&FilterValue2=FB%2D16&FilterType2=Choice&FilterOp2=In"
         },
@@ -2543,8 +2538,8 @@
         },
         {
             "categoria": "PRODUTIVIDADE",
-            "texto": "Acessar PI Vision",
-            "href": "https://brsza022/PIVision/#/Displays/307/FB16---Overview?starttime=*-8h&endtime=*"
+            "texto": "Controle de Processos - PI Vision",
+            "href": "https://brsza022/PIVision/#/Displays/42/Suzano-Mill?starttime=-8h&endtime=*&asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20AFC%3Fa5f9ba42-167a-11f1-a0b9-7486e2f94287;%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20BCC%5CFB14%3Fdfa65144-131a-11f1-a0b9-7486e2f94287"
         },
         {
             "categoria": "PRODUTIVIDADE",
@@ -2587,13 +2582,8 @@
             "href": "https://kimberlyclark.sharepoint.com/:p:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B70806CE8-7D02-4674-98D5-B6C4A6B8E676%7D&file=Apresenta%C3%A7%C3%A3o%20Produtos.pptx&action=edit&mobileredirect=true"
         },
         {
-            "categoria": "PRODUTIVIDADE",
-            "texto": "Portal 5s",
-            "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-        },
-        {
             "categoria": "PESSOAS",
-            "texto": "Matriz Responsabi",
+            "texto": "Matriz Responsabilidades",
             "href": "http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=660909&ETQ$ORIGINAL_DOC_ID=660149"
         },
         {
@@ -2620,11 +2610,6 @@
             "categoria": "PESSOAS",
             "texto": "Escala de Folga",
             "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/Suzano/Quadro%20Interativo/BCM/FB-12/Escala%20de%20folgas%202025.xlsx?d=wb2b0f7e1da684b0abfbd531e37db0a03&csf=1&web=1&e=IODQfm"
-        },
-        {
-            "categoria": "PESSOAS",
-            "texto": "LSW",
-            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/5498a537-9523-4485-8c12-e4b41fe9e227?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&source=portal#"
         },
         {
             "categoria": "CUSTOS",
@@ -2690,7 +2675,7 @@
         },
         {
             "categoria": "QUALIDADE",
-            "texto": "Plano de Controle",
+            "texto": "Plano de Controle - ETQ",
             "href": "https://brsza022/PIVision/#/Displays/711/Plano_de_Controle_BCM"
         },
         {
@@ -2750,6 +2735,11 @@
         },
         {
             "categoria": "PRODUTIVIDADE",
+            "texto": "Controle de Processos - PI Vision",
+            "href": "https://brsza022/PIVision/#/Displays/42/Suzano-Mill?starttime=-8h&endtime=*&asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20AFC%3Fa5f9ba42-167a-11f1-a0b9-7486e2f94287;%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20BCC%5CFB14%3Fdfa65144-131a-11f1-a0b9-7486e2f94287"
+        },
+        {
+            "categoria": "PRODUTIVIDADE",
             "texto": "Lançar Plano de Ação",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Reunio%20Diria%20%20BCM/AllItems.aspx?FilterField1=STATUS&FilterValue1=ANDAMENTO&FilterOp1=In&FilterField2=MAQUINA&FilterValue2=FB17&FilterType2=Choice&FilterOp2=In&FilterField3=MAQUINA&FilterValue3=FB17&FilterType3=Choice&FilterOp3=In&viewid=d8a9d722%2D2cf0%2D40ee%2D8cba%2D96622d53a9ba&useFiltersInViewXml=1&OR=Teams%2DHL&CT=1733741338916&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDEwMjAwMTMxOCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
         },
@@ -2757,11 +2747,6 @@
             "categoria": "PRODUTIVIDADE",
             "texto": "Alarmes PASS",
             "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/1bfe30fd-e450-4a0d-a699-4149492f97a3?ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737&pbi_source=linkShare&bookmarkGuid=57806f42-26b6-4c58-b7a7-83dbe77c6971"
-        },
-        {
-            "categoria": "PRODUTIVIDADE",
-            "texto": "Acessar PI Vision",
-            "href": "https://brsza022/PIVision/#/Displays/308/FB17---Overview?starttime=*-8h&endtime=*"
         },
         {
             "categoria": "PRODUTIVIDADE",
@@ -2800,7 +2785,7 @@
         },
         {
             "categoria": "PESSOAS",
-            "texto": "Matriz Responsabi",
+            "texto": "Matriz Responsabilidades",
             "href": "http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=660909&ETQ$ORIGINAL_DOC_ID=660149"
         },
         {
@@ -2812,11 +2797,6 @@
             "categoria": "PESSOAS",
             "texto": "Escala de Folga",
             "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/Suzano/Quadro%20Interativo/BCM/FB-12/Escala%20de%20folgas%202025.xlsx?d=wb2b0f7e1da684b0abfbd531e37db0a03&csf=1&web=1&e=IODQfm"
-        },
-        {
-            "categoria": "PESSOAS",
-            "texto": "LSW",
-            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/5498a537-9523-4485-8c12-e4b41fe9e227?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&source=portal#"
         },
         {
             "categoria": "PESSOAS",
@@ -2947,6 +2927,11 @@
         },
         {
             "categoria": "PRODUTIVIDADE",
+            "texto": "Portal 5s",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+        },
+        {
+            "categoria": "PRODUTIVIDADE",
             "texto": "Quadro de Desempenho",
             "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Quadro%20de%20Desempenho%20CM/AllItems.aspx?origin=createList&viewid=dff8be5d%2D359e%2D4f74%2Da563%2D6364cba55d2c"
         },
@@ -2962,8 +2947,8 @@
         },
         {
             "categoria": "PRODUTIVIDADE",
-            "texto": "Acessar PI Vision",
-            "href": "https://brsza022/PIVision/#/Displays/44/CM01---Overview"
+            "texto": "Controle de Processos - PI Vision",
+            "href": "https://brsza022/PIVision/#/Displays/42/Suzano-Mill?starttime=-8h&endtime=*&asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20AFC%3Fa5f9ba42-167a-11f1-a0b9-7486e2f94287;%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20BCC%5CFB14%3Fdfa65144-131a-11f1-a0b9-7486e2f94287"
         },
         {
             "categoria": "PRODUTIVIDADE",
@@ -3007,17 +2992,12 @@
         },
         {
             "categoria": "PRODUTIVIDADE",
-            "texto": "Portal 5s",
-            "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-        },
-        {
-            "categoria": "PRODUTIVIDADE",
             "texto": "Checklist Manual",
             "href": "https://kimberlyclark.sharepoint.com/:x:/s/Y2897/EQtih-ZjRrNHummomrRruM4BHKbdWC27Cyorq3QUx-jX4A?e=fO3Lgv"
         },
         {
             "categoria": "PESSOAS",
-            "texto": "Matriz Responsabi",
+            "texto": "Matriz Responsabilidades",
             "href": "http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=660909&ETQ$ORIGINAL_DOC_ID=660149"
         },
         {
@@ -3047,18 +3027,8 @@
         },
         {
             "categoria": "PESSOAS",
-            "texto": "LSW",
-            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/5498a537-9523-4485-8c12-e4b41fe9e227?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&source=portal"
-        },
-        {
-            "categoria": "PESSOAS",
             "texto": "Treinamentos",
             "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/b851353d-d70d-42a3-9200-2d794535b7a7/a5d2a35ebdabf993d8c9?experience=power-bi"
-        },
-        {
-            "categoria": "CUSTOS",
-            "texto": "Custo Waste",
-            "href": ""
         },
         {
             "categoria": "CUSTOS",
@@ -3209,11 +3179,6 @@
         },
         {
             "categoria": "PRODUTIVIDADE",
-            "texto": "5S",
-            "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FOPC%2F5S%2FAuditorias&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&FolderCTID=0x012000C0A16D111EFF8E4BB692C43F71313AAC"
-        },
-        {
-            "categoria": "PRODUTIVIDADE",
             "texto": "Controle de Processos - PI Vision",
             "href": "https://brsza022/PIVision/#/Displays/42/Suzano-Mill?starttime=-8h&endtime=*&asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20AFC%3Fa5f9ba42-167a-11f1-a0b9-7486e2f94287;%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20BCC%5CFB14%3Fdfa65144-131a-11f1-a0b9-7486e2f94287"
         },
@@ -3242,17 +3207,7 @@
             "texto": "Escala de Folga",
             "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/Suzano/Quadro%20Interativo/ESCALA%202020-2028.xlsx?d=w069550dec2634102a6224d59a8b1bf23&csf=1&web=1&e=RJfGbC"
         },
-        {
-            "categoria": "PESSOAS",
-            "texto": "LSW",
-            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/5498a537-9523-4485-8c12-e4b41fe9e227?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&source=portal#"
-        },
-        {
-            "categoria": "PESSOAS",
-            "texto": "Monitoramento LSW",
-            "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/9a676cde-bc6c-4494-a91f-bb49825f3f12/2b7d34700ce16774ea6b?experience=power-bi"
-        },
-        {
+       {
             "categoria": "PESSOAS",
             "texto": "Treinamentos",
             "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/b851353d-d70d-42a3-9200-2d794535b7a7/a5d2a35ebdabf993d8c9?experience=power-bi"
@@ -3321,7 +3276,7 @@
         },
         {
             "categoria": "QUALIDADE",
-            "texto": "Plano de Controle",
+            "texto": "Plano de Controle - ETQ",
             "href": "https://brsza022/PIVision/#/Displays/711/Plano_de_Controle_BCM"
         },
         {
@@ -3386,13 +3341,13 @@
         },
         {
             "categoria": "PRODUTIVIDADE",
-            "texto": "Abrir Ação Facilities",
-            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/15fb6751-0ede-491d-9171-3f3a9508690c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&sourcetime=1728389406219&source=portal&local=predial"
+            "texto": "Controle de Processos - PI Vision",
+            "href": "https://brsza022/PIVision/#/Displays/42/Suzano-Mill?starttime=-8h&endtime=*&asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20AFC%3Fa5f9ba42-167a-11f1-a0b9-7486e2f94287;%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20BCC%5CFB14%3Fdfa65144-131a-11f1-a0b9-7486e2f94287"
         },
         {
             "categoria": "PRODUTIVIDADE",
-            "texto": "Portal 5s",
-            "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+            "texto": "Abrir Ação Facilities",
+            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/15fb6751-0ede-491d-9171-3f3a9508690c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&sourcetime=1728389406219&source=portal&local=predial"
         },
         {
             "categoria": "PRODUTIVIDADE",
@@ -3421,7 +3376,7 @@
         },
         {
             "categoria": "PESSOAS",
-            "texto": "Matriz Responsabi",
+            "texto": "Matriz Responsabilidades",
             "href": "http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=660909&ETQ$ORIGINAL_DOC_ID=660149"
         },
         {
@@ -3438,16 +3393,6 @@
             "categoria": "PESSOAS",
             "texto": "Escala de Folga",
             "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B55B4F8FC-2491-4901-8B73-1864FE4373F3%7D&file=ESCALA%202021.xlsx&action=default&mobileredirect=true"
-        },
-        {
-            "categoria": "PESSOAS",
-            "texto": "Agenda Troca de Turno",
-            "href": ""
-        },
-        {
-            "categoria": "PESSOAS",
-            "texto": "LSW",
-            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/5498a537-9523-4485-8c12-e4b41fe9e227?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&source=portal#"
         },
         {
             "categoria": "PESSOAS",
@@ -3538,7 +3483,7 @@
         },
         {
             "categoria": "QUALIDADE",
-            "texto": "Plano de Controle",
+            "texto": "Plano de Controle - ETQ",
             "href": "https://brsza022/PIVision/#/Displays/711/Plano_de_Controle_BCM"
         },
         {
@@ -3603,6 +3548,11 @@
         },
         {
             "categoria": "PRODUTIVIDADE",
+            "texto": "Controle de Processos - PI Vision",
+            "href": "https://brsza022/PIVision/#/Displays/42/Suzano-Mill?starttime=-8h&endtime=*&asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20AFC%3Fa5f9ba42-167a-11f1-a0b9-7486e2f94287;%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20BCC%5CFB14%3Fdfa65144-131a-11f1-a0b9-7486e2f94287"
+        },
+        {
+            "categoria": "PRODUTIVIDADE",
             "texto": "Abrir Ação Facilities",
             "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/15fb6751-0ede-491d-9171-3f3a9508690c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&sourcetime=1728389406219&source=portal&local=predial"
         },
@@ -3620,11 +3570,6 @@
             "categoria": "PRODUTIVIDADE",
             "texto": "Retenções Máquinas",
             "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B154D2F83-05AE-4BD6-B688-92D4F6E0FBB3%7D&file=Planilha%20de%20Reten%C3%A7%C3%B5es.xlsx&action=default&mobileredirect=true"
-        },
-        {
-            "categoria": "PRODUTIVIDADE",
-            "texto": "Acessar PI Vision",
-            "href": "https://brsza022/PIVision/#/Displays/42/Suzano-Mill"
         },
         {
             "categoria": "PRODUTIVIDADE",
@@ -3667,13 +3612,8 @@
             "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B51F6206F-0621-41F4-90F3-191844532AA2%7D&file=METAS%20BLUE%20COLLAR%202025%20-%20BCM.xlsx&action=default&mobileredirect=true"
         },
         {
-            "categoria": "PRODUTIVIDADE",
-            "texto": "Portal 5s",
-            "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-        },
-        {
             "categoria": "PESSOAS",
-            "texto": "Matriz Responsabi",
+            "texto": "Matriz Responsabilidades",
             "href": "http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=660909&ETQ$ORIGINAL_DOC_ID=660149"
         },
         {
@@ -3690,16 +3630,6 @@
             "categoria": "PESSOAS",
             "texto": "Escala de Folga",
             "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B55B4F8FC-2491-4901-8B73-1864FE4373F3%7D&file=ESCALA%202021.xlsx&action=default&mobileredirect=true"
-        },
-        {
-            "categoria": "PESSOAS",
-            "texto": "Agenda Troca de Turno",
-            "href": ""
-        },
-        {
-            "categoria": "PESSOAS",
-            "texto": "LSW",
-            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/5498a537-9523-4485-8c12-e4b41fe9e227?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&source=portal#"
         },
         {
             "categoria": "PESSOAS",
