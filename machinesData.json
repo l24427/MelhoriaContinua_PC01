@@ -1,206 +1,4 @@
 {
-  "AC20": [
-    {
-      "categoria": "EHS",
-      "texto": "Lançar Safe",
-      "href": "http://proact.kcc.com/Login.aspx?acc=kcc&auth=unpw"
-    },
-    {
-      "categoria": "EHS",
-      "texto": "Indicadores ambientais",
-      "href": "https://app.powerbi.com/groups/dcb8b308-ad58-48a7-aaa4-cba7d0a111fb/reports/62ccf77a-505c-4a05-9408-73fb9bbc9495/ReportSection009b13a603590a0d1293?ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737&experience=power-bi"
-    },
-    {
-      "categoria": "EHS",
-      "texto": "Consulta De Safe",
-      "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/4b7ea60a-94dc-443e-b973-ce06c763c38f/ReportSection2710d86d27c05745394d?language=pt-BR&experience=power-bi"
-    },
-    {
-      "categoria": "EHS",
-      "texto": "Lançar OPT",
-      "href": "https://kimberlyclark.sharepoint.com/Sites/g956/optseguranca"
-    },
-    {
-      "categoria": "EHS",
-      "texto": "Lançar Pré-uso",
-      "href": "https://kimberlyclark.sharepoint.com/sites/G394/SitePages/Inspe%C3%A7%C3%B5es-de-Pr%C3%A9-uso.aspx"
-    },
-    {
-      "categoria": "EHS",
-      "texto": "PRFA Operadores",
-      "href": "#"
-    },
-    {
-      "categoria": "EHS",
-      "texto": "Inventário de Químicos",
-      "href": "https://kimberlyclark-my.sharepoint.com/:x:/g/personal/kayke_bittencourt_kcc_com/EWR1QYS5TDZIrzdD82w-OkgBvukpLPOYrHke64yaVtS6sg?email=kayke.bittencourt%40kcc.com&e=Q4w3oa"
-    },
-    {
-      "categoria": "EHS",
-      "texto": "DEHS",
-      "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FSEGURAN%C3%87A%2FDialogo%20de%20Seguran%C3%A7a%20e%20Meio%20Ambiente%2F2026%5FDEHS%20Reestruturado%2F1%2E1%20DEHS%5FABS&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&ovuser=fee2180b%2D69b6%2D4afe%2D9f14%2Dccd70bd4c737%2Cpaulo%2Ejunior3%40kcc%2Ecom&OR=Teams%2DHL&CT=1743445613509&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNTAzMDIwMTAxMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "CI TI/ RFT",
-      "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/5cdbbfd6-5c3f-44d3-a197-bb844eb2077f/ReportSection7c344e23d1210edc0156?experience=power-bi"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Consulta Ações SisAcr",
-      "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/a8a14356-b6ea-4dac-b6cd-77ba34277171/ReportSection21f352bc2dba2883e2ea"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Etiquetas de Fornecedores",
-      "href": "https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_ATTACHMENT_LAST_REV&ETQ$FILE_NAME=JA-20312+BOOK+ETIQUETAS.pdf&ETQ$APPLICATION_ID=7&ETQ$FORM_ID=37&ETQ$KEY_VALUE=762848&ETQ$SOURCE_FIELD_ID=22423&ETQ$ORIGINAL_DOC_ID=518577"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "GSP",
-      "href": "https://brsza022/PIVision/#/Displays/11595/GSP-ABS---CCS"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Manual de Inspeção",
-      "href": "http://www.etq.kcc.com/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=1115184&ETQ$SCREEN_WIDTH=1280"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Especificação do Produto",
-      "href": "http://www.etq.kcc.com/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=1115184&ETQ$SCREEN_WIDTH=1280"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Retidos & Rejeitados",
-      "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/5b24619b-f0a9-4c4a-aba4-a7b5ea965b5c/ReportSection?experience=power-bi"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "SAC",
-      "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/9c37360c-2552-40ab-b7b3-9cbb93b08cb5/ReportSection329259d58d0bf1fc4185?experience=power-bi"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Plano de Controle - ETQ",
-      "href": "https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=1118724&ETQ$ORIGINAL_DOC_ID=445327"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "AMR",
-      "href": "https://kimberlyclark.sharepoint.com/:l:/s/H945/JACju0CHJ4tBRr98o2RfZ6R8AT8zfzb8E1OAvGPCX_6k9n4?nav=MTkwYzBmZWUtYjJiNy00YWU1LTkzMWQtNDI1MWI3ODRhMTVm"
-    },
-    {
-      "categoria": "PRODUTIVIDADE",
-      "texto": "Troca de Fase",
-      "href": "https://brsza022/PIVision/#/Displays/11889/Troca-de-Fase-AC20"
-    },
-    {
-      "categoria": "PRODUTIVIDADE",
-      "texto": "Troca de Turno",
-      "href": "https://brsza022/PIVision/#/Displays/11558/Agenda-troca-de-turno-AC20"
-    },
-    {
-      "categoria": "PRODUTIVIDADE",
-      "texto": "Portal 5S",
-      "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/76ae6426-e89c-48a5-bb16-b6e837783d8c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&hint=de8e180a-0754-40c6-a176-314674772651&sourcetime=1753295394248"
-    },
-    {
-      "categoria": "PRODUTIVIDADE",
-      "texto": "PIT STOP",
-      "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/f3ef644d-3c37-4964-bd64-20f108e89a4c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&hint=06d768f1-5be8-49ef-950b-11c5f1093db2&sourcetime=1764940866189&source=portal#"
-    },
-    {
-      "categoria": "PRODUTIVIDADE",
-      "texto": "Abrir Ação Facilities",
-      "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/15fb6751-0ede-491d-9171-3f3a9508690c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&sourcetime=1728389406219&source=portal&local=predial"
-    },
-    {
-      "categoria": "PRODUTIVIDADE",
-      "texto": "Cartão Autonomous",
-      "href": "https://brsza022/PIVision/#/Displays/633/AUTONOMOS-CARE-CART%25C3%2595ES"
-    },
-    {
-      "categoria": "PRODUTIVIDADE",
-      "texto": "Instrução de Trabalho",
-      "href": "https://brsza022/PIVision/#/Displays/632/INSTRU%C3%87%C3%83O-TRABALHO-PADS-E-LINER"
-    },
-    {
-      "categoria": "PRODUTIVIDADE",
-      "texto": "Kpi de Máquina",
-      "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B44B2C8FE-4F79-4D98-9C59-55D6ABFC326E%7D&file=OEEWaste%20Planta%202025.xlsx&action=default&mobileredirect=true"
-    },
-    {
-      "categoria": "PRODUTIVIDADE",
-      "texto": "Lançar Plano de Ação",
-      "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Reunio%20Diria%20%20FC/AllItems.aspx?origin=createList&OR=Teams%2DHL&CT=1648774240612¶ms=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMjAzMDcwMTYxMCJ9"
-    },
-    {
-      "categoria": "PRODUTIVIDADE",
-      "texto": "MES",
-      "href": "https://reports.kcc.com/reports/report/SMOM/Prod/Reports/BRSZ/Production%20Tracking/Shift%20Operation%20Summary%20Report"
-    },
-    {
-      "categoria": "PRODUTIVIDADE",
-      "texto": "Plano de Produção",
-      "href": "https://kimberlyclark.sharepoint.com/sites/C83/Planos%20de%20Produo/Forms/AllItems.aspx?InitialTabId=Ribbon%2ERead&VisibilityContext=WSSTabPersistence"
-    },
-    {
-      "categoria": "PRODUTIVIDADE",
-      "texto": "Quadro de Desempenho",
-      "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Quadro%20de%20Desempenho%20AC20/Padro.aspx"
-    },
-    {
-      "categoria": "PRODUTIVIDADE",
-      "texto": "Controle de Processos - PI Vision",
-      "href": "https://brsza022/PIVision/#/Displays/42/Suzano-Mill?starttime=-8h&endtime=*&asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20AFC%3Fa5f9ba42-167a-11f1-a0b9-7486e2f94287;%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20BCC%5CFB14%3Fdfa65144-131a-11f1-a0b9-7486e2f94287"
-    },
-    {
-      "categoria": "PESSOAS",
-      "texto": "Escala de Folga",
-      "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B55B4F8FC-2491-4901-8B73-1864FE4373F3%7D&file=ESCALA%202021.xlsx&action=default&mobileredirect=true"
-    },
-    {
-      "categoria": "PESSOAS",
-      "texto": "Matriz Responsabilidades",
-      "href": "http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=660909&ETQ$ORIGINAL_DOC_ID=660149"
-    },
-    {
-      "categoria": "PESSOAS",
-      "texto": "Reconhecer um Colega",
-      "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Suzano%20%20Estrelas%20do%20Ms/AllItems.aspx"
-    },
-    {
-      "categoria": "PESSOAS",
-      "texto": "Treinamentos",
-      "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/b851353d-d70d-42a3-9200-2d794535b7a7/a5d2a35ebdabf993d8c9?experience=power-bi"
-    },
-    {
-      "categoria": "CUSTOS",
-      "texto": "Custo de Manutenção",
-      "href": "https://app.powerbi.com/reportEmbed?reportId=d9f2e11f-9b01-4a2d-b234-4d6d5b1d86a7&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-    },
-    {
-      "categoria": "CUSTOS",
-      "texto": "Other Waste",
-      "href": "https://app.powerbi.com/groups/da55c46c-50ef-48c9-8143-c36079041cde/reports/b813c4a4-4b2c-40b9-b5e5-d62a3953a86f/cc17cc6b8c8c65b590bc?experience=power-bi"
-    },
-    {
-      "categoria": "CUSTOS",
-      "texto": "Custo de ManutençãoOther WasteInventário",
-      "href": "https://app.powerbi.com/reportEmbed?reportId=d9f2e11f-9b01-4a2d-b234-4d6d5b1d86a7&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-    },
-    {
-      "categoria": "PRODUTIVIDADE",
-      "texto": "Lançar Ação / Power Apps",
-      "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/0061b360-08b4-4f09-9ab7-0c68d2eaa8ab?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-    },
-    {
-      "categoria": "PRODUTIVIDADE",
-      "texto": "5S",
-      "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-    }
-  ],
   "AC21": [
     {
       "categoria": "EHS",
@@ -386,6 +184,203 @@
       "categoria": "CUSTOS",
       "texto": "Other Waste",
       "href": "https://app.powerbi.com/groups/da55c46c-50ef-48c9-8143-c36079041cde/reports/b813c4a4-4b2c-40b9-b5e5-d62a3953a86f/cc17cc6b8c8c65b590bc?experience=power-bi"
+    },
+    {
+      "categoria": "PRODUTIVIDADE",
+      "texto": "Lançar Ação / Power Apps",
+      "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/0061b360-08b4-4f09-9ab7-0c68d2eaa8ab?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+    },
+    {
+      "categoria": "PRODUTIVIDADE",
+      "texto": "5S",
+      "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+    }
+  ],
+  "AC20": [
+    {
+      "categoria": "EHS",
+      "texto": "Indicadores ambientais",
+      "href": "https://app.powerbi.com/groups/dcb8b308-ad58-48a7-aaa4-cba7d0a111fb/reports/62ccf77a-505c-4a05-9408-73fb9bbc9495/ReportSection009b13a603590a0d1293?ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737&experience=power-bi"
+    },
+    {
+      "categoria": "EHS",
+      "texto": "Lançar Safe",
+      "href": "http://proact.kcc.com/Login.aspx?acc=kcc&auth=unpw"
+    },
+    {
+      "categoria": "EHS",
+      "texto": "Consulta De Safe",
+      "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/4b7ea60a-94dc-443e-b973-ce06c763c38f/ReportSection2710d86d27c05745394d?language=pt-BR&experience=power-bi"
+    },
+    {
+      "categoria": "EHS",
+      "texto": "Lançar OPT",
+      "href": "https://kimberlyclark.sharepoint.com/Sites/g956/optseguranca"
+    },
+    {
+      "categoria": "EHS",
+      "texto": "Lançar Pré-uso",
+      "href": "https://kimberlyclark.sharepoint.com/sites/G394/SitePages/Inspe%C3%A7%C3%B5es-de-Pr%C3%A9-uso.aspx"
+    },
+    {
+      "categoria": "EHS",
+      "texto": "Inventário de Químicos",
+      "href": "https://kimberlyclark-my.sharepoint.com/:x:/g/personal/kayke_bittencourt_kcc_com/EWR1QYS5TDZIrzdD82w-OkgBvukpLPOYrHke64yaVtS6sg?email=kayke.bittencourt%40kcc.com&e=Q4w3oa"
+    },
+    {
+      "categoria": "EHS",
+      "texto": "DEHS",
+      "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FSEGURAN%C3%87A%2FDialogo%20de%20Seguran%C3%A7a%20e%20Meio%20Ambiente%2F2026%5FDEHS%20Reestruturado%2F1%2E1%20DEHS%5FABS&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&ovuser=fee2180b%2D69b6%2D4afe%2D9f14%2Dccd70bd4c737%2Cpaulo%2Ejunior3%40kcc%2Ecom&OR=Teams%2DHL&CT=1743445613509&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNTAzMDIwMTAxMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
+    },
+    {
+      "categoria": "QUALIDADE",
+      "texto": "CI TI/ RFT",
+      "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/5cdbbfd6-5c3f-44d3-a197-bb844eb2077f/ReportSection7c344e23d1210edc0156?experience=power-bi"
+    },
+    {
+      "categoria": "QUALIDADE",
+      "texto": "Consulta Ações SisAcr",
+      "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/a8a14356-b6ea-4dac-b6cd-77ba34277171/ReportSection21f352bc2dba2883e2ea"
+    },
+    {
+      "categoria": "QUALIDADE",
+      "texto": "Etiquetas de Fornecedores",
+      "href": "https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_ATTACHMENT_LAST_REV&ETQ$FILE_NAME=JA-20312+BOOK+ETIQUETAS.pdf&ETQ$APPLICATION_ID=7&ETQ$FORM_ID=37&ETQ$KEY_VALUE=762848&ETQ$SOURCE_FIELD_ID=22423&ETQ$ORIGINAL_DOC_ID=518577"
+    },
+    {
+      "categoria": "QUALIDADE",
+      "texto": "GSP",
+      "href": "https://brsza022/PIVision/#/Displays/11595/GSP-ABS---CCS"
+    },
+    {
+      "categoria": "QUALIDADE",
+      "texto": "Manual de Inspeção",
+      "href": "http://www.etq.kcc.com/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=1115184&ETQ$SCREEN_WIDTH=1280"
+    },
+    {
+      "categoria": "QUALIDADE",
+      "texto": "Especificação do Produto",
+      "href": "http://www.etq.kcc.com/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=1115184&ETQ$SCREEN_WIDTH=1280"
+    },
+    {
+      "categoria": "QUALIDADE",
+      "texto": "Retidos & Rejeitados",
+      "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/5b24619b-f0a9-4c4a-aba4-a7b5ea965b5c/ReportSection?experience=power-bi"
+    },
+    {
+      "categoria": "QUALIDADE",
+      "texto": "SAC",
+      "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/9c37360c-2552-40ab-b7b3-9cbb93b08cb5/ReportSection329259d58d0bf1fc4185?experience=power-bi"
+    },
+    {
+      "categoria": "QUALIDADE",
+      "texto": "Plano de Controle - ETQ",
+      "href": "https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=1118724&ETQ$ORIGINAL_DOC_ID=445327"
+    },
+    {
+      "categoria": "QUALIDADE",
+      "texto": "AMR",
+      "href": "https://kimberlyclark.sharepoint.com/:l:/s/H945/JACju0CHJ4tBRr98o2RfZ6R8AT8zfzb8E1OAvGPCX_6k9n4?nav=MTkwYzBmZWUtYjJiNy00YWU1LTkzMWQtNDI1MWI3ODRhMTVm"
+    },
+    {
+      "categoria": "PRODUTIVIDADE",
+      "texto": "Troca de Fase",
+      "href": "https://brsza022/PIVision/#/Displays/11889/Troca-de-Fase-AC20"
+    },
+    {
+      "categoria": "PRODUTIVIDADE",
+      "texto": "Troca de Turno",
+      "href": "https://brsza022/PIVision/#/Displays/11558/Agenda-troca-de-turno-AC20"
+    },
+    {
+      "categoria": "PRODUTIVIDADE",
+      "texto": "Portal 5S",
+      "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/76ae6426-e89c-48a5-bb16-b6e837783d8c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&hint=de8e180a-0754-40c6-a176-314674772651&sourcetime=1753295394248"
+    },
+    {
+      "categoria": "PRODUTIVIDADE",
+      "texto": "PIT STOP",
+      "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/f3ef644d-3c37-4964-bd64-20f108e89a4c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&hint=06d768f1-5be8-49ef-950b-11c5f1093db2&sourcetime=1764940866189&source=portal#"
+    },
+    {
+      "categoria": "PRODUTIVIDADE",
+      "texto": "Abrir Ação Facilities",
+      "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/15fb6751-0ede-491d-9171-3f3a9508690c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&sourcetime=1728389406219&source=portal&local=predial"
+    },
+    {
+      "categoria": "PRODUTIVIDADE",
+      "texto": "Cartão Autonomous",
+      "href": "https://brsza022/PIVision/#/Displays/633/AUTONOMOS-CARE-CART%25C3%2595ES"
+    },
+    {
+      "categoria": "PRODUTIVIDADE",
+      "texto": "Instrução de Trabalho",
+      "href": "https://brsza022/PIVision/#/Displays/632/INSTRU%C3%87%C3%83O-TRABALHO-PADS-E-LINER"
+    },
+    {
+      "categoria": "PRODUTIVIDADE",
+      "texto": "Kpi de Máquina",
+      "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B44B2C8FE-4F79-4D98-9C59-55D6ABFC326E%7D&file=OEEWaste%20Planta%202025.xlsx&action=default&mobileredirect=true"
+    },
+    {
+      "categoria": "PRODUTIVIDADE",
+      "texto": "Lançar Plano de Ação",
+      "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Reunio%20Diria%20%20FC/AllItems.aspx?origin=createList&OR=Teams%2DHL&CT=1648774240612¶ms=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMjAzMDcwMTYxMCJ9"
+    },
+    {
+      "categoria": "PRODUTIVIDADE",
+      "texto": "MES",
+      "href": "https://reports.kcc.com/reports/report/SMOM/Prod/Reports/BRSZ/Production%20Tracking/Shift%20Operation%20Summary%20Report"
+    },
+    {
+      "categoria": "PRODUTIVIDADE",
+      "texto": "Plano de Produção",
+      "href": "https://kimberlyclark.sharepoint.com/sites/C83/Planos%20de%20Produo/Forms/AllItems.aspx?InitialTabId=Ribbon%2ERead&VisibilityContext=WSSTabPersistence"
+    },
+    {
+      "categoria": "PRODUTIVIDADE",
+      "texto": "Quadro de Desempenho",
+      "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Quadro%20de%20Desempenho%20AC20/Padro.aspx"
+    },
+    {
+      "categoria": "PRODUTIVIDADE",
+      "texto": "Controle de Processos - PI Vision",
+      "href": "https://brsza022/PIVision/#/Displays/42/Suzano-Mill?starttime=-8h&endtime=*&asset=%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20AFC%3Fa5f9ba42-167a-11f1-a0b9-7486e2f94287;%5C%5CBRSZA010%5CBRSZ_Centerlining%5CSuzano%5CCONFORMIDADE%20BCC%5CFB14%3Fdfa65144-131a-11f1-a0b9-7486e2f94287"
+    },
+    {
+      "categoria": "PESSOAS",
+      "texto": "Escala de Folga",
+      "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B55B4F8FC-2491-4901-8B73-1864FE4373F3%7D&file=ESCALA%202021.xlsx&action=default&mobileredirect=true"
+    },
+    {
+      "categoria": "PESSOAS",
+      "texto": "Matriz Responsabilidades",
+      "href": "http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=660909&ETQ$ORIGINAL_DOC_ID=660149"
+    },
+    {
+      "categoria": "PESSOAS",
+      "texto": "Reconhecer um Colega",
+      "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Suzano%20%20Estrelas%20do%20Ms/AllItems.aspx"
+    },
+    {
+      "categoria": "PESSOAS",
+      "texto": "Treinamentos",
+      "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/b851353d-d70d-42a3-9200-2d794535b7a7/a5d2a35ebdabf993d8c9?experience=power-bi"
+    },
+    {
+      "categoria": "CUSTOS",
+      "texto": "Custo de Manutenção",
+      "href": "https://app.powerbi.com/reportEmbed?reportId=d9f2e11f-9b01-4a2d-b234-4d6d5b1d86a7&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+    },
+    {
+      "categoria": "CUSTOS",
+      "texto": "Other Waste",
+      "href": "https://app.powerbi.com/groups/da55c46c-50ef-48c9-8143-c36079041cde/reports/b813c4a4-4b2c-40b9-b5e5-d62a3953a86f/cc17cc6b8c8c65b590bc?experience=power-bi"
+    },
+    {
+      "categoria": "CUSTOS",
+      "texto": "Custo de ManutençãoOther WasteInventário",
+      "href": "https://app.powerbi.com/reportEmbed?reportId=d9f2e11f-9b01-4a2d-b234-4d6d5b1d86a7&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
     },
     {
       "categoria": "PRODUTIVIDADE",
