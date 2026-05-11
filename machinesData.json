@@ -2461,13 +2461,18 @@
     },
     {
       "categoria": "PRODUTIVIDADE",
-      "texto": "Troca de fase",
-      "href": "https://brsza022/PIVision/#/Displays/11879/Troca-de-fase-FB14"
+      "texto": "Agenda Troca de Turno",
+      "href": "https://brsza022/PIVision/#/Displays/11506/Agenda-Troca-de-Turno---FB14-(Tier-1)"
     },
     {
       "categoria": "PRODUTIVIDADE",
-      "texto": "Agenda Troca de Turno",
-      "href": "https://brsza022/PIVision/#/Displays/11506/Agenda-Troca-de-Turno---FB14-(Tier-1)"
+      "texto": "Pergunte ao VIOLET",
+      "href": "https://clark-iq.kcc.com/violet"
+    },
+    {
+      "categoria": "PRODUTIVIDADE",
+      "texto": "Troca de fase",
+      "href": "https://brsza022/PIVision/#/Displays/11879/Troca-de-fase-FB14"
     },
     {
       "categoria": "PRODUTIVIDADE",
