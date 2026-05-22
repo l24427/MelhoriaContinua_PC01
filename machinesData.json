@@ -1771,7 +1771,7 @@
     {
       "categoria": "QUALIDADE",
       "texto": "Plano de Controle - ETQ",
-      "href": ""
+      "href": "https://brsza022/PIVision/#/Displays/911/Plano_de_Controle_L06"
     },
     {
       "categoria": "QUALIDADE",
@@ -1787,11 +1787,6 @@
       "categoria": "QUALIDADE",
       "texto": "Consulta Ações SisAcr",
       "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/b1af17c7-3bb4-41e4-a36e-29b8cb94ce5f/ReportSection21f352bc2dba2883e2ea?experience=power-bi"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Etiquetas de Fornecedores",
-      "href": "http://www.etq.kcc.com/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=762848&ETQ$SCREEN_WIDTH=1536"
     },
     {
       "categoria": "QUALIDADE",
@@ -1824,13 +1819,8 @@
       "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/15fb6751-0ede-491d-9171-3f3a9508690c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&sourcetime=1728389406219&source=portal&local=predial"
     },
     {
-      "categoria": "PRODUTIVIDADE",
-      "texto": "Quadro de Desempenho",
-      "href": "https://kimberlyclark-my.sharepoint.com/:x:/r/personal/vinicius_santos_kcc_com/Documents/DIARIO%20DE%20BORDO%20(1).xlsm?d=w072c13b702bc463a8e1b93d9f536ea7b&csf=1&web=1&e=aXTccF"
-    },
-    {
-      "categoria": "PRODUTIVIDADE",
-      "texto": "Retenções Máquinas",
+      "categoria": "QUALIDADE",
+      "texto": "Alarmes Reais PASS",
       "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/1bfe30fd-e450-4a0d-a699-4149492f97a3/ReportSection353447415ae2330c5e0c"
     },
     {
@@ -1849,8 +1839,8 @@
       "href": "https://brsza022/PIVision/#/Displays/1050/IT-WIPES"
     },
     {
-      "categoria": "PRODUTIVIDADE",
-      "texto": "Documentos Auxiliares",
+      "categoria": "QUALIDADE",
+      "texto": "GSP - SOLUÇÃO DE PROBLEMAS",
       "href": "https://brsza022/PIVision/#/Displays/804/GSP_WIPES_L06"
     },
     {
@@ -1865,38 +1855,13 @@
     },
     {
       "categoria": "CUSTOS",
-      "texto": "Custo Waste",
-      "href": ""
-    },
-    {
-      "categoria": "CUSTOS",
-      "texto": "Other Waste",
-      "href": "https://www.google.com/"
-    },
-    {
-      "categoria": "CUSTOS",
-      "texto": "Consumo de MP",
-      "href": ""
-    },
-    {
-      "categoria": "CUSTOS",
-      "texto": "Conta 5301",
-      "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/f3790613-dcf0-4181-a043-a15d89f62940/ReportSectione7387e1bf575bf112d0f?ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737&experience=power-bi"
-    },
-    {
-      "categoria": "CUSTOS",
-      "texto": "Custo Prod x Consumo",
-      "href": ""
+      "texto": "Total Waste",
+      "href": "https://app.powerbi.com/groups/da55c46c-50ef-48c9-8143-c36079041cde/reports/b813c4a4-4b2c-40b9-b5e5-d62a3953a86f/bdfb2b3b4e24b010040b?experience=power-bi"
     },
     {
       "categoria": "PESSOAS",
-      "texto": "Matriz Responsabi",
+      "texto": "Matriz Responsabilidades - QMSR",
       "href": "http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=660909&ETQ$ORIGINAL_DOC_ID=660149"
-    },
-    {
-      "categoria": "PESSOAS",
-      "texto": "Matriz de Habilidades",
-      "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/Suzano/OPEX/02%20-%20Documenta%C3%A7%C3%A3o%20Ciclos%20OPEX/01%20-%202022/02%20-%20BCC/03%20-%20WW%20e%20COFORM/01%20-%20Ciclo%201_2022/03%20-%20Diagn%C3%B3stico/04%20-%20MBC/Matriz%20de%20habilidades%20-%20Wipes.xlsx?d=w1b09fa6f4a114ccdafc622b8d7d5b687&csf=1&web=1"
     },
     {
       "categoria": "PESSOAS",
@@ -1911,27 +1876,12 @@
     {
       "categoria": "PESSOAS",
       "texto": "Escala de Folga",
-      "href": "https://kimberlyclark.sharepoint.com/:b:/r/Sites/H945/Suzano/Quadro%20Interativo/WIPES/Escala%20de%20folga%202024.pdf?csf=1&web=1&e=yPjqdP"
-    },
-    {
-      "categoria": "PESSOAS",
-      "texto": "Agenda Troca de Turno",
-      "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B21258B47-A4C8-44CD-9B98-59A354013D72%7D&file=Troca%20de%20Turno%20WW.xlsx&action=default&mobileredirect=true"
-    },
-    {
-      "categoria": "PESSOAS",
-      "texto": "LSW",
-      "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/5498a537-9523-4485-8c12-e4b41fe9e227?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&source=portal"
+      "href": "https://kimberlyclark.sharepoint.com/:b:/r/Sites/H945/Suzano/Quadro%20Interativo/WIPES/Escala%20de%20folgas%202026.pdf?csf=1&web=1&e=PwX7uD"
     },
     {
       "categoria": "PESSOAS",
       "texto": "Treinamentos",
       "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/b851353d-d70d-42a3-9200-2d794535b7a7/a5d2a35ebdabf993d8c9?experience=power-bi"
-    },
-    {
-      "categoria": "PESSOAS",
-      "texto": "testeww2",
-      "href": "https://kcc.seeq.site/data-lab/0F0324AD-8A50-EEF0-A45E-4B35FD2DCF41/lab"
     },
     {
       "categoria": "PRODUTIVIDADE",
@@ -1974,11 +1924,6 @@
       "categoria": "EHS",
       "texto": "Lista de Presença",
       "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FQuadro%20Interativo%2FBCM%2FLP&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&OR=Teams%2DHL&CT=1682000822834&clickparams=eyJBcHBOYW1eIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzAzMDUwMTExMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "Especificação de M.P",
-      "href": ""
     },
     {
       "categoria": "QUALIDADE",
@@ -2149,11 +2094,6 @@
       "categoria": "CUSTOS",
       "texto": "Other Waste",
       "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FCusto%2FTOTAL%20WASTE%2F2024&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&OR=Teams%2DHL&CT=1718380094722&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDA1MDMwNzYxNyIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
-    },
-    {
-      "categoria": "CUSTOS",
-      "texto": "Consumo de MP",
-      "href": ""
     },
     {
       "categoria": "PRODUTIVIDADE",
