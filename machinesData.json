@@ -1957,23 +1957,13 @@
     },
     {
       "categoria": "QUALIDADE",
-      "texto": "Etiquetas de Fornecedores",
-      "href": "http://www.etq.kcc.com/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=762848&ETQ$SCREEN_WIDTH=1536"
-    },
-    {
-      "categoria": "QUALIDADE",
       "texto": "Microbiologia",
       "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FQuadro%20Interativo%2FQUALIDADE%2FMicrobiologia&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&OR=Teams%2DHL&CT=1668706997178&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMjEwMjgwNzIwMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
     },
     {
       "categoria": "QUALIDADE",
-      "texto": "Indicadores SAC",
-      "href": "https://app.powerbi.com/reportEmbed?reportId=50ff9c73-dc3c-4c6c-8dff-f598f198ea6c&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXVzLW5vcnRoLWNlbnRyYWwtZS1wcmltYXJ5LXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9"
-    },
-    {
-      "categoria": "QUALIDADE",
-      "texto": "CI TI / RFT",
-      "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/c88550a3-4103-4833-9e7e-376ef5d1868f/ReportSection7c344e23d1210edc0156?experience=power-bi"
+      "texto": "GSP - Solução de Problema",
+      "href": "https://brsza022/PIVision/#/Displays/871/GSP_COFORM"
     },
     {
       "categoria": "PRODUTIVIDADE",
@@ -1987,13 +1977,13 @@
     },
     {
       "categoria": "PRODUTIVIDADE",
-      "texto": "Portal 5s",
-      "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+      "texto": "Agenda Troca de Turno",
+      "href": "https://brsza022/PIVision/#/Displays/11613/Agenda-Troca-de-Turno---CM1%25C2%25A0(Tier-1)"
     },
     {
       "categoria": "PRODUTIVIDADE",
-      "texto": "Quadro de Desempenho",
-      "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Quadro%20de%20Desempenho%20CM/AllItems.aspx?origin=createList&viewid=dff8be5d%2D359e%2D4f74%2Da563%2D6364cba55d2c"
+      "texto": "Portal 5s",
+      "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
     },
     {
       "categoria": "PRODUTIVIDADE",
@@ -2001,8 +1991,8 @@
       "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Reunio%20Diria%20BCM/AllItems.aspx?origin=createList&viewid=380ace11%2D2f5c%2D4a92%2Db02a%2D98f0f731d08a&OR=Teams%2DHL&CT=1634687236860&useFiltersInViewXml=1&FilterField1=STATUS&FilterValue1=ANDAMENTO&FilterType1=Choice&FilterOp1=In&FilterField2=MAQUINA&FilterValue2=COFORM&FilterType2=Choice&FilterOp2=In"
     },
     {
-      "categoria": "PRODUTIVIDADE",
-      "texto": "Retenções Máquinas",
+      "categoria": "QUALIDADE",
+      "texto": "Alarmes Reais - PASS",
       "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/1bfe30fd-e450-4a0d-a699-4149492f97a3/ReportSection353447415ae2330c5e0c"
     },
     {
@@ -2022,13 +2012,8 @@
     },
     {
       "categoria": "PRODUTIVIDADE",
-      "texto": "Solução de Problema",
-      "href": "https://brsza022/PIVision/#/Displays/871/GSP_COFORM"
-    },
-    {
-      "categoria": "PRODUTIVIDADE",
       "texto": "KPI de Máquina",
-      "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B90344E91-F85B-478E-AD5F-D7A99B7B71C7%7D&file=KPI%27s.xlsx&action=default&mobileredirect=true"
+      "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B44B2C8FE-4F79-4D98-9C59-55D6ABFC326E%7D&file=OEEWaste%20Planta%202025.xlsx&action=default&mobileredirect=true"
     },
     {
       "categoria": "PRODUTIVIDADE",
@@ -2042,22 +2027,17 @@
     },
     {
       "categoria": "PRODUTIVIDADE",
-      "texto": "Status Manutenção",
-      "href": "https://app.powerbi.com/groups/me/reports/0c9ebb68-b2af-4e15-a942-252cd14b524f/ReportSection5b7ef888cadb861f3988"
+      "texto": "5S",
+      "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
     },
     {
       "categoria": "PRODUTIVIDADE",
-      "texto": "Manutenção",
+      "texto": "QUADRO INTERATIVO - Manutenção",
       "href": "https://l24427.github.io/MelhoriaContinua_Manutencao/"
     },
     {
-      "categoria": "PRODUTIVIDADE",
-      "texto": "Checklist Manual",
-      "href": "https://kimberlyclark.sharepoint.com/:x:/s/Y2897/EQtih-ZjRrNHummomrRruM4BHKbdWC27Cyorq3QUx-jX4A?e=fO3Lgv"
-    },
-    {
       "categoria": "PESSOAS",
-      "texto": "Matriz Responsabilidades",
+      "texto": "Matriz Responsabilidades - QMSR",
       "href": "http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=660909&ETQ$ORIGINAL_DOC_ID=660149"
     },
     {
@@ -2072,18 +2052,8 @@
     },
     {
       "categoria": "PESSOAS",
-      "texto": "Treinamentos Planejados",
-      "href": "https://app.powerbi.com/groups/4a60522e-df17-40c3-afca-f699785afb5d/reports/fe555b92-4421-4a0d-9428-de4530812f7f/ReportSectionb11196832b5090b2e659"
-    },
-    {
-      "categoria": "PESSOAS",
       "texto": "Escala de Folga",
-      "href": "https://kimberlyclark.sharepoint.com/:b:/r/Sites/H945/Suzano/Quadro%20Interativo/WIPES/Escala%20de%20folga%202024.pdf?csf=1&web=1&e=yPjqdP"
-    },
-    {
-      "categoria": "PESSOAS",
-      "texto": "Agenda Troca de Turno",
-      "href": "https://brsza022/PIVision/#/Displays/11613/Agenda-Troca-de-Turno---CM1%25C2%25A0(Tier-1)"
+      "href": "https://kimberlyclark.sharepoint.com/:b:/r/Sites/H945/Suzano/Quadro%20Interativo/WIPES/Escala%20de%20folgas%202026.pdf?csf=1&web=1&e=PqZzVr"
     },
     {
       "categoria": "PESSOAS",
@@ -2093,12 +2063,7 @@
     {
       "categoria": "CUSTOS",
       "texto": "Other Waste",
-      "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FCusto%2FTOTAL%20WASTE%2F2024&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&OR=Teams%2DHL&CT=1718380094722&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDA1MDMwNzYxNyIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
-    },
-    {
-      "categoria": "PRODUTIVIDADE",
-      "texto": "5S",
-      "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+      "href": "https://app.powerbi.com/groups/da55c46c-50ef-48c9-8143-c36079041cde/reports/b813c4a4-4b2c-40b9-b5e5-d62a3953a86f/bdfb2b3b4e24b010040b?experience=power-bi"
     }
   ],
   "FB12": [
