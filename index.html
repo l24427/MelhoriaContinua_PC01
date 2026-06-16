@@ -14,105 +14,115 @@
     <div id="root"></div>
 
     <script type="text/babel">
-        const { useState, useMemo, useEffect } = React; // Adicionamos o useEffect
+        const { useState, useMemo, useEffect } = React;
 
         const QuadroInterativo = () => {
             const [selectedMachine, setSelectedMachine] = useState(null);
             const [searchTerm, setSearchTerm] = useState('');
-            
-            // 1. NOVO ESTADO: Para guardar os dados que virão do JSON. Começa como nulo.
             const [machinesData, setMachinesData] = useState(null);
 
-            // 2. EFEITO: Para buscar os dados do JSON assim que o componente for montado na tela.
             useEffect(() => {
-                // O fetch busca o arquivo no mesmo diretório do HTML.
-                fetch('./machinesData.json')
-                    .then(response => response.json()) // Converte a resposta em JSON
-                    .then(data => {
-                        setMachinesData(data); // Armazena os dados no nosso estado
-                    })
-                    .catch(error => console.error('Erro ao carregar os dados das máquinas:', error));
-            }, []); // O array vazio [] significa que este efeito roda apenas uma vez.
+                fetch('machinesData.json')
+                    .then(response => response.json())
+                    .then(data => setMachinesData(data))
+                    .catch(error => console.error('Erro ao carregar JSON:', error));
+            }, []);
 
-            // 3. ADEUS OBJETO GIGANTE: O objeto que estava aqui foi removido.
-
-            // O resto do seu código vai depender de 'machinesData' não ser nulo.
             const machines = machinesData ? Object.keys(machinesData) : [];
 
-            const normalizeText = (text) => text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase();
+            const normalizeText = (text) =>
+                text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase();
 
             const organizedLinks = useMemo(() => {
-                // Se ainda não temos os dados ou máquina, retorna objeto vazio.
                 if (!machinesData || !selectedMachine) return {};
 
                 const links = machinesData[selectedMachine];
                 const organized = {};
+
                 links.forEach(link => {
                     if (!organized[link.categoria]) organized[link.categoria] = [];
                     organized[link.categoria].push(link);
                 });
+
                 return organized;
-            }, [machinesData, selectedMachine]); // machinesData agora é uma dependência
+            }, [machinesData, selectedMachine]);
 
             const filteredLinks = useMemo(() => {
-                // ... (lógica de filtro não muda)
                 if (!searchTerm.trim()) return organizedLinks;
+
                 const normalizedSearch = normalizeText(searchTerm);
                 const filtered = {};
+
                 Object.keys(organizedLinks).forEach(category => {
-                    const matchingLinks = organizedLinks[category].filter(link => 
+                    const matchingLinks = organizedLinks[category].filter(link =>
                         normalizeText(link.texto).includes(normalizedSearch)
                     );
+
                     if (matchingLinks.length > 0) {
                         filtered[category] = matchingLinks;
                     }
                 });
+
                 return filtered;
             }, [organizedLinks, searchTerm]);
 
             const categories = Object.keys(filteredLinks);
 
-            // 4. ESTADO DE CARREGAMENTO: Enquanto os dados não chegam, mostramos uma mensagem.
             if (!machinesData) {
                 return <div className="text-center p-10 text-xl font-bold">Carregando dados...</div>;
             }
 
-            // O seu JSX (a parte visual) continua exatamente o mesmo
             return (
                 <div className="min-h-screen bg-gradient-to-r from-blue-100 to-blue-300">
-                    {/* ... todo o seu JSX a partir daqui ... */}
-                    {/* (É o mesmo código de antes, não precisa mudar nada aqui) */}
+                    
                     <header className="bg-white shadow-md">
                         <div className="max-w-7xl mx-auto px-4 py-5">
                             <div className="flex justify-between items-center flex-wrap gap-4">
                                 <div className="text-2xl font-bold text-blue-600">KC</div>
+
                                 <h1 className="text-xl md:text-2xl font-bold text-blue-700 text-center flex-1">
                                     {selectedMachine ? `Quadro Interativo - ${selectedMachine}` : 'Quadro Interativo'}
                                 </h1>
-                                <a href="https://kimberlyclark.sharepoint.com/Sites/H945/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm md:text-base">
+
+                                {/* ✅ CORRIGIDO */}
+                                <a 
+                                    href="https://kimberlyclark.sharepoint.com/Sites/H945/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-600 hover:underline text-sm md:text-base"
+                                >
                                     Sharepoint Planta Suzano
                                 </a>
                             </div>
+
                             {selectedMachine && (
-                                <div className="mt-4 relative">
+                                <div className="mt-4">
                                     <input
                                         type="text"
                                         placeholder="Pesquisar..."
                                         value={searchTerm}
                                         onChange={(e) => setSearchTerm(e.target.value)}
-                                        className="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        className="w-full pl-4 pr-4 py-2 border rounded-lg"
                                     />
                                 </div>
                             )}
                         </div>
                     </header>
+
                     <main className="max-w-7xl mx-auto px-4 py-8">
                         {!selectedMachine ? (
                             <div>
-                                <h2 className="text-2xl font-bold text-blue-700 mb-6 text-center">Selecione uma Máquina</h2>
+                                <h2 className="text-2xl font-bold text-blue-700 mb-6 text-center">
+                                    Selecione uma Máquina
+                                </h2>
+
                                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                                     {machines.map(machine => (
-                                        <button key={machine} onClick={() => setSelectedMachine(machine)} className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-xl shadow-lg transition-all duration-200 transform hover:scale-105">
+                                        <button
+                                            key={machine}
+                                            onClick={() => setSelectedMachine(machine)}
+                                            className="bg-blue-600 hover:bg-blue-700 text-white py-4 px-6 rounded-xl"
+                                        >
                                             {machine}
                                         </button>
                                     ))}
@@ -120,41 +130,57 @@
                             </div>
                         ) : (
                             <div>
-                                <button onClick={() => { setSelectedMachine(null); setSearchTerm(''); }} className="mb-6 bg-gray-500 hover:bg-gray-600 text-white font-semibold py-2 px-6 rounded-lg">
-                                    ← Voltar para Máquinas
+                                <button
+                                    onClick={() => {
+                                        setSelectedMachine(null);
+                                        setSearchTerm('');
+                                    }}
+                                    className="mb-6 bg-gray-500 text-white py-2 px-6 rounded-lg"
+                                >
+                                    ← Voltar
                                 </button>
+
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
                                     {categories.map(category => (
-                                        <div key={category} className="space-y-3">
+                                        <div key={category}>
                                             <h3 className="text-xl font-bold text-blue-600">{category}</h3>
+
                                             {filteredLinks[category].map((link, index) => (
-                                                <a key={index} href={link.href === '#' ? undefined : link.href} target={link.href !== '#' ? '_blank' : undefined} rel={link.href !== '#' ? 'noopener noreferrer' : undefined} onClick={link.href === '#' ? (e) => e.preventDefault() : undefined} className="block w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-xl text-center transition-colors duration-200">
+                                                <a
+                                                    key={index}
+                                                    href={link.href}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="block bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-xl text-center mt-2"
+                                                >
                                                     {link.texto}
                                                 </a>
                                             ))}
                                         </div>
                                     ))}
                                 </div>
+
                                 {categories.length === 0 && (
-                                    <p className="text-center text-gray-600 text-lg mt-10">
-                                        Nenhum resultado encontrado para "{searchTerm}"
+                                    <p className="text-center mt-10">
+                                        Nenhum resultado para "{searchTerm}"
                                     </p>
                                 )}
                             </div>
                         )}
                     </main>
+
                     <footer className="text-center py-8">
-                        <div className="text-blue-700 font-semibold text-lg">PERFORMANCE = CUIDADO</div>
+                        <div className="text-blue-700 font-semibold">
+                            PERFORMANCE = CUIDADO
+                        </div>
                     </footer>
+
                 </div>
             );
         };
 
-        const container = document.getElementById('root');
-        const root = ReactDOM.createRoot(container);
+        const root = ReactDOM.createRoot(document.getElementById('root'));
         root.render(<QuadroInterativo />);
     </script>
 </body>
 </html>
-
-
