@@ -4,225 +4,211 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quadro Interativo KC</title>
-
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(to right, #dbeafe, #bfdbfe);
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        .container { max-width: 80rem; margin: 0 auto; padding: 0 1rem; }
+        header { background: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .header-content { padding: 1.25rem 1rem; }
+        .header-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #2563eb; }
+        .title { font-size: 1.5rem; font-weight: bold; color: #1d4ed8; text-align: center; flex: 1; }
+        .sharepoint-link { color: #2563eb; text-decoration: none; font-size: 0.875rem; }
+        .sharepoint-link:hover { text-decoration: underline; }
+        .search-box { width: 100%; margin-top: 1rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.5rem; }
+        main { max-width: 80rem; margin: 0 auto; padding: 2rem 1rem; }
+        .loading { text-align: center; padding: 2.5rem; font-size: 1.25rem; font-weight: bold; }
+        .error { background: #fecaca; color: #991b1b; padding: 2rem; border-radius: 0.5rem; margin: 2rem 0; }
+        .machine-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .machine-btn { background: #2563eb; color: white; padding: 1rem; border: none; border-radius: 0.75rem; cursor: pointer; font-weight: 600; }
+        .machine-btn:hover { background: #1d4ed8; }
+        .back-btn { background: #6b7280; color: white; padding: 0.5rem 1.5rem; border: none; border-radius: 0.5rem; cursor: pointer; margin-bottom: 1.5rem; }
+        .category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
+        .category { background: white; padding: 1rem; border-radius: 0.5rem; }
+        .category-title { font-size: 1.25rem; font-weight: bold; color: #2563eb; margin-bottom: 1rem; }
+        .link-btn { display: block; background: #2563eb; color: white; padding: 0.75rem 1rem; border-radius: 0.75rem; text-align: center; margin-top: 0.5rem; text-decoration: none; cursor: pointer; }
+        .link-btn:hover { background: #1d4ed8; }
+        footer { text-align: center; padding: 2rem; color: #1e40af; font-weight: 600; }
+        .hidden { display: none; }
+    </style>
 </head>
 <body>
-    <div id="root"></div>
+    <header>
+        <div class="container header-content">
+            <div class="header-top">
+                <div class="logo">KC</div>
+                <h1 class="title" id="pageTitle">Quadro Interativo</h1>
+                <a href="https://kimberlyclark.sharepoint.com/Sites/H945/" target="_blank" rel="noopener noreferrer" class="sharepoint-link">
+                    Sharepoint Planta Suzano
+                </a>
+            </div>
+            <input type="text" id="searchBox" class="search-box hidden" placeholder="Pesquisar...">
+        </div>
+    </header>
 
-    <script type="text/babel">
-        const { useState, useMemo, useEffect } = React;
+    <main class="container">
+        <div id="loading" class="loading">⏳ Carregando dados...</div>
+        <div id="error" class="error hidden"></div>
+        <div id="machineSelection" class="hidden">
+            <h2 style="font-size: 1.5rem; font-weight: bold; color: #1d4ed8; text-align: center; margin-bottom: 1.5rem;">
+                Selecione uma Máquina
+            </h2>
+            <div id="machineGrid" class="machine-grid"></div>
+        </div>
+        <div id="machineContent" class="hidden">
+            <button id="backBtn" class="back-btn">← Voltar</button>
+            <div id="contentGrid" class="category-grid"></div>
+        </div>
+    </main>
 
-        const QuadroInterativo = () => {
-            const [selectedMachine, setSelectedMachine] = useState(null);
-            const [searchTerm, setSearchTerm] = useState('');
-            const [machinesData, setMachinesData] = useState(null);
-            const [error, setError] = useState(null);
+    <footer>
+        <div>PERFORMANCE = CUIDADO</div>
+    </footer>
 
-            useEffect(() => {
+    <script>
+        let machinesData = null;
+        let selectedMachine = null;
+
+        async function loadJSON() {
+            try {
                 console.log('Iniciando carregamento do JSON...');
-                fetch('machinesData.json')
-                    .then(response => {
-                        console.log('Resposta recebida:', response.status);
-                        if (!response.ok) {
-                            throw new Error(`HTTP error! status: ${response.status}`);
-                        }
-                        return response.json();
-                    })
-                    .then(data => {
-                        console.log('JSON carregado com sucesso:', data);
-                        setMachinesData(data);
-                    })
-                    .catch(error => {
-                        console.error('Erro ao carregar JSON:', error);
-                        setError(`Erro ao carregar dados: ${error.message}`);
-                    });
-            }, []);
-
-            const machines = machinesData ? Object.keys(machinesData) : [];
-
-            const normalizeText = (text) =>
-                text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase();
-
-            const organizedLinks = useMemo(() => {
-                if (!machinesData || !selectedMachine) return {};
-
-                const links = machinesData[selectedMachine];
-                if (!Array.isArray(links)) {
-                    console.error('Links não é um array:', links);
-                    return {};
+                const response = await fetch('machinesData.json');
+                console.log('Status:', response.status);
+                
+                if (!response.ok) {
+                    throw new Error(`Erro HTTP: ${response.status}`);
                 }
 
-                const organized = {};
+                const text = await response.text();
+                console.log(`Resposta: ${text.length} caracteres`);
+                
+                const data = JSON.parse(text);
+                console.log('JSON carregado:', Object.keys(data));
+                
+                machinesData = data;
+                showMachineSelection();
+                document.getElementById('loading').classList.add('hidden');
 
-                links.forEach(link => {
-                    if (!organized[link.categoria]) organized[link.categoria] = [];
-                    organized[link.categoria].push(link);
-                });
-
-                return organized;
-            }, [machinesData, selectedMachine]);
-
-            const filteredLinks = useMemo(() => {
-                if (!searchTerm.trim()) return organizedLinks;
-
-                const normalizedSearch = normalizeText(searchTerm);
-                const filtered = {};
-
-                Object.keys(organizedLinks).forEach(category => {
-                    const matchingLinks = organizedLinks[category].filter(link =>
-                        normalizeText(link.texto).includes(normalizedSearch)
-                    );
-
-                    if (matchingLinks.length > 0) {
-                        filtered[category] = matchingLinks;
-                    }
-                });
-
-                return filtered;
-            }, [organizedLinks, searchTerm]);
-
-            const categories = Object.keys(filteredLinks);
-
-            if (error) {
-                return (
-                    <div className="min-h-screen bg-gradient-to-r from-red-100 to-red-300 flex items-center justify-center">
-                        <div className="bg-white p-8 rounded-lg shadow-lg">
-                            <h1 className="text-2xl font-bold text-red-600 mb-4">❌ Erro</h1>
-                            <p className="text-gray-700">{error}</p>
-                            <p className="text-gray-500 text-sm mt-4">Verifique se o arquivo machinesData.json existe no repositório.</p>
-                        </div>
-                    </div>
-                );
+            } catch (error) {
+                console.error('Erro:', error);
+                showError(`Erro ao carregar dados: ${error.message}`);
             }
-
-            if (!machinesData) {
-                return (
-                    <div className="min-h-screen bg-gradient-to-r from-blue-100 to-blue-300 flex items-center justify-center">
-                        <div className="bg-white p-8 rounded-lg shadow-lg">
-                            <h1 className="text-2xl font-bold text-blue-600">Carregando dados...</h1>
-                            <p className="text-gray-500 text-sm mt-2">Por favor aguarde</p>
-                        </div>
-                    </div>
-                );
-            }
-
-            return (
-                <div className="min-h-screen bg-gradient-to-r from-blue-100 to-blue-300">
-                    
-                    <header className="bg-white shadow-md">
-                        <div className="max-w-7xl mx-auto px-4 py-5">
-                            <div className="flex justify-between items-center flex-wrap gap-4">
-                                <div className="text-2xl font-bold text-blue-600">KC</div>
-
-                                <h1 className="text-xl md:text-2xl font-bold text-blue-700 text-center flex-1">
-                                    {selectedMachine ? `Quadro Interativo - ${selectedMachine}` : 'Quadro Interativo'}
-                                </h1>
-
-                                <a 
-                                    href="https://kimberlyclark.sharepoint.com/Sites/H945/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-blue-600 hover:underline text-sm md:text-base"
-                                >
-                                    Sharepoint Planta Suzano
-                                </a>
-                            </div>
-
-                            {selectedMachine && (
-                                <div className="mt-4">
-                                    <input
-                                        type="text"
-                                        placeholder="Pesquisar..."
-                                        value={searchTerm}
-                                        onChange={(e) => setSearchTerm(e.target.value)}
-                                        className="w-full pl-4 pr-4 py-2 border rounded-lg"
-                                    />
-                                </div>
-                            )}
-                        </div>
-                    </header>
-
-                    <main className="max-w-7xl mx-auto px-4 py-8">
-                        {!selectedMachine ? (
-                            <div>
-                                <h2 className="text-2xl font-bold text-blue-700 mb-6 text-center">
-                                    Selecione uma Máquina
-                                </h2>
-
-                                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                                    {machines.map(machine => (
-                                        <button
-                                            key={machine}
-                                            onClick={() => setSelectedMachine(machine)}
-                                            className="bg-blue-600 hover:bg-blue-700 text-white py-4 px-6 rounded-xl"
-                                        >
-                                            {machine}
-                                        </button>
-                                    ))}
-                                </div>
-                            </div>
-                        ) : (
-                            <div>
-                                <button
-                                    onClick={() => {
-                                        setSelectedMachine(null);
-                                        setSearchTerm('');
-                                    }}
-                                    className="mb-6 bg-gray-500 text-white py-2 px-6 rounded-lg"
-                                >
-                                    ← Voltar
-                                </button>
-
-                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-                                    {categories.map(category => (
-                                        <div key={category}>
-                                            <h3 className="text-xl font-bold text-blue-600">{category}</h3>
-
-                                            {filteredLinks[category].map((link, index) => (
-                                                <a
-                                                    key={index}
-                                                    href={link.href}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className="block bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-xl text-center mt-2"
-                                                >
-                                                    {link.texto}
-                                                </a>
-                                            ))}
-                                        </div>
-                                    ))}
-                                </div>
-
-                                {categories.length === 0 && (
-                                    <p className="text-center mt-10">
-                                        Nenhum resultado para "{searchTerm}"
-                                    </p>
-                                )}
-                            </div>
-                        )}
-                    </main>
-
-                    <footer className="text-center py-8">
-                        <div className="text-blue-700 font-semibold">
-                            PERFORMANCE = CUIDADO
-                        </div>
-                    </footer>
-
-                </div>
-            );
-        };
-
-        try {
-            const root = ReactDOM.createRoot(document.getElementById('root'));
-            root.render(<QuadroInterativo />);
-        } catch (err) {
-            console.error('Erro ao renderizar React:', err);
-            document.getElementById('root').innerHTML = `<div style="color: red; padding: 20px; font-family: Arial;">Erro ao carregar a aplicação: ${err.message}</div>`;
         }
+
+        function showError(message) {
+            document.getElementById('loading').classList.add('hidden');
+            const errorDiv = document.getElementById('error');
+            errorDiv.textContent = '❌ ' + message;
+            errorDiv.classList.remove('hidden');
+        }
+
+        function showMachineSelection() {
+            document.getElementById('machineSelection').classList.remove('hidden');
+            const grid = document.getElementById('machineGrid');
+            grid.innerHTML = '';
+
+            const machines = Object.keys(machinesData).sort();
+            machines.forEach(machine => {
+                const btn = document.createElement('button');
+                btn.className = 'machine-btn';
+                btn.textContent = machine;
+                btn.onclick = () => selectMachine(machine);
+                grid.appendChild(btn);
+            });
+        }
+
+        function selectMachine(machine) {
+            selectedMachine = machine;
+            document.getElementById('machineSelection').classList.add('hidden');
+            document.getElementById('machineContent').classList.remove('hidden');
+            document.getElementById('searchBox').classList.remove('hidden');
+            document.getElementById('pageTitle').textContent = `Quadro Interativo - ${machine}`;
+            
+            renderMachineContent(machine);
+        }
+
+        function renderMachineContent(machine) {
+            const links = machinesData[machine];
+            const organized = {};
+
+            // Organizar por categoria
+            links.forEach(link => {
+                if (!organized[link.categoria]) {
+                    organized[link.categoria] = [];
+                }
+                organized[link.categoria].push(link);
+            });
+
+            displayContent(organized);
+        }
+
+        function displayContent(organized) {
+            const grid = document.getElementById('contentGrid');
+            grid.innerHTML = '';
+
+            Object.keys(organized).sort().forEach(category => {
+                const categoryDiv = document.createElement('div');
+                categoryDiv.className = 'category';
+                
+                const title = document.createElement('h3');
+                title.className = 'category-title';
+                title.textContent = category;
+                categoryDiv.appendChild(title);
+
+                organized[category].forEach(link => {
+                    const btn = document.createElement('a');
+                    btn.className = 'link-btn';
+                    btn.href = link.href;
+                    btn.target = '_blank';
+                    btn.rel = 'noopener noreferrer';
+                    btn.textContent = link.texto;
+                    categoryDiv.appendChild(btn);
+                });
+
+                grid.appendChild(categoryDiv);
+            });
+        }
+
+        function goBack() {
+            selectedMachine = null;
+            document.getElementById('machineContent').classList.add('hidden');
+            document.getElementById('machineSelection').classList.remove('hidden');
+            document.getElementById('searchBox').classList.add('hidden');
+            document.getElementById('searchBox').value = '';
+            document.getElementById('pageTitle').textContent = 'Quadro Interativo';
+        }
+
+        document.getElementById('backBtn').addEventListener('click', goBack);
+
+        document.getElementById('searchBox').addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const links = machinesData[selectedMachine];
+            
+            if (!searchTerm.trim()) {
+                renderMachineContent(selectedMachine);
+                return;
+            }
+
+            const organized = {};
+            links.forEach(link => {
+                const texto = link.texto.toLowerCase();
+                if (texto.includes(searchTerm)) {
+                    if (!organized[link.categoria]) {
+                        organized[link.categoria] = [];
+                    }
+                    organized[link.categoria].push(link);
+                }
+            });
+
+            displayContent(organized);
+        });
+
+        // Iniciar carregamento
+        loadJSON();
     </script>
 </body>
 </html>
