@@ -20,12 +20,26 @@
             const [selectedMachine, setSelectedMachine] = useState(null);
             const [searchTerm, setSearchTerm] = useState('');
             const [machinesData, setMachinesData] = useState(null);
+            const [error, setError] = useState(null);
 
             useEffect(() => {
+                console.log('Iniciando carregamento do JSON...');
                 fetch('machinesData.json')
-                    .then(response => response.json())
-                    .then(data => setMachinesData(data))
-                    .catch(error => console.error('Erro ao carregar JSON:', error));
+                    .then(response => {
+                        console.log('Resposta recebida:', response.status);
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! status: ${response.status}`);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        console.log('JSON carregado com sucesso:', data);
+                        setMachinesData(data);
+                    })
+                    .catch(error => {
+                        console.error('Erro ao carregar JSON:', error);
+                        setError(`Erro ao carregar dados: ${error.message}`);
+                    });
             }, []);
 
             const machines = machinesData ? Object.keys(machinesData) : [];
@@ -37,6 +51,11 @@
                 if (!machinesData || !selectedMachine) return {};
 
                 const links = machinesData[selectedMachine];
+                if (!Array.isArray(links)) {
+                    console.error('Links não é um array:', links);
+                    return {};
+                }
+
                 const organized = {};
 
                 links.forEach(link => {
@@ -68,8 +87,27 @@
 
             const categories = Object.keys(filteredLinks);
 
+            if (error) {
+                return (
+                    <div className="min-h-screen bg-gradient-to-r from-red-100 to-red-300 flex items-center justify-center">
+                        <div className="bg-white p-8 rounded-lg shadow-lg">
+                            <h1 className="text-2xl font-bold text-red-600 mb-4">❌ Erro</h1>
+                            <p className="text-gray-700">{error}</p>
+                            <p className="text-gray-500 text-sm mt-4">Verifique se o arquivo machinesData.json existe no repositório.</p>
+                        </div>
+                    </div>
+                );
+            }
+
             if (!machinesData) {
-                return <div className="text-center p-10 text-xl font-bold">Carregando dados...</div>;
+                return (
+                    <div className="min-h-screen bg-gradient-to-r from-blue-100 to-blue-300 flex items-center justify-center">
+                        <div className="bg-white p-8 rounded-lg shadow-lg">
+                            <h1 className="text-2xl font-bold text-blue-600">Carregando dados...</h1>
+                            <p className="text-gray-500 text-sm mt-2">Por favor aguarde</p>
+                        </div>
+                    </div>
+                );
             }
 
             return (
@@ -178,8 +216,13 @@
             );
         };
 
-        const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(<QuadroInterativo />);
+        try {
+            const root = ReactDOM.createRoot(document.getElementById('root'));
+            root.render(<QuadroInterativo />);
+        } catch (err) {
+            console.error('Erro ao renderizar React:', err);
+            document.getElementById('root').innerHTML = `<div style="color: red; padding: 20px; font-family: Arial;">Erro ao carregar a aplicação: ${err.message}</div>`;
+        }
     </script>
 </body>
 </html>
