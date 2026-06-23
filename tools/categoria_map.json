@@ -1,0 +1,6 @@
+{
+  "Infant Care": ["FB12", "FB14", "FB15", "FB16", "FB17", "PH01", "PH02"],
+  "Feminine Care": ["AF16", "AF17", "AF19", "AC20", "AC21", "AC22"],
+  "Adult Care": ["PC01", "PC02", "PC04"],
+  "Wipes/Coform": ["L06", "CM01"]
+}

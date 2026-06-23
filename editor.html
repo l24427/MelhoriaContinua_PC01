@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Quadro · KC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink:#0B1F3A; --ink-2:#13294B; --bg:#EEF2F8; --card:#FFFFFF; --line:#D7DEEA;
+            --kc:#0C5BCE; --kc-d:#0A47A0; --muted:#5B6B85; --text:#0B1F3A;
+            --p-ehs:#1F9D57; --p-qual:#3B5BDB; --p-prod:#E8870C; --p-pess:#8A4FD6; --p-cust:#D1453B; --p-default:#5B6B85;
+            --ok:#1F9D57; --warn:#E8870C; --err:#D1453B;
+            --shadow:0 1px 2px rgba(11,31,58,.06), 0 8px 24px rgba(11,31,58,.06);
+            --sg:'Space Grotesk',system-ui,sans-serif; --ui:'IBM Plex Sans',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+        }
+        * { box-sizing:border-box; }
+        body { background:
+                radial-gradient(1200px 380px at 100% -120px, rgba(12,91,206,.10), transparent 60%),
+                var(--bg);
+            min-height:100vh; margin:0; font-family:var(--ui); color:var(--text);
+            -webkit-font-smoothing:antialiased; }
+        .wrap { max-width: 84rem; margin: 0 auto; padding: 1.25rem 1.5rem 4rem; }
+
+        /* ---- rail superior (mesa de controle) ---- */
+        header { background:var(--ink);
+            background-image: linear-gradient(180deg, var(--ink-2), var(--ink));
+            box-shadow:0 1px 0 rgba(255,255,255,.04) inset, 0 6px 18px rgba(11,31,58,.18);
+            position:sticky; top:0; z-index:20; }
+        .head { display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap;
+            padding:.85rem 1.5rem; max-width:84rem; margin:0 auto; }
+        .brand { display:flex; align-items:baseline; gap:.7rem; }
+        .brand .kc { font-family:var(--sg); font-weight:700; letter-spacing:.04em; color:#fff;
+            background:var(--kc); padding:.18rem .5rem; border-radius:.35rem; font-size:.95rem; }
+        .h-title { font-family:var(--sg); font-size:1.05rem; font-weight:600; color:#Eaf1fb; letter-spacing:.01em; }
+        .h-title small { display:block; font-family:var(--mono); font-weight:500; font-size:.66rem;
+            letter-spacing:.18em; text-transform:uppercase; color:#7C93B8; margin-top:.05rem; }
+        a.link { color:#Bcd2f3; text-decoration:none; font-size:.82rem; font-weight:500; }
+        a.link:hover { color:#fff; }
+
+        /* ---- Andon: indicador de status ---- */
+        .status { font-family:var(--mono); font-size:.72rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase;
+            padding:.34rem .7rem .34rem .55rem; border-radius:999px; display:inline-flex; align-items:center; gap:.5rem;
+            background:rgba(255,255,255,.06); color:#cdd9ec; border:1px solid rgba(255,255,255,.10); }
+        .status::before { content:""; width:.55rem; height:.55rem; border-radius:50%; background:var(--warn);
+            box-shadow:0 0 0 3px rgba(232,135,12,.25); }
+        .status.ok { color:#CFEFD9; } .status.ok::before { background:var(--ok); box-shadow:0 0 0 3px rgba(31,157,87,.28); animation:pulse 2.4s infinite; }
+        .status.warn { color:#F6E2C2; } .status.warn::before { background:var(--warn); box-shadow:0 0 0 3px rgba(232,135,12,.25); }
+        .status.err { color:#F6CFCB; } .status.err::before { background:var(--err); box-shadow:0 0 0 3px rgba(209,69,59,.28); }
+        @keyframes pulse { 0%,100%{ opacity:1; } 50%{ opacity:.45; } }
+        @media (prefers-reduced-motion: reduce) { .status.ok::before { animation:none; } }
+
+        /* ---- painéis ---- */
+        .panel { background:var(--card); border:1px solid var(--line); border-radius:.9rem;
+            padding:1.15rem 1.35rem; margin:1.15rem 0; box-shadow:var(--shadow); }
+        .panel > h2 { margin:0 0 .25rem; font-family:var(--sg); font-size:1.02rem; font-weight:600; color:var(--ink);
+            display:flex; align-items:center; gap:.6rem; }
+        .panel > h2::before { content:""; width:.34rem; height:1.05rem; border-radius:2px; background:var(--kc); }
+        .panel .sub { color:var(--muted); font-size:.86rem; margin:.15rem 0 1rem; }
+
+        label { font-family:var(--mono); font-size:.68rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase;
+            color:var(--muted); display:block; margin-bottom:.32rem; }
+        input[type=text], input[type=url], select, textarea {
+            width:100%; padding:.55rem .65rem; border:1px solid var(--line); border-radius:.55rem; font-size:.9rem;
+            font-family:var(--ui); color:var(--text); background:#FBFCFE; }
+        input:focus, select:focus, textarea:focus { outline:none; border-color:var(--kc); box-shadow:0 0 0 3px rgba(12,91,206,.15); }
+        select[multiple] { min-height:7.5rem; font-family:var(--mono); font-size:.82rem; padding:.3rem; }
+        select[multiple] option { padding:.18rem .4rem; border-radius:.3rem; }
+
+        button { cursor:pointer; border:1px solid transparent; border-radius:.55rem; font-family:var(--ui);
+            font-weight:600; font-size:.84rem; padding:.55rem .95rem; transition:transform .04s ease, background .15s ease; }
+        button:active { transform:translateY(1px); }
+        .btn { background:var(--kc); color:#fff; } .btn:hover{ background:var(--kc-d); }
+        .btn-sec { background:#EDF1F8; color:var(--ink); border-color:var(--line); } .btn-sec:hover{ background:#E2E9F4; }
+        .btn-danger { background:var(--err); color:#fff; } .btn-danger:hover{ background:#B23930; }
+        .btn-ghost { background:transparent; color:var(--kc); padding:.3rem .45rem; border:none; font-size:1rem; }
+        .btn-ghost:hover { color:var(--kc-d); }
+        button:focus-visible, a:focus-visible { outline:2px solid var(--kc); outline-offset:2px; }
+
+        .row { display:flex; gap:.7rem; flex-wrap:wrap; align-items:flex-end; }
+        .row > div { flex:1; min-width:140px; }
+        .muted { color:var(--muted); font-size:.85rem; }
+        .mono { font-family:var(--mono); }
+
+        .chips { display:flex; flex-wrap:wrap; gap:.45rem; margin:.5rem 0; }
+        .chip { background:#fff; color:var(--ink); border:1px solid var(--line); padding:.4rem .8rem; border-radius:.5rem;
+            cursor:pointer; font-family:var(--mono); font-weight:600; font-size:.82rem; letter-spacing:.02em; }
+        .chip:hover { border-color:var(--kc); }
+        .chip.active { background:var(--ink); color:#fff; border-color:var(--ink); }
+
+        .cols { display:grid; grid-template-columns:repeat(auto-fit,minmax(265px,1fr)); gap:1rem; align-items:start; margin-top:1rem; }
+        .area-col { border:1px solid var(--line); border-radius:.7rem; padding:.85rem; background:#FBFCFE;
+            border-top:3px solid var(--accent,var(--p-default)); }
+        .area-col h3 { margin:.05rem 0 .7rem; font-family:var(--sg); color:var(--accent,var(--ink)); font-size:.92rem;
+            font-weight:600; letter-spacing:.08em; text-transform:uppercase; display:flex; align-items:center; gap:.45rem; }
+        .area-col h3::before { content:""; width:.5rem; height:.5rem; border-radius:50%; background:var(--accent,var(--p-default)); }
+        .maq-tag { font-family:var(--mono); font-weight:600; font-size:.7rem; letter-spacing:.06em; color:var(--muted);
+            background:#EDF1F8; border-radius:.3rem; padding:.1rem .4rem; display:inline-block; margin:.55rem 0 .3rem; }
+
+        .bt-row { display:flex; gap:.3rem; align-items:center; margin-bottom:.35rem; }
+        .bt-row .t { flex:1; background:#fff; border:1px solid var(--line); border-radius:.5rem; padding:.42rem .6rem;
+            font-size:.85rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+        .bt-row .t a { color:var(--ink); text-decoration:none; }
+        .bt-row .t a:hover { color:var(--kc); }
+        .edit-box { background:#F2F6FD; border:1px solid #C9DBF6; border-radius:.6rem; padding:.6rem; margin-bottom:.4rem; }
+        .edit-box > div { margin-bottom:.4rem; }
+
+        .log-item { display:flex; justify-content:space-between; gap:.5rem; padding:.5rem .2rem; border-bottom:1px solid var(--line); font-size:.86rem; }
+        .log-item:last-child { border-bottom:none; }
+        .badge { font-family:var(--mono); background:#EDF1F8; color:var(--kc-d); border-radius:999px; padding:.05rem .55rem;
+            font-size:.74rem; font-weight:600; border:1px solid var(--line); }
+        .hidden { display:none; }
+        .add-form { margin-top:.55rem; display:flex; gap:.35rem; flex-wrap:wrap; }
+        .add-form input { flex:1; min-width:90px; }
+        .pill-count { font-family:var(--mono); font-size:.82rem; color:var(--ink); font-weight:500; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="brand">
+                <span class="kc">KC</span>
+                <span class="h-title">Painel do Quadro<small>Melhoria Contínua · Suzano</small></span>
+            </div>
+            <div style="display:flex; gap:1.1rem; align-items:center;">
+                <span id="conexao" class="status warn">desconectado</span>
+                <a class="link" href="index.html">Ver quadro →</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrap">
+        <!-- Conexão / token -->
+        <div class="panel" id="painelToken">
+            <h2>Conexão com o GitHub</h2>
+            <p class="sub">Cole um <strong>token fine-grained</strong> com acesso só a este repositório e permissão <em>Contents: Read and write</em>. Ele fica salvo apenas neste navegador.</p>
+            <div class="row">
+                <div style="flex:3;">
+                    <label>Token (github_pat_...)</label>
+                    <input type="text" id="tokenInput" placeholder="github_pat_..." autocomplete="off">
+                </div>
+                <div style="flex:0;">
+                    <button class="btn" id="btnConectar">Salvar e conectar</button>
+                </div>
+                <div style="flex:0;">
+                    <button class="btn-sec" id="btnEsquecer">Esquecer token</button>
+                </div>
+            </div>
+            <p style="margin-top:.6rem;">
+                <button class="btn-ghost" id="btnLocal">Carregar cópia local (sem publicar)</button>
+                <span class="muted">— para testar a edição sem token; a publicação fica desativada.</span>
+            </p>
+            <div id="tokenMsg" class="muted" style="margin-top:.5rem;"></div>
+        </div>
+
+        <div id="appArea" class="hidden">
+            <!-- Edição em massa -->
+            <div class="panel">
+                <h2>Edição em massa (por escopo)</h2>
+                <p class="sub">Defina o alcance e a operação. Útil para "mesmo botão em todas as máquinas", "mesmo nome numa categoria", etc.</p>
+                <div class="row">
+                    <div>
+                        <label>Categorias</label>
+                        <select id="escCategorias" multiple></select>
+                        <span class="muted">vazio = todas</span>
+                    </div>
+                    <div>
+                        <label>Máquinas</label>
+                        <select id="escMaquinas" multiple></select>
+                        <span class="muted">vazio = todas</span>
+                    </div>
+                    <div>
+                        <label>Áreas</label>
+                        <select id="escAreas" multiple></select>
+                        <span class="muted">vazio = todas</span>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:.6rem;">
+                    <div style="flex:2;">
+                        <label>Filtrar botões pelo nome (texto)</label>
+                        <input type="text" id="escTexto" placeholder="ex.: Lançar Safe">
+                    </div>
+                    <div style="flex:0; min-width:170px;">
+                        <label><input type="checkbox" id="escExato" checked style="width:auto;"> nome exato</label>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:.6rem;">
+                    <div>
+                        <label>Operação</label>
+                        <select id="opTipo">
+                            <option value="setHref">Definir hyperlink (href)</option>
+                            <option value="renameTexto">Renomear texto</option>
+                            <option value="deleteEscopo">Apagar botões</option>
+                        </select>
+                    </div>
+                    <div style="flex:2;">
+                        <label id="opValorLabel">Novo hyperlink</label>
+                        <input type="text" id="opValor" placeholder="https://...">
+                    </div>
+                </div>
+                <div class="row" style="margin-top:.7rem; align-items:center;">
+                    <div style="flex:0;"><button class="btn-sec" id="btnPrever">Pré-visualizar impacto</button></div>
+                    <div style="flex:0;"><button class="btn" id="btnAplicarMassa">Aplicar à fila</button></div>
+                    <div><span id="impacto" class="pill-count"></span></div>
+                </div>
+            </div>
+
+            <!-- Navegação / edição pontual -->
+            <div class="panel">
+                <h2>Navegar e editar</h2>
+                <div class="row">
+                    <div style="flex:0; min-width:220px;">
+                        <label>Categoria</label>
+                        <select id="navCategoria"></select>
+                    </div>
+                    <div style="flex:0;">
+                        <button class="btn-sec" id="btnAddCategoria">+ Categoria</button>
+                    </div>
+                    <div style="flex:0;">
+                        <button class="btn-sec" id="btnAddArea">+ Área</button>
+                    </div>
+                </div>
+                <div id="formEstrutura"></div>
+                <div class="muted" style="margin-top:.6rem;">Máquinas (clique para mostrar/ocultar):</div>
+                <div id="navMaquinas" class="chips"></div>
+                <div style="margin-top:.3rem;">
+                    <button class="btn-sec" id="btnAddMaquina">+ Máquina nesta categoria</button>
+                    <button class="btn-sec" id="btnMoverMaquina">Mover máquina de categoria</button>
+                </div>
+                <div id="formMaqExtra"></div>
+                <div id="cols" class="cols"></div>
+            </div>
+
+            <!-- Fila de mudanças / publicação -->
+            <div class="panel">
+                <h2>Mudanças pendentes <span class="badge" id="logCount">0</span></h2>
+                <div id="logList"></div>
+                <div class="row" style="margin-top:.8rem;">
+                    <div style="flex:3;">
+                        <label>Mensagem do commit</label>
+                        <input type="text" id="commitMsg" placeholder="Atualiza botões via editor">
+                    </div>
+                    <div style="flex:0;"><button class="btn" id="btnPublicar">Publicar no GitHub</button></div>
+                    <div style="flex:0;"><button class="btn-sec" id="btnDescartar">Descartar tudo</button></div>
+                </div>
+                <div id="pubMsg" style="margin-top:.6rem;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dataEngine.js"></script>
+    <script src="githubClient.js"></script>
+    <script>
+    (function () {
+        'use strict';
+
+        var gh = GitHubClient.create({ owner: 'l24427', repo: 'MelhoriaContinua_PC01', path: 'machinesData.json', branch: 'main' });
+        var baseData = null;     // cópia original carregada (com sha)
+        var baseSha = null;
+        var engine = null;       // engine sobre a cópia de trabalho (base + mudanças)
+        var log = [];            // descrições das mudanças pendentes
+        var modoLocal = false;   // carregado da cópia local => sem publicar
+        var navCat = null;
+        var maqVisiveis = [];
+
+        var $ = function (id) { return document.getElementById(id); };
+        function setConexao(txt, cls) { var e = $('conexao'); e.textContent = txt; e.className = 'status ' + cls; }
+        function msg(el, txt, cls) { el.innerHTML = txt ? '<span class="status ' + (cls||'') + '">' + txt + '</span>' : ''; }
+
+        /* ---------- carregamento ---------- */
+        function iniciarComDados(data, sha) {
+            baseData = data; baseSha = sha;
+            resetTrabalho();
+            $('appArea').classList.remove('hidden');
+            navCat = engine.listCategorias()[0] || null;
+            maqVisiveis = [];
+            popularEscopo();
+            renderNav();
+            renderLog();
+        }
+
+        function resetTrabalho() {
+            engine = DataEngine.create(JSON.parse(JSON.stringify(baseData)));
+            log = [];
+        }
+
+        $('btnConectar').onclick = function () {
+            var t = $('tokenInput').value.trim();
+            if (t) gh.setToken(t);
+            if (!gh.hasToken()) { msg($('tokenMsg'), 'Informe um token.', 'err'); return; }
+            msg($('tokenMsg'), 'Verificando acesso...', 'warn');
+            gh.verificarAcesso().then(function (r) {
+                if (!r.podeEscrever) { setConexao('sem permissão de escrita', 'err'); msg($('tokenMsg'), 'O token não tem permissão de escrita neste repo.', 'err'); return; }
+                return gh.getArquivo().then(function (f) {
+                    modoLocal = false;
+                    setConexao('conectado', 'ok');
+                    msg($('tokenMsg'), 'Conectado. Arquivo carregado do GitHub.', 'ok');
+                    $('tokenInput').value = '';
+                    iniciarComDados(f.data, f.sha);
+                });
+            }).catch(function (e) { setConexao('erro', 'err'); msg($('tokenMsg'), e.message, 'err'); });
+        };
+
+        $('btnEsquecer').onclick = function () { gh.clearToken(); setConexao('desconectado', 'warn'); msg($('tokenMsg'), 'Token removido deste navegador.', 'warn'); };
+
+        $('btnLocal').onclick = function () {
+            msg($('tokenMsg'), 'Carregando cópia local...', 'warn');
+            fetch('machinesData.json?t=' + Date.now()).then(function (r) { return r.json(); }).then(function (d) {
+                modoLocal = true; baseSha = null;
+                setConexao('modo local (sem publicar)', 'warn');
+                msg($('tokenMsg'), 'Cópia local carregada. Publicação desativada.', 'warn');
+                iniciarComDados(d, null);
+            }).catch(function (e) { msg($('tokenMsg'), 'Falha ao carregar local: ' + e.message, 'err'); });
+        };
+
+        /* ---------- escopo (massa) ---------- */
+        function preencherSelect(sel, itens) {
+            sel.innerHTML = '';
+            itens.forEach(function (it) { var o = document.createElement('option'); o.value = it; o.textContent = it; sel.appendChild(o); });
+        }
+        function popularEscopo() {
+            preencherSelect($('escCategorias'), engine.listCategorias());
+            preencherSelect($('escMaquinas'), engine.listMaquinas());
+            preencherSelect($('escAreas'), engine.listAreas());
+        }
+        function valoresSelecionados(sel) { return Array.prototype.slice.call(sel.selectedOptions).map(function (o) { return o.value; }); }
+        function montarEscopo() {
+            var cats = valoresSelecionados($('escCategorias'));
+            var maqs = valoresSelecionados($('escMaquinas'));
+            var areas = valoresSelecionados($('escAreas'));
+            var esc = {
+                categorias: cats.length ? cats : 'ALL',
+                maquinas: maqs.length ? maqs : 'ALL',
+                areas: areas.length ? areas : 'ALL'
+            };
+            var txt = $('escTexto').value.trim();
+            if (txt) { esc.matchTexto = txt; esc.matchExato = $('escExato').checked; }
+            return esc;
+        }
+
+        $('opTipo').onchange = function () {
+            var t = this.value;
+            $('opValorLabel').textContent = t === 'setHref' ? 'Novo hyperlink' : t === 'renameTexto' ? 'Novo texto' : '(sem valor — apaga os botões do escopo)';
+            $('opValor').classList.toggle('hidden', t === 'deleteEscopo');
+        };
+
+        $('btnPrever').onclick = function () {
+            var esc = montarEscopo();
+            var n = engine.resolveSeletor(esc).length;
+            $('impacto').textContent = n + ' botão(ões) no escopo atual.';
+        };
+
+        $('btnAplicarMassa').onclick = function () {
+            var tipo = $('opTipo').value;
+            var esc = montarEscopo();
+            var alvo = engine.resolveSeletor(esc);
+            if (!alvo.length) { $('impacto').textContent = 'Nenhum botão no escopo — nada aplicado.'; return; }
+            var op = { tipo: tipo, escopo: esc };
+            var desc;
+            if (tipo === 'setHref') { op.href = $('opValor').value.trim(); desc = 'Definir href em ' + alvo.length + ' botão(ões)'; }
+            else if (tipo === 'renameTexto') { op.novoTexto = $('opValor').value.trim(); desc = 'Renomear ' + alvo.length + ' botão(ões) para "' + op.novoTexto + '"'; }
+            else { desc = 'Apagar ' + alvo.length + ' botão(ões) do escopo'; }
+            engine.applyOperacao(op);
+            registrar(desc, alvo.length);
+            popularEscopo(); renderNav();
+            $('impacto').textContent = 'Aplicado: ' + desc + '.';
+        };
+
+        /* ---------- navegação / edição pontual ---------- */
+        function registrar(desc, n) { log.push({ desc: desc, n: n || 1 }); renderLog(); }
+
+        function renderNav() {
+            // categoria select
+            var sel = $('navCategoria');
+            var cats = engine.listCategorias();
+            if (cats.indexOf(navCat) === -1) navCat = cats[0] || null;
+            sel.innerHTML = '';
+            cats.forEach(function (c) { var o = document.createElement('option'); o.value = c; o.textContent = c; if (c === navCat) o.selected = true; sel.appendChild(o); });
+
+            // chips de máquina
+            var chips = $('navMaquinas'); chips.innerHTML = '';
+            (navCat ? engine.listMaquinas(navCat) : []).forEach(function (m) {
+                var c = document.createElement('button');
+                c.className = 'chip' + (maqVisiveis.indexOf(m) !== -1 ? ' active' : '');
+                c.textContent = m;
+                c.onclick = function () { var i = maqVisiveis.indexOf(m); if (i === -1) maqVisiveis.push(m); else maqVisiveis.splice(i, 1); renderCols(); renderNav(); };
+                chips.appendChild(c);
+            });
+            renderCols();
+        }
+
+        $('navCategoria').onchange = function () { navCat = this.value; maqVisiveis = []; renderNav(); };
+
+        function renderCols() {
+            var cont = $('cols'); cont.innerHTML = '';
+            if (!navCat || !maqVisiveis.length) { cont.innerHTML = '<div class="muted">Selecione máquina(s) acima para editar os botões.</div>'; return; }
+            engine.listAreas().forEach(function (area) {
+                var col = document.createElement('div'); col.className = 'area-col';
+                col.style.setProperty('--accent', corDaArea(area));
+                var h = document.createElement('h3'); h.textContent = area; col.appendChild(h);
+                maqVisiveis.forEach(function (maq) {
+                    var sub = document.createElement('div'); sub.className = 'maq-tag'; sub.textContent = maq;
+                    col.appendChild(sub);
+                    var botoes = engine.listBotoes(navCat, maq, area);
+                    botoes.forEach(function (b, idx) { col.appendChild(linhaBotao(maq, area, b, idx)); });
+                    col.appendChild(formAddBotao(maq, area));
+                });
+                cont.appendChild(col);
+            });
+        }
+
+        function linhaBotao(maq, area, b, idx) {
+            var row = document.createElement('div'); row.className = 'bt-row';
+            var t = document.createElement('div'); t.className = 't';
+            var a = document.createElement('a'); a.href = b.href; a.target = '_blank'; a.rel = 'noopener'; a.textContent = b.texto; a.title = b.href;
+            t.appendChild(a); row.appendChild(t);
+            var ed = document.createElement('button'); ed.className = 'btn-ghost'; ed.textContent = '✎'; ed.title = 'Editar';
+            ed.onclick = function () { row.replaceWith(editBox(maq, area, b, idx)); };
+            var del = document.createElement('button'); del.className = 'btn-ghost'; del.textContent = '🗑'; del.title = 'Apagar'; del.style.color = '#dc2626';
+            del.onclick = function () { row.replaceWith(confirmDel(maq, area, b, idx)); };
+            row.appendChild(ed); row.appendChild(del);
+            return row;
+        }
+
+        function editBox(maq, area, b, idx) {
+            var box = document.createElement('div'); box.className = 'edit-box';
+            var t = document.createElement('input'); t.type = 'text'; t.value = b.texto;
+            var h = document.createElement('input'); h.type = 'text'; h.value = b.href;
+            var d1 = document.createElement('div'); d1.innerHTML = '<label>Texto</label>'; d1.appendChild(t);
+            var d2 = document.createElement('div'); d2.innerHTML = '<label>Hyperlink</label>'; d2.appendChild(h);
+            var acoes = document.createElement('div'); acoes.style.display = 'flex'; acoes.style.gap = '.4rem';
+            var ok = document.createElement('button'); ok.className = 'btn'; ok.textContent = 'Salvar';
+            var cc = document.createElement('button'); cc.className = 'btn-sec'; cc.textContent = 'Cancelar';
+            ok.onclick = function () {
+                engine.updateBotao({ categoria: navCat, maquina: maq, area: area, idx: idx }, { texto: t.value, href: h.value });
+                registrar('Editar botão "' + t.value + '" (' + maq + ' · ' + area + ')', 1);
+                renderCols();
+            };
+            cc.onclick = function () { renderCols(); };
+            acoes.appendChild(ok); acoes.appendChild(cc);
+            box.appendChild(d1); box.appendChild(d2); box.appendChild(acoes);
+            return box;
+        }
+
+        function confirmDel(maq, area, b, idx) {
+            var box = document.createElement('div'); box.className = 'edit-box';
+            box.innerHTML = '<div class="muted">Apagar <strong>' + escapeHtml(b.texto) + '</strong> de ' + maq + ' · ' + area + '?</div>';
+            var acoes = document.createElement('div'); acoes.style.display = 'flex'; acoes.style.gap = '.4rem';
+            var sim = document.createElement('button'); sim.className = 'btn-danger'; sim.textContent = 'Apagar';
+            var nao = document.createElement('button'); nao.className = 'btn-sec'; nao.textContent = 'Cancelar';
+            sim.onclick = function () {
+                engine.deleteBotao({ categoria: navCat, maquina: maq, area: area, idx: idx });
+                registrar('Apagar botão "' + b.texto + '" (' + maq + ' · ' + area + ')', 1);
+                renderCols();
+            };
+            nao.onclick = function () { renderCols(); };
+            acoes.appendChild(sim); acoes.appendChild(nao); box.appendChild(acoes);
+            return box;
+        }
+
+        function formAddBotao(maq, area) {
+            var f = document.createElement('div'); f.className = 'add-form';
+            var t = document.createElement('input'); t.type = 'text'; t.placeholder = 'novo texto';
+            var h = document.createElement('input'); h.type = 'text'; h.placeholder = 'https://...';
+            var add = document.createElement('button'); add.className = 'btn-sec'; add.textContent = '+ botão';
+            add.onclick = function () {
+                if (!t.value.trim()) return;
+                engine.addBotao(navCat, maq, area, { texto: t.value, href: h.value });
+                registrar('Adicionar botão "' + t.value.trim() + '" (' + maq + ' · ' + area + ')', 1);
+                renderCols();
+            };
+            f.appendChild(t); f.appendChild(h); f.appendChild(add);
+            return f;
+        }
+
+        /* ---------- estrutura (categoria/máquina/área) ---------- */
+        $('btnAddCategoria').onclick = function () {
+            formInline($('formEstrutura'), [{ ph: 'nome da categoria', key: 'nome' }], 'Criar', function (v) {
+                if (!v.nome.trim()) return; engine.addCategoria(v.nome.trim()); navCat = v.nome.trim(); maqVisiveis = [];
+                registrar('Criar categoria "' + v.nome.trim() + '"', 1); popularEscopo(); renderNav();
+            });
+        };
+        $('btnAddArea').onclick = function () {
+            formInline($('formEstrutura'), [{ ph: 'nome da área', key: 'nome' }], 'Criar', function (v) {
+                if (!v.nome.trim()) return; engine.addArea(v.nome.trim());
+                registrar('Criar área "' + v.nome.trim() + '"', 1); popularEscopo(); renderNav();
+            });
+        };
+        $('btnAddMaquina').onclick = function () {
+            if (!navCat) return;
+            formInline($('formMaqExtra'), [{ ph: 'código da máquina', key: 'maq' }], 'Criar em ' + navCat, function (v) {
+                if (!v.maq.trim()) return; engine.addMaquina(navCat, v.maq.trim());
+                registrar('Criar máquina "' + v.maq.trim() + '" em ' + navCat, 1); popularEscopo(); renderNav();
+            });
+        };
+        $('btnMoverMaquina').onclick = function () {
+            if (!navCat) return;
+            var maqs = engine.listMaquinas(navCat); var cats = engine.listCategorias();
+            formInline($('formMaqExtra'), [
+                { type: 'select', options: maqs, key: 'maq', label: 'Máquina' },
+                { type: 'select', options: cats, key: 'destino', label: 'Para categoria' }
+            ], 'Mover', function (v) {
+                if (!v.maq || !v.destino || v.destino === navCat) return;
+                engine.moveMaquina(v.maq, navCat, v.destino);
+                registrar('Mover máquina ' + v.maq + ': ' + navCat + ' → ' + v.destino, 1);
+                maqVisiveis = []; popularEscopo(); renderNav();
+            });
+        };
+
+        function formInline(host, campos, labelBtn, onOk) {
+            host.innerHTML = '';
+            var box = document.createElement('div'); box.className = 'edit-box'; box.style.marginTop = '.6rem';
+            var inputs = {};
+            campos.forEach(function (c) {
+                var d = document.createElement('div');
+                if (c.label) d.innerHTML = '<label>' + c.label + '</label>';
+                var el;
+                if (c.type === 'select') { el = document.createElement('select'); (c.options || []).forEach(function (o) { var op = document.createElement('option'); op.value = o; op.textContent = o; el.appendChild(op); }); }
+                else { el = document.createElement('input'); el.type = 'text'; el.placeholder = c.ph || ''; }
+                inputs[c.key] = el; d.appendChild(el); box.appendChild(d);
+            });
+            var acoes = document.createElement('div'); acoes.style.display = 'flex'; acoes.style.gap = '.4rem'; acoes.style.marginTop = '.4rem';
+            var ok = document.createElement('button'); ok.className = 'btn'; ok.textContent = labelBtn;
+            var cc = document.createElement('button'); cc.className = 'btn-sec'; cc.textContent = 'Cancelar';
+            ok.onclick = function () { var v = {}; Object.keys(inputs).forEach(function (k) { v[k] = inputs[k].value; }); host.innerHTML = ''; onOk(v); };
+            cc.onclick = function () { host.innerHTML = ''; };
+            acoes.appendChild(ok); acoes.appendChild(cc); box.appendChild(acoes); host.appendChild(box);
+        }
+
+        /* ---------- fila / publicação ---------- */
+        function renderLog() {
+            $('logCount').textContent = log.length;
+            var c = $('logList'); c.innerHTML = '';
+            if (!log.length) { c.innerHTML = '<div class="muted">Nenhuma mudança pendente.</div>'; return; }
+            log.forEach(function (it, i) {
+                var d = document.createElement('div'); d.className = 'log-item';
+                d.innerHTML = '<span>' + (i + 1) + '. ' + escapeHtml(it.desc) + '</span><span class="badge">' + it.n + '</span>';
+                c.appendChild(d);
+            });
+        }
+
+        $('btnDescartar').onclick = function () { resetTrabalho(); maqVisiveis = []; popularEscopo(); renderNav(); renderLog(); msg($('pubMsg'), 'Mudanças descartadas.', 'warn'); };
+
+        $('btnPublicar').onclick = function () {
+            if (!log.length) { msg($('pubMsg'), 'Nada a publicar.', 'warn'); return; }
+            if (modoLocal) { msg($('pubMsg'), 'Modo local: conecte um token para publicar.', 'err'); return; }
+            var mensagem = $('commitMsg').value.trim() || ('Editor: ' + log.length + ' mudança(s)');
+            msg($('pubMsg'), 'Publicando...', 'warn');
+            gh.publicar(engine.getData(), baseSha, mensagem).then(function (res) {
+                // a cópia publicada vira a nova base
+                baseData = JSON.parse(JSON.stringify(engine.getData())); baseSha = res.sha;
+                resetTrabalho(); renderLog();
+                var url = res.commitUrl ? ' <a class="link" target="_blank" href="' + res.commitUrl + '">ver commit</a>' : '';
+                msg($('pubMsg'), 'Publicado! O quadro será atualizado em instantes.' + url, 'ok');
+            }).catch(function (e) {
+                if (e.code === 'CONFLITO') { msg($('pubMsg'), e.message + ' Recarregue a página para puxar a versão mais nova.', 'err'); }
+                else { msg($('pubMsg'), 'Erro: ' + e.message, 'err'); }
+            });
+        };
+
+        function escapeHtml(s) { return String(s).replace(/[&<>"']/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]; }); }
+
+        // cor fixa por pilar (assinatura visual): codifica a área, não decora.
+        var CORES_AREA = { 'EHS': '#1F9D57', 'QUALIDADE': '#3B5BDB', 'PRODUTIVIDADE': '#E8870C', 'PESSOAS': '#8A4FD6', 'CUSTOS': '#D1453B' };
+        function corDaArea(area) { return CORES_AREA[String(area || '').toUpperCase()] || '#5B6B85'; }
+
+        /* ---------- bootstrap ---------- */
+        if (gh.hasToken()) { setConexao('token salvo — clique em Conectar', 'warn'); $('tokenInput').placeholder = 'token salvo (oculto)'; }
+    })();
+    </script>
+</body>
+</html>

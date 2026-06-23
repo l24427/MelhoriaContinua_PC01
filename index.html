@@ -3,36 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quadro Interativo KC</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Quadro Interativo · KC Suzano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
     <style>
-        body {
-            background: linear-gradient(to right, #dbeafe, #bfdbfe);
-            min-height: 100vh;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        :root {
+            --ink:#0B1F3A; --ink-2:#13294B; --bg:#EEF2F8; --card:#FFFFFF; --line:#D7DEEA;
+            --kc:#0C5BCE; --kc-d:#0A47A0; --muted:#5B6B85; --text:#0B1F3A;
+            --sg:'Space Grotesk',system-ui,sans-serif; --ui:'IBM Plex Sans',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+            --shadow:0 1px 2px rgba(11,31,58,.06), 0 8px 24px rgba(11,31,58,.06);
         }
-        .container { max-width: 80rem; margin: 0 auto; padding: 0 1rem; }
-        header { background: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .header-content { padding: 1.25rem 1rem; }
+        * { box-sizing:border-box; }
+        body {
+            background:
+                radial-gradient(1100px 360px at 100% -120px, rgba(12,91,206,.10), transparent 60%),
+                var(--bg);
+            min-height: 100vh; margin:0; color:var(--text); font-family:var(--ui); -webkit-font-smoothing:antialiased;
+        }
+        .container { max-width: 84rem; margin: 0 auto; padding: 0 1.5rem; }
+        header { background:var(--ink); background-image:linear-gradient(180deg,var(--ink-2),var(--ink));
+            box-shadow:0 6px 18px rgba(11,31,58,.18); position:sticky; top:0; z-index:20; }
+        .header-content { padding: .85rem 1.5rem; max-width:84rem; margin:0 auto; }
         .header-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
-        .logo { font-size: 1.5rem; font-weight: bold; color: #2563eb; }
-        .title { font-size: 1.5rem; font-weight: bold; color: #1d4ed8; text-align: center; flex: 1; }
-        .sharepoint-link { color: #2563eb; text-decoration: none; font-size: 0.875rem; }
-        .sharepoint-link:hover { text-decoration: underline; }
-        .search-box { width: 100%; margin-top: 1rem; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.5rem; }
-        main { max-width: 80rem; margin: 0 auto; padding: 2rem 1rem; }
-        .loading { text-align: center; padding: 2.5rem; font-size: 1.25rem; font-weight: bold; }
-        .error { background: #fecaca; color: #991b1b; padding: 2rem; border-radius: 0.5rem; margin: 2rem 0; }
-        .machine-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-        .machine-btn { background: #2563eb; color: white; padding: 1rem; border: none; border-radius: 0.75rem; cursor: pointer; font-weight: 600; }
-        .machine-btn:hover { background: #1d4ed8; }
-        .back-btn { background: #6b7280; color: white; padding: 0.5rem 1.5rem; border: none; border-radius: 0.5rem; cursor: pointer; margin-bottom: 1.5rem; }
-        .category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
-        .category { background: white; padding: 1rem; border-radius: 0.5rem; }
-        .category-title { font-size: 1.25rem; font-weight: bold; color: #2563eb; margin-bottom: 1rem; }
-        .link-btn { display: block; background: #2563eb; color: white; padding: 0.75rem 1rem; border-radius: 0.75rem; text-align: center; margin-top: 0.5rem; text-decoration: none; cursor: pointer; }
-        .link-btn:hover { background: #1d4ed8; }
-        footer { text-align: center; padding: 2rem; color: #1e40af; font-weight: 600; }
+        .logo { font-family:var(--sg); font-weight:700; letter-spacing:.04em; color:#fff; background:var(--kc);
+            padding:.18rem .5rem; border-radius:.35rem; font-size:.95rem; }
+        .title { font-family:var(--sg); font-size: 1.1rem; font-weight: 600; color: #Eaf1fb; text-align: center; flex: 1; letter-spacing:.01em; }
+        .sharepoint-link { color:#Bcd2f3; text-decoration: none; font-size: 0.82rem; font-weight:500; }
+        .sharepoint-link:hover { color:#fff; }
+        .editor-link { color:#Eaf1fb; text-decoration: none; font-size: 0.8rem; border: 1px solid rgba(255,255,255,.18);
+            padding: 0.3rem 0.7rem; border-radius: 0.5rem; font-weight:500; }
+        .editor-link:hover { background: rgba(255,255,255,.08); }
+        .search-box { width: 100%; margin-top: .9rem; padding: 0.6rem .7rem; border: 1px solid rgba(255,255,255,.16);
+            border-radius: 0.55rem; background:rgba(255,255,255,.07); color:#fff; font-family:var(--ui); }
+        .search-box::placeholder { color:#8aa2c4; }
+        .search-box:focus { outline:none; border-color:var(--kc); box-shadow:0 0 0 3px rgba(12,91,206,.25); }
+        main { max-width: 84rem; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+        .loading { text-align: center; padding: 2.5rem; font-family:var(--mono); font-size: 1rem; color:var(--muted); }
+        .error { background: #FBE4E2; color: #8a2c25; padding: 1.5rem; border-radius: 0.6rem; margin: 2rem 0; border:1px solid #f1c4bf; }
+        .section-title { font-family:var(--sg); font-size: 1.05rem; font-weight: 600; color: var(--ink); text-align:center;
+            letter-spacing:.12em; text-transform:uppercase; margin: .5rem 0 1.5rem; }
+        .grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .card-btn { background:var(--card); color:var(--ink); padding: 1.15rem 1.1rem; border: 1px solid var(--line);
+            border-radius: 0.8rem; cursor: pointer; font-family:var(--sg); font-weight: 600; font-size: 1.05rem; text-align:left;
+            box-shadow:var(--shadow); transition:transform .06s ease, border-color .15s ease; position:relative; }
+        .card-btn::before { content:""; position:absolute; left:0; top:1rem; bottom:1rem; width:3px; border-radius:3px; background:var(--kc); }
+        .card-btn:hover { transform:translateY(-2px); border-color:var(--kc); }
+        .card-btn small { display: block; font-family:var(--mono); font-weight: 500; color:var(--muted); margin-top: 0.35rem; font-size: 0.72rem; letter-spacing:.04em; }
+        .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0 1.5rem; }
+        .chip { background:var(--card); color: var(--ink); border: 1px solid var(--line); padding: 0.45rem 0.95rem;
+            border-radius: 0.5rem; cursor: pointer; font-family:var(--mono); font-weight: 600; font-size:.85rem; letter-spacing:.02em; }
+        .chip:hover { border-color:var(--kc); }
+        .chip.active { background:var(--ink); color: #fff; border-color:var(--ink); }
+        .toolbar { display: flex; align-items: center; gap: 0.85rem; flex-wrap: wrap; margin-bottom: 1rem; }
+        .back-btn { background:#EDF1F8; color:var(--ink); padding: 0.5rem 1.1rem; border: 1px solid var(--line);
+            border-radius: 0.55rem; cursor: pointer; font-family:var(--ui); font-weight:600; }
+        .back-btn:hover { background:#E2E9F4; }
+        .columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.1rem; margin: 1.5rem 0; align-items: start; }
+        .area-col { background:var(--card); padding: 1rem; border-radius: 0.75rem; border:1px solid var(--line);
+            border-top:3px solid var(--accent,var(--muted)); box-shadow:var(--shadow); }
+        .area-title { font-family:var(--sg); font-size: 0.92rem; font-weight: 600; color: var(--accent,var(--ink)); margin-bottom: 0.75rem;
+            letter-spacing:.08em; text-transform:uppercase; display:flex; align-items:center; gap:.45rem; }
+        .area-title::before { content:""; width:.5rem; height:.5rem; border-radius:50%; background:var(--accent,var(--muted)); }
+        .maq-sub { font-family:var(--mono); font-size: 0.7rem; font-weight: 600; color: var(--muted); text-transform: uppercase;
+            margin: 0.8rem 0 0.35rem; letter-spacing: 0.06em; background:#EDF1F8; border-radius:.3rem; padding:.12rem .4rem; display:inline-block; }
+        .link-btn { display: block; background:#F4F7FC; color:var(--ink); padding: 0.55rem 0.75rem; border:1px solid var(--line);
+            border-radius: 0.55rem; text-align: left; margin-top: 0.4rem; text-decoration: none; font-size: 0.88rem; }
+        .link-btn:hover { background:var(--kc); color:#fff; border-color:var(--kc); }
+        .empty { color: var(--muted); text-align: center; padding: 2.5rem; font-family:var(--mono); font-size:.85rem; }
+        footer { text-align: center; padding: 2.5rem; color: var(--muted); font-family:var(--sg); font-weight: 600; letter-spacing:.14em; text-transform:uppercase; font-size:.8rem; }
+        a:focus-visible, button:focus-visible { outline:2px solid var(--kc); outline-offset:2px; }
         .hidden { display: none; }
     </style>
 </head>
@@ -42,26 +82,34 @@
             <div class="header-top">
                 <div class="logo">KC</div>
                 <h1 class="title" id="pageTitle">Quadro Interativo</h1>
-                <a href="https://kimberlyclark.sharepoint.com/Sites/H945/" target="_blank" rel="noopener noreferrer" class="sharepoint-link">
-                    Sharepoint Planta Suzano
-                </a>
+                <div style="display:flex; gap:0.75rem; align-items:center;">
+                    <a href="https://kimberlyclark.sharepoint.com/Sites/H945/" target="_blank" rel="noopener noreferrer" class="sharepoint-link">Sharepoint Planta Suzano</a>
+                    <a href="editor.html" class="editor-link">✎ Editar quadro</a>
+                </div>
             </div>
-            <input type="text" id="searchBox" class="search-box hidden" placeholder="Pesquisar...">
+            <input type="text" id="searchBox" class="search-box hidden" placeholder="Pesquisar botão...">
         </div>
     </header>
 
     <main class="container">
         <div id="loading" class="loading">⏳ Carregando dados...</div>
         <div id="error" class="error hidden"></div>
-        <div id="machineSelection" class="hidden">
-            <h2 style="font-size: 1.5rem; font-weight: bold; color: #1d4ed8; text-align: center; margin-bottom: 1.5rem;">
-                Selecione uma Máquina
-            </h2>
-            <div id="machineGrid" class="machine-grid"></div>
+
+        <!-- Passo 1: categorias -->
+        <div id="categoriaSelection" class="hidden">
+            <h2 class="section-title">Selecione uma Categoria</h2>
+            <div id="categoriaGrid" class="grid-cards"></div>
         </div>
-        <div id="machineContent" class="hidden">
-            <button id="backBtn" class="back-btn">← Voltar</button>
-            <div id="contentGrid" class="category-grid"></div>
+
+        <!-- Passo 2: máquinas + colunas por área -->
+        <div id="conteudo" class="hidden">
+            <div class="toolbar">
+                <button id="backBtn" class="back-btn">← Voltar</button>
+                <strong id="categoriaAtual" style="font-family:var(--sg); color:var(--ink); letter-spacing:.02em;"></strong>
+                <span style="color:var(--muted); font-size:0.85rem;">Selecione uma ou mais máquinas:</span>
+            </div>
+            <div id="maquinaChips" class="chips"></div>
+            <div id="colunas" class="columns"></div>
         </div>
     </main>
 
@@ -69,145 +117,142 @@
         <div>PERFORMANCE = CUIDADO</div>
     </footer>
 
+    <script src="dataEngine.js"></script>
     <script>
-        let machinesData = null;
-        let selectedMachine = null;
+        var engine = null;
+        var categoriaAtual = null;
+        var maquinasSelecionadas = [];
+
+        // cor fixa por pilar (assinatura visual): codifica a área, não decora.
+        var CORES_AREA = { 'EHS': '#1F9D57', 'QUALIDADE': '#3B5BDB', 'PRODUTIVIDADE': '#E8870C', 'PESSOAS': '#8A4FD6', 'CUSTOS': '#D1453B' };
+        function corDaArea(area) { return CORES_AREA[String(area || '').toUpperCase()] || '#5B6B85'; }
 
         async function loadJSON() {
             try {
-                console.log('Iniciando carregamento do JSON...');
-                const response = await fetch('machinesData.json');
-                console.log('Status:', response.status);
-                
-                if (!response.ok) {
-                    throw new Error(`Erro HTTP: ${response.status}`);
-                }
-
-                const text = await response.text();
-                console.log(`Resposta: ${text.length} caracteres`);
-                
-                const data = JSON.parse(text);
-                console.log('JSON carregado:', Object.keys(data));
-                
-                machinesData = data;
-                showMachineSelection();
+                var response = await fetch('machinesData.json?t=' + Date.now());
+                if (!response.ok) throw new Error('Erro HTTP: ' + response.status);
+                var data = JSON.parse(await response.text());
+                engine = DataEngine.create(data);
                 document.getElementById('loading').classList.add('hidden');
-
+                showCategorias();
             } catch (error) {
-                console.error('Erro:', error);
-                showError(`Erro ao carregar dados: ${error.message}`);
+                showError('Erro ao carregar dados: ' + error.message);
             }
         }
 
         function showError(message) {
             document.getElementById('loading').classList.add('hidden');
-            const errorDiv = document.getElementById('error');
-            errorDiv.textContent = '❌ ' + message;
-            errorDiv.classList.remove('hidden');
+            var el = document.getElementById('error');
+            el.textContent = '❌ ' + message;
+            el.classList.remove('hidden');
         }
 
-        function showMachineSelection() {
-            document.getElementById('machineSelection').classList.remove('hidden');
-            const grid = document.getElementById('machineGrid');
-            grid.innerHTML = '';
+        function showCategorias() {
+            categoriaAtual = null;
+            maquinasSelecionadas = [];
+            document.getElementById('conteudo').classList.add('hidden');
+            document.getElementById('categoriaSelection').classList.remove('hidden');
+            document.getElementById('searchBox').classList.add('hidden');
+            document.getElementById('searchBox').value = '';
+            document.getElementById('pageTitle').textContent = 'Quadro Interativo';
 
-            const machines = Object.keys(machinesData).sort();
-            machines.forEach(machine => {
-                const btn = document.createElement('button');
-                btn.className = 'machine-btn';
-                btn.textContent = machine;
-                btn.onclick = () => selectMachine(machine);
+            var grid = document.getElementById('categoriaGrid');
+            grid.innerHTML = '';
+            engine.listCategorias().forEach(function (cat) {
+                var n = engine.listMaquinas(cat).length;
+                var btn = document.createElement('button');
+                btn.className = 'card-btn';
+                btn.innerHTML = cat + '<small>' + n + ' máquina' + (n === 1 ? '' : 's') + '</small>';
+                btn.onclick = function () { selecionarCategoria(cat); };
                 grid.appendChild(btn);
             });
         }
 
-        function selectMachine(machine) {
-            selectedMachine = machine;
-            document.getElementById('machineSelection').classList.add('hidden');
-            document.getElementById('machineContent').classList.remove('hidden');
+        function selecionarCategoria(cat) {
+            categoriaAtual = cat;
+            maquinasSelecionadas = [];
+            document.getElementById('categoriaSelection').classList.add('hidden');
+            document.getElementById('conteudo').classList.remove('hidden');
             document.getElementById('searchBox').classList.remove('hidden');
-            document.getElementById('pageTitle').textContent = `Quadro Interativo - ${machine}`;
-            
-            renderMachineContent(machine);
-        }
+            document.getElementById('pageTitle').textContent = 'Quadro Interativo - ' + cat;
+            document.getElementById('categoriaAtual').textContent = cat;
 
-        function renderMachineContent(machine) {
-            const links = machinesData[machine];
-            const organized = {};
-
-            // Organizar por categoria
-            links.forEach(link => {
-                if (!organized[link.categoria]) {
-                    organized[link.categoria] = [];
-                }
-                organized[link.categoria].push(link);
+            var chips = document.getElementById('maquinaChips');
+            chips.innerHTML = '';
+            engine.listMaquinas(cat).forEach(function (maq) {
+                var c = document.createElement('button');
+                c.className = 'chip';
+                c.textContent = maq;
+                c.onclick = function () { toggleMaquina(maq, c); };
+                chips.appendChild(c);
             });
-
-            displayContent(organized);
+            renderColunas();
         }
 
-        function displayContent(organized) {
-            const grid = document.getElementById('contentGrid');
-            grid.innerHTML = '';
-
-            Object.keys(organized).sort().forEach(category => {
-                const categoryDiv = document.createElement('div');
-                categoryDiv.className = 'category';
-                
-                const title = document.createElement('h3');
-                title.className = 'category-title';
-                title.textContent = category;
-                categoryDiv.appendChild(title);
-
-                organized[category].forEach(link => {
-                    const btn = document.createElement('a');
-                    btn.className = 'link-btn';
-                    btn.href = link.href;
-                    btn.target = '_blank';
-                    btn.rel = 'noopener noreferrer';
-                    btn.textContent = link.texto;
-                    categoryDiv.appendChild(btn);
-                });
-
-                grid.appendChild(categoryDiv);
-            });
+        function toggleMaquina(maq, chipEl) {
+            var i = maquinasSelecionadas.indexOf(maq);
+            if (i === -1) { maquinasSelecionadas.push(maq); chipEl.classList.add('active'); }
+            else { maquinasSelecionadas.splice(i, 1); chipEl.classList.remove('active'); }
+            renderColunas();
         }
 
-        function goBack() {
-            selectedMachine = null;
-            document.getElementById('machineContent').classList.add('hidden');
-            document.getElementById('machineSelection').classList.remove('hidden');
-            document.getElementById('searchBox').classList.add('hidden');
-            document.getElementById('searchBox').value = '';
-            document.getElementById('pageTitle').textContent = 'Quadro Interativo';
-        }
-
-        document.getElementById('backBtn').addEventListener('click', goBack);
-
-        document.getElementById('searchBox').addEventListener('input', (e) => {
-            const searchTerm = e.target.value.toLowerCase();
-            const links = machinesData[selectedMachine];
-            
-            if (!searchTerm.trim()) {
-                renderMachineContent(selectedMachine);
+        function renderColunas() {
+            var cont = document.getElementById('colunas');
+            cont.innerHTML = '';
+            if (maquinasSelecionadas.length === 0) {
+                cont.innerHTML = '<div class="empty">Selecione uma máquina acima para ver os botões.</div>';
                 return;
             }
+            var termo = document.getElementById('searchBox').value.trim().toLowerCase();
+            var mostrarMaq = maquinasSelecionadas.length > 1;
 
-            const organized = {};
-            links.forEach(link => {
-                const texto = link.texto.toLowerCase();
-                if (texto.includes(searchTerm)) {
-                    if (!organized[link.categoria]) {
-                        organized[link.categoria] = [];
+            engine.listAreas().forEach(function (area) {
+                // monta a coluna da área reunindo as máquinas selecionadas
+                var blocos = [];
+                maquinasSelecionadas.forEach(function (maq) {
+                    var botoes = engine.listBotoes(categoriaAtual, maq, area).filter(function (b) {
+                        return !termo || b.texto.toLowerCase().indexOf(termo) !== -1;
+                    });
+                    if (botoes.length) blocos.push({ maq: maq, botoes: botoes });
+                });
+                if (!blocos.length) return; // coluna vazia: não exibe
+
+                var col = document.createElement('div');
+                col.className = 'area-col';
+                col.style.setProperty('--accent', corDaArea(area));
+                var t = document.createElement('h3');
+                t.className = 'area-title';
+                t.textContent = area;
+                col.appendChild(t);
+
+                blocos.forEach(function (bloco) {
+                    if (mostrarMaq) {
+                        var sub = document.createElement('div');
+                        sub.className = 'maq-sub';
+                        sub.textContent = bloco.maq;
+                        col.appendChild(sub);
                     }
-                    organized[link.categoria].push(link);
-                }
+                    bloco.botoes.forEach(function (b) {
+                        var a = document.createElement('a');
+                        a.className = 'link-btn';
+                        a.href = b.href;
+                        a.target = '_blank';
+                        a.rel = 'noopener noreferrer';
+                        a.textContent = b.texto;
+                        col.appendChild(a);
+                    });
+                });
+                cont.appendChild(col);
             });
 
-            displayContent(organized);
-        });
+            if (!cont.children.length) {
+                cont.innerHTML = '<div class="empty">Nenhum botão encontrado.</div>';
+            }
+        }
 
-        // Iniciar carregamento
+        document.getElementById('backBtn').addEventListener('click', showCategorias);
+        document.getElementById('searchBox').addEventListener('input', renderColunas);
+
         loadJSON();
     </script>
 </body>
