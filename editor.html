@@ -112,6 +112,13 @@
         .badge { font-family:var(--mono); background:#EDF1F8; color:var(--kc-d); border-radius:999px; padding:.05rem .55rem;
             font-size:.74rem; font-weight:600; border:1px solid var(--line); }
         .hidden { display:none; }
+        .novo-botao { margin-top:.6rem; padding:.6rem; border:1px dashed #B9CCEA; border-radius:.6rem; background:#F7FAFE;
+            display:grid; grid-template-columns:1fr auto; gap:.4rem; align-items:center; }
+        .novo-botao-lab { grid-column:1 / -1; font-family:var(--mono); font-size:.68rem; font-weight:600; letter-spacing:.08em;
+            text-transform:uppercase; color:var(--kc-d); }
+        .novo-botao input { min-width:0; }
+        .novo-botao input:nth-of-type(1) { grid-column:1 / -1; }
+        .novo-botao .btn { white-space:nowrap; }
         .add-form { margin-top:.55rem; display:flex; gap:.35rem; flex-wrap:wrap; }
         .add-form input { flex:1; min-width:90px; }
         .pill-count { font-family:var(--mono); font-size:.82rem; color:var(--ink); font-weight:500; }
@@ -461,18 +468,22 @@
         }
 
         function formAddBotao(maq, area) {
-            var f = document.createElement('div'); f.className = 'add-form';
-            var t = document.createElement('input'); t.type = 'text'; t.placeholder = 'novo texto';
-            var h = document.createElement('input'); h.type = 'text'; h.placeholder = 'https://...';
-            var add = document.createElement('button'); add.className = 'btn-sec'; add.textContent = '+ botão';
-            add.onclick = function () {
-                if (!t.value.trim()) return;
+            var box = document.createElement('div'); box.className = 'novo-botao';
+            var lab = document.createElement('div'); lab.className = 'novo-botao-lab'; lab.textContent = '+ Novo botão';
+            var t = document.createElement('input'); t.type = 'text'; t.placeholder = 'nome do botão';
+            var h = document.createElement('input'); h.type = 'text'; h.placeholder = 'https://... (hyperlink)';
+            var add = document.createElement('button'); add.className = 'btn'; add.textContent = 'Adicionar';
+            function criar() {
+                if (!t.value.trim()) { t.focus(); return; }
                 engine.addBotao(navCat, maq, area, { texto: t.value, href: h.value });
-                registrar('Adicionar botão "' + t.value.trim() + '" (' + maq + ' · ' + area + ')', 1);
+                registrar('Criar botão "' + t.value.trim() + '" (' + maq + ' · ' + area + ')', 1);
                 renderCols();
-            };
-            f.appendChild(t); f.appendChild(h); f.appendChild(add);
-            return f;
+            }
+            add.onclick = criar;
+            h.addEventListener('keydown', function (e) { if (e.key === 'Enter') criar(); });
+            t.addEventListener('keydown', function (e) { if (e.key === 'Enter') h.focus(); });
+            box.appendChild(lab); box.appendChild(t); box.appendChild(h); box.appendChild(add);
+            return box;
         }
 
         /* ---------- estrutura (categoria/máquina/área) ---------- */
