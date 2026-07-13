@@ -1307,16 +1307,124 @@
         ]
       },
       "EOL": {
-        "EHS": [],
-        "QUALIDADE": [],
+        "EHS": [
+          {
+            "texto": "Lançar Safe",
+            "href": "https://proact.kcc.com/Login.aspx?acc=kcc&auth=sso"
+          },
+          {
+            "texto": "PFRA Operadores",
+            "href": "https://brsza022/PIVision/#/Displays/905/PFRA-WIPES"
+          },
+          {
+            "texto": "Lançar Pré-Uso",
+            "href": "https://kimberlyclark.sharepoint.com/sites/G394/SitePages/Inspe%C3%A7%C3%B5es-de-Pr%C3%A9-uso.aspx"
+          },
+          {
+            "texto": "DEHS",
+            "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FSEGURAN%C3%87A%2FDialogo%20de%20Seguran%C3%A7a%20e%20Meio%20Ambiente%2F2026%5FDEHS%20Reestruturado%2F1%2E5%20DEHS%20WIPES&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&ovuser=fee2180b%2D69b6%2D4afe%2D9f14%2Dccd70bd4c737%2Cpaulo%2Ejunior3%40kcc%2Ecom&OR=Teams%2DHL&CT=1743445613509&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNTAzMDIwMTAxMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D"
+          },
+          {
+            "texto": "Lista de Presença",
+            "href": "https://kimberlyclark.sharepoint.com/:f:/r/Sites/H945/Suzano/Quadro%20Interativo/BCM/LP?csf=1&web=1&e=Zz6FIf"
+          }
+        ],
+        "QUALIDADE": [
+          {
+            "texto": "Especificação de Produto",
+            "href": "https://brsza022/PIVision/#/Displays/11908/Especifica%C3%A7%C3%A3o-Produto-WW"
+          },
+          {
+            "texto": "Plano de Controle - ETQ",
+            "href": "https://brsza022/PIVision/#/Displays/911/Plano_de_Controle_L06"
+          },
+          {
+            "texto": "Manual de Inspeção",
+            "href": "https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=968012&ETQ$ORIGINAL_DOC_ID=94693"
+          },
+          {
+            "texto": "Procedimento de Limpeza",
+            "href": "https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=965617&ETQ$ORIGINAL_DOC_ID=227780"
+          },
+          {
+            "texto": "Consulta Ações SisAcr",
+            "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/b1af17c7-3bb4-41e4-a36e-29b8cb94ce5f/ReportSection21f352bc2dba2883e2ea?experience=power-bi"
+          },
+          {
+            "texto": "CI TI/ RFT",
+            "href": "https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/5cdbbfd6-5c3f-44d3-a197-bb844eb2077f/ReportSection7c344e23d1210edc0156?experience=power-bi"
+          },
+          {
+            "texto": "GSP - SOLUÇÃO DE PROBLEMAS",
+            "href": "https://brsza022/PIVision/#/Displays/804/GSP_WIPES_L06"
+          },
+          {
+            "texto": "AMR",
+            "href": "https://kimberlyclark.sharepoint.com/Sites/H945/_layouts/15/listforms.aspx?cid=YThkNGEzZTMtZDUzMy00MDJjLWFlMDAtMzlkZjU2MjE0N2Uy&nav=YWQxYmNhYzQtNDA1Mi00N2Q4LThhM2QtMmE1YjFiOWQzOGQ2&preview=true"
+          }
+        ],
         "PRODUTIVIDADE": [
           {
             "texto": "ABRIR AÇÕES REUNIÃO DIARIA",
             "href": "https://kimberlyclark.sharepoint.com/:l:/r/Sites/H945/Lists/Reunio%20Diria%20BCM?e=mYiJcx"
+          },
+          {
+            "texto": "PIT STOP",
+            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/f3ef644d-3c37-4964-bd64-20f108e89a4c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&hint=06d768f1-5be8-49ef-950b-11c5f1093db2&sourcetime=1764940866189&source=portal#"
+          },
+          {
+            "texto": "Portal 5S",
+            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/76ae6426-e89c-48a5-bb16-b6e837783d8c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&hint=de8e180a-0754-40c6-a176-314674772651&sourcetime=1753295394248"
+          },
+          {
+            "texto": "Plano de Produção",
+            "href": "https://kimberlyclark.sharepoint.com/sites/C83/Planos%20de%20Produo/Forms/AllItems.aspx?InitialTabId=Ribbon%2ERead&VisibilityContext=WSSTabPersistence"
+          },
+          {
+            "texto": "Instrução de Trabalho",
+            "href": "https://brsza022/PIVision/#/Displays/1050/IT-WIPES"
+          },
+          {
+            "texto": "KPI OEE / Waste / Total Waste",
+            "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/Suzano/Produtividade/OEEWASTE/OEEWaste%20Planta%202025.xlsx?d=w44b2c8fe4f794d989c5955d6abfc326e&csf=1&web=1&e=0fPHKj"
+          },
+          {
+            "texto": "Cartão Autonomous",
+            "href": "https://brsza022/PIVision/#/Displays/633/AUTONOMOS-CARE-CART%25C3%2595ES"
+          },
+          {
+            "texto": "5S",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
           }
         ],
-        "PESSOAS": [],
-        "CUSTOS": []
+        "PESSOAS": [
+          {
+            "texto": "Matriz Responsabilidades - QMSR",
+            "href": "http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=660909&ETQ$ORIGINAL_DOC_ID=660149"
+          },
+          {
+            "texto": "Reconhecer um Colega",
+            "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Suzano%20%20Estrelas%20do%20Ms/AllItems.aspx"
+          },
+          {
+            "texto": "Treinamentos Planejados",
+            "href": "https://app.powerbi.com/groups/4a60522e-df17-40c3-afca-f699785afb5d/reports/fe555b92-4421-4a0d-9428-de4530812f7f/ReportSectionb11196832b5090b2e659"
+          },
+          {
+            "texto": "Escala de Folga",
+            "href": "https://kimberlyclark.sharepoint.com/:b:/r/Sites/H945/Suzano/Quadro%20Interativo/WIPES/Escala%20de%20folgas%202026.pdf?csf=1&web=1&e=PwX7uD"
+          },
+          {
+            "texto": "Treinamentos",
+            "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/b851353d-d70d-42a3-9200-2d794535b7a7/a5d2a35ebdabf993d8c9?experience=power-bi"
+          }
+        ],
+        "CUSTOS": [
+          {
+            "texto": "Total Waste",
+            "href": "https://app.powerbi.com/groups/da55c46c-50ef-48c9-8143-c36079041cde/reports/b813c4a4-4b2c-40b9-b5e5-d62a3953a86f/bdfb2b3b4e24b010040b?experience=power-bi"
+          }
+        ]
       }
     },
     "Infant Care": {
