@@ -188,6 +188,42 @@
       return out;
     }
 
+    // Lista destinos (categoria, maquina, area) dentro do escopo, independente
+    // de já haver botões ali — usado pela inclusão em massa.
+    function resolveDestinos(escopo) {
+      escopo = escopo || {};
+      var out = [];
+      listCategorias().forEach(function (cat) {
+        if (!inScope(cat, escopo.categorias)) return;
+        Object.keys(data.categorias[cat]).sort().forEach(function (maq) {
+          if (!inScope(maq, escopo.maquinas)) return;
+          var areas = data.categorias[cat][maq];
+          Object.keys(areas).forEach(function (area) {
+            if (!inScope(area, escopo.areas)) return;
+            out.push({ categoria: cat, maquina: maq, area: area });
+          });
+        });
+      });
+      return out;
+    }
+
+    // Adiciona {texto, href} em todo destino do escopo que ainda não tenha
+    // um botão com esse texto (idempotente — reaplicar não duplica).
+    function insertEscopo(escopo, texto, href) {
+      texto = String(texto || '').trim();
+      if (!texto) throw new Error('Botão sem texto.');
+      href = String(href || '').trim();
+      var alvo = norm(texto);
+      var criados = 0, pulados = 0;
+      resolveDestinos(escopo).forEach(function (d) {
+        var arr = listBotoes(d.categoria, d.maquina, d.area);
+        if (arr.some(function (b) { return norm(b.texto) === alvo; })) { pulados++; return; }
+        addBotao(d.categoria, d.maquina, d.area, { texto: texto, href: href });
+        criados++;
+      });
+      return { criados: criados, pulados: pulados };
+    }
+
     /* ---------- operações (changeset) ----------
      * Cada operação é um objeto serializável. Aplicar a mesma lista garante
      * idempotência lógica para publicação num único commit.
@@ -202,6 +238,8 @@
         case 'addBotao':
         case 'insert':
           return addBotao(op.categoria, op.maquina, op.area, { texto: op.texto, href: op.href });
+        case 'insertEscopo':
+          return insertEscopo(op.escopo, op.texto, op.href);
         case 'updateBotao':
           return updateBotao(op.sel, op.patch);
         case 'deleteBotao':
@@ -228,6 +266,14 @@
       if (op.tipo === 'setHref' || op.tipo === 'renameTexto' || op.tipo === 'deleteEscopo') {
         return resolveSeletor(op.escopo).length;
       }
+      if (op.tipo === 'insertEscopo') {
+        var alvo = norm(op.texto);
+        var destinos = resolveDestinos(op.escopo);
+        var jaTem = destinos.filter(function (d) {
+          return listBotoes(d.categoria, d.maquina, d.area).some(function (b) { return norm(b.texto) === alvo; });
+        }).length;
+        return { total: destinos.length, jaTem: jaTem, criar: destinos.length - jaTem };
+      }
       return 1;
     }
 
@@ -239,7 +285,7 @@
       addCategoria: addCategoria, renameCategoria: renameCategoria,
       addMaquina: addMaquina, moveMaquina: moveMaquina, addArea: addArea,
       addBotao: addBotao, updateBotao: updateBotao, deleteBotao: deleteBotao,
-      resolveSeletor: resolveSeletor,
+      resolveSeletor: resolveSeletor, resolveDestinos: resolveDestinos, insertEscopo: insertEscopo,
       applyOperacao: applyOperacao, applyChangeset: applyChangeset, preverImpacto: preverImpacto
     };
   }

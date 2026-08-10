@@ -166,7 +166,7 @@
             <!-- Edição em massa -->
             <div class="panel">
                 <h2>Edição em massa (por escopo)</h2>
-                <p class="sub">Defina o alcance e a operação. Útil para "mesmo botão em todas as máquinas", "mesmo nome numa categoria", etc.</p>
+                <p class="sub">Defina o alcance e a operação. Útil para "mesmo botão em todas as máquinas", "criar um botão novo em toda uma categoria", etc. Na inclusão, máquinas que já tiverem um botão com o mesmo nome são puladas automaticamente (não duplica).</p>
                 <div class="row">
                     <div>
                         <label>Categorias</label>
@@ -184,7 +184,7 @@
                         <span class="muted">vazio = todas</span>
                     </div>
                 </div>
-                <div class="row" style="margin-top:.6rem;">
+                <div class="row" id="filtroTextoRow" style="margin-top:.6rem;">
                     <div style="flex:2;">
                         <label>Filtrar botões pelo nome (texto)</label>
                         <input type="text" id="escTexto" placeholder="ex.: Lançar Safe">
@@ -199,8 +199,13 @@
                         <select id="opTipo">
                             <option value="setHref">Definir hyperlink (href)</option>
                             <option value="renameTexto">Renomear texto</option>
+                            <option value="insertEscopo">Adicionar novo botão</option>
                             <option value="deleteEscopo">Apagar botões</option>
                         </select>
+                    </div>
+                    <div id="opTextoWrap" class="hidden" style="flex:1.4;">
+                        <label>Texto do botão</label>
+                        <input type="text" id="opTexto" placeholder="ex.: Abrir SAFETY INTENSITY">
                     </div>
                     <div style="flex:2;">
                         <label id="opValorLabel">Novo hyperlink</label>
@@ -349,12 +354,25 @@
 
         $('opTipo').onchange = function () {
             var t = this.value;
-            $('opValorLabel').textContent = t === 'setHref' ? 'Novo hyperlink' : t === 'renameTexto' ? 'Novo texto' : '(sem valor — apaga os botões do escopo)';
+            $('opTextoWrap').classList.toggle('hidden', t !== 'insertEscopo');
+            $('filtroTextoRow').classList.toggle('hidden', t === 'insertEscopo');
+            $('opValorLabel').textContent = t === 'setHref' ? 'Novo hyperlink'
+                : t === 'renameTexto' ? 'Novo texto'
+                : t === 'insertEscopo' ? 'Hyperlink do novo botão'
+                : '(sem valor — apaga os botões do escopo)';
             $('opValor').classList.toggle('hidden', t === 'deleteEscopo');
         };
 
         $('btnPrever').onclick = function () {
             var esc = montarEscopo();
+            var tipo = $('opTipo').value;
+            if (tipo === 'insertEscopo') {
+                var texto = $('opTexto').value.trim();
+                if (!texto) { $('impacto').textContent = 'Informe o texto do botão para pré-visualizar.'; return; }
+                var p = engine.preverImpacto({ tipo: 'insertEscopo', escopo: esc, texto: texto });
+                $('impacto').textContent = p.total + ' local(is) no escopo — ' + p.criar + ' vão receber o botão novo, ' + p.jaTem + ' já têm "' + texto + '" e serão pulados.';
+                return;
+            }
             var n = engine.resolveSeletor(esc).length;
             $('impacto').textContent = n + ' botão(ões) no escopo atual.';
         };
@@ -362,15 +380,30 @@
         $('btnAplicarMassa').onclick = function () {
             var tipo = $('opTipo').value;
             var esc = montarEscopo();
-            var alvo = engine.resolveSeletor(esc);
-            if (!alvo.length) { $('impacto').textContent = 'Nenhum botão no escopo — nada aplicado.'; return; }
             var op = { tipo: tipo, escopo: esc };
-            var desc;
-            if (tipo === 'setHref') { op.href = $('opValor').value.trim(); desc = 'Definir href em ' + alvo.length + ' botão(ões)'; }
-            else if (tipo === 'renameTexto') { op.novoTexto = $('opValor').value.trim(); desc = 'Renomear ' + alvo.length + ' botão(ões) para "' + op.novoTexto + '"'; }
-            else { desc = 'Apagar ' + alvo.length + ' botão(ões) do escopo'; }
-            engine.applyOperacao(op);
-            registrar(desc, alvo.length);
+            var desc, n;
+
+            if (tipo === 'insertEscopo') {
+                op.texto = $('opTexto').value.trim();
+                op.href = $('opValor').value.trim();
+                if (!op.texto) { $('impacto').textContent = 'Informe o texto do botão.'; return; }
+                if (!engine.resolveDestinos(esc).length) { $('impacto').textContent = 'Nenhuma máquina/área no escopo — nada aplicado.'; return; }
+                var resultado = engine.applyOperacao(op);
+                n = resultado.criados;
+                if (!n) { $('impacto').textContent = 'Nada criado — todos os locais do escopo já têm "' + op.texto + '".'; return; }
+                desc = 'Adicionar botão "' + op.texto + '" em ' + resultado.criados + ' local(is)' +
+                    (resultado.pulados ? ' (' + resultado.pulados + ' já tinham o botão e foram pulados)' : '');
+            } else {
+                var alvo = engine.resolveSeletor(esc);
+                if (!alvo.length) { $('impacto').textContent = 'Nenhum botão no escopo — nada aplicado.'; return; }
+                n = alvo.length;
+                if (tipo === 'setHref') { op.href = $('opValor').value.trim(); desc = 'Definir href em ' + n + ' botão(ões)'; }
+                else if (tipo === 'renameTexto') { op.novoTexto = $('opValor').value.trim(); desc = 'Renomear ' + n + ' botão(ões) para "' + op.novoTexto + '"'; }
+                else { desc = 'Apagar ' + n + ' botão(ões) do escopo'; }
+                engine.applyOperacao(op);
+            }
+
+            registrar(desc, n);
             popularEscopo(); renderNav();
             $('impacto').textContent = 'Aplicado: ' + desc + '.';
         };
