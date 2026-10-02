@@ -128,6 +128,23 @@
       node[area].push({ texto: String(botao.texto).trim(), href: String(botao.href || '').trim() });
     }
 
+    function moveBotao(cat, maq, area, idx, direction) {
+      var arr = listBotoes(cat, maq, area);
+      if (!Array.isArray(arr)) return false;
+      var current = Number(idx);
+      if (!Number.isInteger(current) || current < 0 || current >= arr.length) return false;
+      var target = direction === 'up' ? current - 1 : direction === 'down' ? current + 1 : null;
+      if (target === null || target < 0 || target >= arr.length) return false;
+      var temp = arr[current];
+      arr[current] = arr[target];
+      arr[target] = temp;
+      return true;
+    }
+
+    function moveItem(cat, maq, area, idx, direction) {
+      return moveBotao(cat, maq, area, idx, direction);
+    }
+
     // sel: { categoria, maquina, area, texto } ou { categoria, maquina, area, idx }
     function localizarBotao(sel) {
       var arr = listBotoes(sel.categoria, sel.maquina, sel.area);
@@ -240,6 +257,8 @@
           return addBotao(op.categoria, op.maquina, op.area, { texto: op.texto, href: op.href });
         case 'insertEscopo':
           return insertEscopo(op.escopo, op.texto, op.href);
+        case 'moveBotao':
+          return moveBotao(op.categoria, op.maquina, op.area, op.idx, op.direction);
         case 'updateBotao':
           return updateBotao(op.sel, op.patch);
         case 'deleteBotao':
@@ -284,7 +303,8 @@
       listBotoes: listBotoes, categoriaDaMaquina: categoriaDaMaquina,
       addCategoria: addCategoria, renameCategoria: renameCategoria,
       addMaquina: addMaquina, moveMaquina: moveMaquina, addArea: addArea,
-      addBotao: addBotao, updateBotao: updateBotao, deleteBotao: deleteBotao,
+      addBotao: addBotao, moveBotao: moveBotao, moveItem: moveItem,
+      updateBotao: updateBotao, deleteBotao: deleteBotao,
       resolveSeletor: resolveSeletor, resolveDestinos: resolveDestinos, insertEscopo: insertEscopo,
       applyOperacao: applyOperacao, applyChangeset: applyChangeset, preverImpacto: preverImpacto
     };
@@ -295,3 +315,4 @@
   if (typeof module !== 'undefined' && module.exports) module.exports = DataEngine;
   global.DataEngine = DataEngine;
 })(typeof window !== 'undefined' ? window : this);
+
