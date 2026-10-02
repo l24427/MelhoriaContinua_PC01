@@ -77,6 +77,7 @@
         .btn-danger { background:var(--err); color:#fff; } .btn-danger:hover{ background:#B23930; }
         .btn-ghost { background:transparent; color:var(--kc); padding:.3rem .45rem; border:none; font-size:1rem; }
         .btn-ghost:hover { color:var(--kc-d); }
+        .btn-ghost:disabled { color:#B9CCEA; cursor:not-allowed; opacity:0.5; }
         button:focus-visible, a:focus-visible { outline:2px solid var(--kc); outline-offset:2px; }
 
         .row { display:flex; gap:.7rem; flex-wrap:wrap; align-items:flex-end; }
@@ -104,6 +105,7 @@
             font-size:.85rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
         .bt-row .t a { color:var(--ink); text-decoration:none; }
         .bt-row .t a:hover { color:var(--kc); }
+        .bt-row .actions { display:flex; gap:.2rem; align-items:center; flex-shrink:0; }
         .edit-box { background:#F2F6FD; border:1px solid #C9DBF6; border-radius:.6rem; padding:.6rem; margin-bottom:.4rem; }
         .edit-box > div { margin-bottom:.4rem; }
 
@@ -166,7 +168,7 @@
             <!-- Edição em massa -->
             <div class="panel">
                 <h2>Edição em massa (por escopo)</h2>
-                <p class="sub">Defina o alcance e a operação. Útil para "mesmo botão em todas as máquinas", "criar um botão novo em toda uma categoria", etc. Na inclusão, máquinas que já tiverem um botão com o mesmo nome são puladas automaticamente (não duplica).</p>
+                <p class="sub">Defina o alcance e a operação. Útil para "mesmo botão em todas as máquinas", "criar um botão novo em toda uma categoria", etc. Na inclusão, máquinas que já têm o botão são puladas.</p>
                 <div class="row">
                     <div>
                         <label>Categorias</label>
@@ -444,27 +446,73 @@
                     var sub = document.createElement('div'); sub.className = 'maq-tag'; sub.textContent = maq;
                     col.appendChild(sub);
                     var botoes = engine.listBotoes(navCat, maq, area);
-                    botoes.forEach(function (b, idx) { col.appendChild(linhaBotao(maq, area, b, idx)); });
+                    botoes.forEach(function (b, idx) { col.appendChild(linhaBotao(navCat, maq, area, b, idx, botoes.length)); });
                     col.appendChild(formAddBotao(maq, area));
                 });
                 cont.appendChild(col);
             });
         }
 
-        function linhaBotao(maq, area, b, idx) {
+        function linhaBotao(cat, maq, area, b, idx, total) {
             var row = document.createElement('div'); row.className = 'bt-row';
             var t = document.createElement('div'); t.className = 't';
             var a = document.createElement('a'); a.href = b.href; a.target = '_blank'; a.rel = 'noopener'; a.textContent = b.texto; a.title = b.href;
             t.appendChild(a); row.appendChild(t);
-            var ed = document.createElement('button'); ed.className = 'btn-ghost'; ed.textContent = '✎'; ed.title = 'Editar';
-            ed.onclick = function () { row.replaceWith(editBox(maq, area, b, idx)); };
-            var del = document.createElement('button'); del.className = 'btn-ghost'; del.textContent = '🗑'; del.title = 'Apagar'; del.style.color = '#dc2626';
-            del.onclick = function () { row.replaceWith(confirmDel(maq, area, b, idx)); };
-            row.appendChild(ed); row.appendChild(del);
+            
+            var actions = document.createElement('div'); actions.className = 'actions';
+            
+            // Botão SUBIR
+            var btnUp = document.createElement('button'); 
+            btnUp.className = 'btn-ghost'; 
+            btnUp.textContent = '↑'; 
+            btnUp.title = 'Mover para cima';
+            btnUp.setAttribute('aria-label', 'Mover este botão para cima');
+            btnUp.disabled = (idx === 0);
+            btnUp.onclick = function () { 
+                if (engine.moveBotao(cat, maq, area, idx, 'up')) {
+                    registrar('Mover botão "' + b.texto + '" para cima (' + maq + ' · ' + area + ')', 1);
+                    renderCols();
+                }
+            };
+            actions.appendChild(btnUp);
+            
+            // Botão DESCER
+            var btnDown = document.createElement('button'); 
+            btnDown.className = 'btn-ghost'; 
+            btnDown.textContent = '↓'; 
+            btnDown.title = 'Mover para baixo';
+            btnDown.setAttribute('aria-label', 'Mover este botão para baixo');
+            btnDown.disabled = (idx === total - 1);
+            btnDown.onclick = function () { 
+                if (engine.moveBotao(cat, maq, area, idx, 'down')) {
+                    registrar('Mover botão "' + b.texto + '" para baixo (' + maq + ' · ' + area + ')', 1);
+                    renderCols();
+                }
+            };
+            actions.appendChild(btnDown);
+            
+            // Botão EDITAR
+            var ed = document.createElement('button'); 
+            ed.className = 'btn-ghost'; 
+            ed.textContent = '✎'; 
+            ed.title = 'Editar';
+            ed.onclick = function () { row.replaceWith(editBox(cat, maq, area, b, idx)); };
+            actions.appendChild(ed);
+            
+            // Botão EXCLUIR
+            var del = document.createElement('button'); 
+            del.className = 'btn-ghost'; 
+            del.textContent = '🗑'; 
+            del.title = 'Apagar'; 
+            del.style.color = '#dc2626';
+            del.onclick = function () { row.replaceWith(confirmDel(cat, maq, area, b, idx)); };
+            actions.appendChild(del);
+            
+            row.appendChild(actions);
             return row;
         }
 
-        function editBox(maq, area, b, idx) {
+        function editBox(cat, maq, area, b, idx) {
             var box = document.createElement('div'); box.className = 'edit-box';
             var t = document.createElement('input'); t.type = 'text'; t.value = b.texto;
             var h = document.createElement('input'); h.type = 'text'; h.value = b.href;
@@ -474,7 +522,7 @@
             var ok = document.createElement('button'); ok.className = 'btn'; ok.textContent = 'Salvar';
             var cc = document.createElement('button'); cc.className = 'btn-sec'; cc.textContent = 'Cancelar';
             ok.onclick = function () {
-                engine.updateBotao({ categoria: navCat, maquina: maq, area: area, idx: idx }, { texto: t.value, href: h.value });
+                engine.updateBotao({ categoria: cat, maquina: maq, area: area, idx: idx }, { texto: t.value, href: h.value });
                 registrar('Editar botão "' + t.value + '" (' + maq + ' · ' + area + ')', 1);
                 renderCols();
             };
@@ -484,14 +532,14 @@
             return box;
         }
 
-        function confirmDel(maq, area, b, idx) {
+        function confirmDel(cat, maq, area, b, idx) {
             var box = document.createElement('div'); box.className = 'edit-box';
             box.innerHTML = '<div class="muted">Apagar <strong>' + escapeHtml(b.texto) + '</strong> de ' + maq + ' · ' + area + '?</div>';
             var acoes = document.createElement('div'); acoes.style.display = 'flex'; acoes.style.gap = '.4rem';
             var sim = document.createElement('button'); sim.className = 'btn-danger'; sim.textContent = 'Apagar';
             var nao = document.createElement('button'); nao.className = 'btn-sec'; nao.textContent = 'Cancelar';
             sim.onclick = function () {
-                engine.deleteBotao({ categoria: navCat, maquina: maq, area: area, idx: idx });
+                engine.deleteBotao({ categoria: cat, maquina: maq, area: area, idx: idx });
                 registrar('Apagar botão "' + b.texto + '" (' + maq + ' · ' + area + ')', 1);
                 renderCols();
             };
