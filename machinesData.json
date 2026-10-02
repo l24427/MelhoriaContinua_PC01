@@ -1401,6 +1401,10 @@
         ],
         "PRODUTIVIDADE": [
           {
+            "texto": "Apontamento de Paradas",
+            "href": "https://kimberlyclark.sharepoint.com/Sites/H945/_layouts/15/listforms.aspx?cid=NTZjNDFmMjctNjI3MC00MDMwLWIyMDAtMGI4ZTEzN2M1NDNk&nav=ZmQyYmU2MWQtYjRiNi00Y2QzLWI3NmYtODA3NTIzMTAxM2I2&preview=true"
+          },
+          {
             "texto": "ABRIR AÇÕES REUNIÃO DIARIA",
             "href": "https://kimberlyclark.sharepoint.com/:l:/r/Sites/H945/Lists/Reunio%20Diria%20BCM?e=mYiJcx"
           },
@@ -1431,10 +1435,6 @@
           {
             "texto": "5S",
             "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
-          },
-          {
-            "texto": "Apontamento de Paradas",
-            "href": "https://kimberlyclark.sharepoint.com/Sites/H945/_layouts/15/listforms.aspx?cid=NTZjNDFmMjctNjI3MC00MDMwLWIyMDAtMGI4ZTEzN2M1NDNk&nav=ZmQyYmU2MWQtYjRiNi00Y2QzLWI3NmYtODA3NTIzMTAxM2I2&preview=true"
           }
         ],
         "PESSOAS": [
