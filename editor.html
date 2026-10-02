@@ -471,6 +471,7 @@
             btnUp.onclick = function () { 
                 if (engine.moveBotao(cat, maq, area, idx, 'up')) {
                     registrar('Mover botão "' + b.texto + '" para cima (' + maq + ' · ' + area + ')', 1);
+                    renderLog();
                     renderCols();
                 }
             };
@@ -486,6 +487,7 @@
             btnDown.onclick = function () { 
                 if (engine.moveBotao(cat, maq, area, idx, 'down')) {
                     registrar('Mover botão "' + b.texto + '" para baixo (' + maq + ' · ' + area + ')', 1);
+                    renderLog();
                     renderCols();
                 }
             };
@@ -524,6 +526,7 @@
             ok.onclick = function () {
                 engine.updateBotao({ categoria: cat, maquina: maq, area: area, idx: idx }, { texto: t.value, href: h.value });
                 registrar('Editar botão "' + t.value + '" (' + maq + ' · ' + area + ')', 1);
+                renderLog();
                 renderCols();
             };
             cc.onclick = function () { renderCols(); };
@@ -541,6 +544,7 @@
             sim.onclick = function () {
                 engine.deleteBotao({ categoria: cat, maquina: maq, area: area, idx: idx });
                 registrar('Apagar botão "' + b.texto + '" (' + maq + ' · ' + area + ')', 1);
+                renderLog();
                 renderCols();
             };
             nao.onclick = function () { renderCols(); };
@@ -558,6 +562,7 @@
                 if (!t.value.trim()) { t.focus(); return; }
                 engine.addBotao(navCat, maq, area, { texto: t.value, href: h.value });
                 registrar('Criar botão "' + t.value.trim() + '" (' + maq + ' · ' + area + ')', 1);
+                renderLog();
                 renderCols();
             }
             add.onclick = criar;
