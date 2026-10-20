@@ -1341,10 +1341,6 @@
       "EOL": {
         "EHS": [
           {
-            "texto": "Lançar Safe",
-            "href": "https://proact.kcc.com/Login.aspx?acc=kcc&auth=sso"
-          },
-          {
             "texto": "PFRA Operadores",
             "href": "https://brsza022/PIVision/#/Displays/905/PFRA-WIPES"
           },
