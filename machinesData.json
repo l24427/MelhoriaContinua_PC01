@@ -1193,10 +1193,6 @@
       "L06": {
         "EHS": [
           {
-            "texto": "Lançar Safe",
-            "href": "https://proact.kcc.com/Login.aspx?acc=kcc&auth=sso"
-          },
-          {
             "texto": "PFRA Operadores",
             "href": "https://brsza022/PIVision/#/Displays/905/PFRA-WIPES"
           },
@@ -1320,7 +1316,7 @@
           },
           {
             "texto": "Treinamentos Planejados",
-            "href": "https://app.powerbi.com/groups/4a60522e-df17-40c3-afca-f699785afb5d/reports/fe555b92-4421-4a0d-9428-de4530812f7f/ReportSectionb11196832b5090b2e659"
+            "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/b851353d-d70d-42a3-9200-2d794535b7a7/4cffd0b505d304a158c6?experience=power-bi"
           },
           {
             "texto": "Escala de Folga",
@@ -1328,7 +1324,7 @@
           },
           {
             "texto": "Treinamentos por Colaborador",
-            "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/b851353d-d70d-42a3-9200-2d794535b7a7/4cffd0b505d304a158c6?experience=power-bi"
+            "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/b851353d-d70d-42a3-9200-2d794535b7a7/a5d2a35ebdabf993d8c9?experience=power-bi"
           }
         ],
         "CUSTOS": [
