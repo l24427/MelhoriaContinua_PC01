@@ -70,6 +70,12 @@
         .link-btn { display: block; background:#F4F7FC; color:var(--ink); padding: 0.55rem 0.75rem; border:1px solid var(--line);
             border-radius: 0.55rem; text-align: left; margin-top: 0.4rem; text-decoration: none; font-size: 0.88rem; }
         .link-btn:hover { background:var(--kc); color:#fff; border-color:var(--kc); }
+        /* exibição expandida (Manutenção): colunas = seções; o pilar vira marca no botão */
+        .link-btn.com-pilar { display:flex; align-items:center; justify-content:space-between; gap:.5rem;
+            border-left:3px solid var(--pilar,var(--muted)); }
+        .link-btn.com-pilar::after { content:attr(data-pilar); flex:none; font-family:var(--mono); font-size:.58rem; font-weight:600;
+            letter-spacing:.02em; color:var(--pilar,var(--muted)); text-transform:uppercase; }
+        .link-btn.com-pilar:hover::after { color:#fff; }
         .empty { color: var(--muted); text-align: center; padding: 2.5rem; font-family:var(--mono); font-size:.85rem; }
         footer { text-align: center; padding: 2.5rem; color: var(--muted); font-family:var(--sg); font-weight: 600; letter-spacing:.14em; text-transform:uppercase; font-size:.8rem; }
         a:focus-visible, button:focus-visible { outline:2px solid var(--kc); outline-offset:2px; }
@@ -106,7 +112,7 @@
             <div class="toolbar">
                 <button id="backBtn" class="back-btn">← Voltar</button>
                 <strong id="categoriaAtual" style="font-family:var(--sg); color:var(--ink); letter-spacing:.02em;"></strong>
-                <span style="color:var(--muted); font-size:0.85rem;">Selecione uma ou mais máquinas:</span>
+                <span id="instrucao" style="color:var(--muted); font-size:0.85rem;">Selecione uma ou mais máquinas:</span>
             </div>
             <div id="maquinaChips" class="chips"></div>
             <div id="colunas" class="columns"></div>
@@ -122,6 +128,27 @@
         var engine = null;
         var categoriaAtual = null;
         var maquinasSelecionadas = [];
+        var modoExpandido = false;
+
+        /* ---------- exibição expandida (só para as categorias listadas aqui) ----------
+         * Ao entrar na categoria, mostra direto todas as "máquinas" como colunas, na
+         * ordem abaixo, sem chips para clicar. Cada botão leva a cor e o nome do seu
+         * pilar, e a coluna segue o campo opcional "ordem" dos botões. Máquinas
+         * criadas depois pelo editor entram no fim, em ordem alfabética.
+         * A chave é o nome da categoria sem acento e em minúsculas.
+         */
+        var EXIBICAO_EXPANDIDA = {
+            'manutencao': ['INDICADORES', 'INFORMAÇÃO', 'PREDITIVA', 'CRONOGRAMA', 'CUSTOS']
+        };
+
+        function colunasExpandidas(cat) {
+            var ordem = EXIBICAO_EXPANDIDA[chave(cat)];
+            if (!ordem) return null;
+            var lista = engine.listMaquinas(cat), out = [];
+            ordem.forEach(function (n) { var m = acharNome(lista, n); if (m && out.indexOf(m) === -1) out.push(m); });
+            lista.forEach(function (m) { if (out.indexOf(m) === -1) out.push(m); });
+            return out;
+        }
 
         // cor fixa por pilar (assinatura visual): codifica a área, não decora.
         var CORES_AREA = { 'EHS': '#1F9D57', 'QUALIDADE': '#3B5BDB', 'PRODUTIVIDADE': '#E8870C', 'PESSOAS': '#8A4FD6', 'CUSTOS': '#D1453B' };
@@ -194,7 +221,7 @@
             if (!window.history || !history.replaceState) return;
             var h = '';
             if (categoriaAtual) {
-                h = '#categoria=' + encodeURIComponent(categoriaAtual) + maquinasSelecionadas.map(function (m) {
+                h = '#categoria=' + encodeURIComponent(categoriaAtual) + (modoExpandido ? [] : maquinasSelecionadas).map(function (m) {
                     return '&maquina=' + encodeURIComponent(m);
                 }).join('');
             }
@@ -204,6 +231,7 @@
         function showCategorias() {
             categoriaAtual = null;
             maquinasSelecionadas = [];
+            modoExpandido = false;
             atualizarHash();
             document.getElementById('conteudo').classList.add('hidden');
             document.getElementById('categoriaSelection').classList.remove('hidden');
@@ -234,6 +262,17 @@
 
             var chips = document.getElementById('maquinaChips');
             chips.innerHTML = '';
+            var expandidas = colunasExpandidas(cat);
+            modoExpandido = !!expandidas;
+            chips.classList.toggle('hidden', modoExpandido);
+            document.getElementById('instrucao').classList.toggle('hidden', modoExpandido);
+            if (modoExpandido) {
+                // tudo aberto direto: o deep link (com ou sem maquina=) cai aqui também
+                maquinasSelecionadas = expandidas;
+                renderColunas();
+                atualizarHash();
+                return;
+            }
             var lista = engine.listMaquinas(cat);
             // pré-seleção (deep link): mantém a ordem pedida, que é a ordem dos subtítulos nas colunas
             var iniciais = (maqsIniciais || []).filter(function (m) { return lista.indexOf(m) !== -1; });
@@ -266,6 +305,7 @@
                 return;
             }
             var termo = document.getElementById('searchBox').value.trim().toLowerCase();
+            if (modoExpandido) { renderExpandido(cont, termo); return; }
             var mostrarMaq = maquinasSelecionadas.length > 1;
 
             engine.listAreas().forEach(function (area) {
@@ -307,6 +347,46 @@
                 cont.appendChild(col);
             });
 
+            if (!cont.children.length) {
+                cont.innerHTML = '<div class="empty">Nenhum botão encontrado.</div>';
+            }
+        }
+
+        // uma coluna por máquina (seção), com os botões de todos os pilares
+        function renderExpandido(cont, termo) {
+            maquinasSelecionadas.forEach(function (maq) {
+                var itens = [];
+                engine.listAreas().forEach(function (area) {
+                    engine.listBotoes(categoriaAtual, maq, area).forEach(function (b) {
+                        if (termo && b.texto.toLowerCase().indexOf(termo) === -1) return;
+                        itens.push({ b: b, area: area, i: itens.length });
+                    });
+                });
+                if (!itens.length) return;
+                var pos = function (x) { return typeof x.b.ordem === 'number' ? x.b.ordem : Infinity; };
+                itens.sort(function (x, y) { return (pos(x) - pos(y)) || (x.i - y.i); });
+
+                var col = document.createElement('div');
+                col.className = 'area-col';
+                col.style.setProperty('--accent', 'var(--kc)');
+                var t = document.createElement('h3');
+                t.className = 'area-title';
+                t.textContent = maq;
+                col.appendChild(t);
+                itens.forEach(function (x) {
+                    var a = document.createElement('a');
+                    a.className = 'link-btn com-pilar';
+                    a.href = x.b.href;
+                    a.target = '_blank';
+                    a.rel = 'noopener noreferrer';
+                    a.textContent = x.b.texto;
+                    a.setAttribute('data-pilar', x.area);
+                    a.title = 'Pilar: ' + x.area;
+                    a.style.setProperty('--pilar', corDaArea(x.area));
+                    col.appendChild(a);
+                });
+                cont.appendChild(col);
+            });
             if (!cont.children.length) {
                 cont.innerHTML = '<div class="empty">Nenhum botão encontrado.</div>';
             }
