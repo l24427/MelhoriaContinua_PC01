@@ -73,7 +73,7 @@
         /* exibição expandida (Manutenção): colunas = seções; o pilar vira marca no botão */
         .link-btn.com-pilar { display:flex; align-items:center; justify-content:space-between; gap:.5rem;
             border-left:3px solid var(--pilar,var(--muted)); }
-        .link-btn.com-pilar::after { content:attr(data-pilar); flex:none; font-family:var(--mono); font-size:.58rem; font-weight:600;
+        .link-btn.com-pilar::after { content:attr(data-pilar); flex:none; font-family:var(--mono); font-size:.68rem; font-weight:600;
             letter-spacing:.02em; color:var(--pilar,var(--muted)); text-transform:uppercase; }
         .link-btn.com-pilar:hover::after { color:#fff; }
         .empty { color: var(--muted); text-align: center; padding: 2.5rem; font-family:var(--mono); font-size:.85rem; }
@@ -357,14 +357,19 @@
             maquinasSelecionadas.forEach(function (maq) {
                 var itens = [];
                 engine.listAreas().forEach(function (area) {
+                    // botão sem "ordem" (criado no editor) fica logo depois do anterior do
+                    // mesmo pilar; assim subir/descer no editor também move o botão no quadro
+                    var ant = null, n = 0;
                     engine.listBotoes(categoriaAtual, maq, area).forEach(function (b) {
+                        var k;
+                        if (typeof b.ordem === 'number') { k = b.ordem; ant = k; n = 0; }
+                        else k = ant === null ? Infinity : ant + (++n) / 1000;
                         if (termo && b.texto.toLowerCase().indexOf(termo) === -1) return;
-                        itens.push({ b: b, area: area, i: itens.length });
+                        itens.push({ b: b, area: area, k: k, i: itens.length });
                     });
                 });
                 if (!itens.length) return;
-                var pos = function (x) { return typeof x.b.ordem === 'number' ? x.b.ordem : Infinity; };
-                itens.sort(function (x, y) { return (pos(x) - pos(y)) || (x.i - y.i); });
+                itens.sort(function (x, y) { return (x.k === y.k ? 0 : x.k - y.k) || (x.i - y.i); });
 
                 var col = document.createElement('div');
                 col.className = 'area-col';
