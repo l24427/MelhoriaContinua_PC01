@@ -237,7 +237,6 @@
             var lista = engine.listMaquinas(cat);
             // pré-seleção (deep link): mantém a ordem pedida, que é a ordem dos subtítulos nas colunas
             var iniciais = (maqsIniciais || []).filter(function (m) { return lista.indexOf(m) !== -1; });
-            if (!iniciais.length && lista.length === 1) iniciais = lista.slice();
             lista.forEach(function (maq) {
                 var c = document.createElement('button');
                 c.className = 'chip';
