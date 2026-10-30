@@ -4,8 +4,10 @@
  * Modelo:
  *   data = {
  *     areas: ["EHS", ...],                       // lista canônica/ordenada
- *     categorias: { <categoria>: { <maquina>: { <area>: [ {texto, href}, ... ] } } }
+ *     categorias: { <categoria>: { <maquina>: { <area>: [ {texto, href, ordem?}, ... ] } } }
  *   }
+ *   "ordem" é opcional: só a exibição expandida do index.html (Manutenção) o usa,
+ *   para manter a ordem dos botões de cada coluna entre pilares diferentes.
  *
  * Toda escrita acontece no objeto em memória. O seletor de escopo unifica as
  * edições pontuais e em massa. As operações são objetos serializáveis, o que
@@ -138,6 +140,13 @@
       var temp = arr[current];
       arr[current] = arr[target];
       arr[target] = temp;
+      // campo opcional "ordem" (posição na coluna da exibição expandida):
+      // troca junto, para que subir/descer no editor também mude o quadro.
+      if (typeof arr[current].ordem === 'number' && typeof arr[target].ordem === 'number') {
+        var o = arr[current].ordem;
+        arr[current].ordem = arr[target].ordem;
+        arr[target].ordem = o;
+      }
       return true;
     }
 
