@@ -1186,7 +1186,7 @@
           },
           {
             "texto": "QUADRO INTERATIVO - Manutenção",
-            "href": "https://l24427.github.io/MelhoriaContinua_Manutencao/"
+            "href": "https://l24427.github.io/MelhoriaContinua_PC01/#categoria=Manuten%C3%A7%C3%A3o&maquina=INDICADORES&maquina=INFORMA%C3%87%C3%83O&maquina=PREDITIVA&maquina=CRONOGRAMA&maquina=CUSTOS"
           },
           {
             "texto": "CheckList Processos",
@@ -1644,7 +1644,7 @@
           },
           {
             "texto": "Manutenção",
-            "href": "https://l24427.github.io/MelhoriaContinua_Manutencao/"
+            "href": "https://l24427.github.io/MelhoriaContinua_PC01/#categoria=Manuten%C3%A7%C3%A3o&maquina=INDICADORES&maquina=INFORMA%C3%87%C3%83O&maquina=PREDITIVA&maquina=CRONOGRAMA&maquina=CUSTOS"
           },
           {
             "texto": "Apresentação Produtos",
@@ -1840,7 +1840,7 @@
           },
           {
             "texto": "Manutenção",
-            "href": "https://l24427.github.io/MelhoriaContinua_Manutencao/"
+            "href": "https://l24427.github.io/MelhoriaContinua_PC01/#categoria=Manuten%C3%A7%C3%A3o&maquina=INDICADORES&maquina=INFORMA%C3%87%C3%83O&maquina=PREDITIVA&maquina=CRONOGRAMA&maquina=CUSTOS"
           },
           {
             "texto": "Apresentação Produtos",
@@ -2028,7 +2028,7 @@
           },
           {
             "texto": "Manutenção",
-            "href": "https://l24427.github.io/MelhoriaContinua_Manutencao/"
+            "href": "https://l24427.github.io/MelhoriaContinua_PC01/#categoria=Manuten%C3%A7%C3%A3o&maquina=INDICADORES&maquina=INFORMA%C3%87%C3%83O&maquina=PREDITIVA&maquina=CRONOGRAMA&maquina=CUSTOS"
           },
           {
             "texto": "Produção MES",
@@ -2228,7 +2228,7 @@
           },
           {
             "texto": "Manutenção",
-            "href": "https://l24427.github.io/MelhoriaContinua_Manutencao/"
+            "href": "https://l24427.github.io/MelhoriaContinua_PC01/#categoria=Manuten%C3%A7%C3%A3o&maquina=INDICADORES&maquina=INFORMA%C3%87%C3%83O&maquina=PREDITIVA&maquina=CRONOGRAMA&maquina=CUSTOS"
           },
           {
             "texto": "Apresentação Produtos",
@@ -2404,7 +2404,7 @@
           },
           {
             "texto": "Manutenção",
-            "href": "https://l24427.github.io/MelhoriaContinua_Manutencao/"
+            "href": "https://l24427.github.io/MelhoriaContinua_PC01/#categoria=Manuten%C3%A7%C3%A3o&maquina=INDICADORES&maquina=INFORMA%C3%87%C3%83O&maquina=PREDITIVA&maquina=CRONOGRAMA&maquina=CUSTOS"
           },
           {
             "texto": "5S",
@@ -2744,7 +2744,7 @@
           },
           {
             "texto": "Manutenção",
-            "href": "https://l24427.github.io/MelhoriaContinua_Manutencao/"
+            "href": "https://l24427.github.io/MelhoriaContinua_PC01/#categoria=Manuten%C3%A7%C3%A3o&maquina=INDICADORES&maquina=INFORMA%C3%87%C3%83O&maquina=PREDITIVA&maquina=CRONOGRAMA&maquina=CUSTOS"
           },
           {
             "texto": "Produção MES",
@@ -2918,7 +2918,7 @@
           },
           {
             "texto": "Manutenção",
-            "href": "https://l24427.github.io/MelhoriaContinua_Manutencao/"
+            "href": "https://l24427.github.io/MelhoriaContinua_PC01/#categoria=Manuten%C3%A7%C3%A3o&maquina=INDICADORES&maquina=INFORMA%C3%87%C3%83O&maquina=PREDITIVA&maquina=CRONOGRAMA&maquina=CUSTOS"
           },
           {
             "texto": "Lançar Ação / Power Apps",
@@ -3094,7 +3094,7 @@
           },
           {
             "texto": "Manutenção",
-            "href": "https://l24427.github.io/MelhoriaContinua_Manutencao/"
+            "href": "https://l24427.github.io/MelhoriaContinua_PC01/#categoria=Manuten%C3%A7%C3%A3o&maquina=INDICADORES&maquina=INFORMA%C3%87%C3%83O&maquina=PREDITIVA&maquina=CRONOGRAMA&maquina=CUSTOS"
           },
           {
             "texto": "Produção MES",
@@ -3266,7 +3266,7 @@
           },
           {
             "texto": "Manutenção",
-            "href": "https://l24427.github.io/MelhoriaContinua_Manutencao/"
+            "href": "https://l24427.github.io/MelhoriaContinua_PC01/#categoria=Manuten%C3%A7%C3%A3o&maquina=INDICADORES&maquina=INFORMA%C3%87%C3%83O&maquina=PREDITIVA&maquina=CRONOGRAMA&maquina=CUSTOS"
           },
           {
             "texto": "Produção MES",
@@ -3303,6 +3303,188 @@
           {
             "texto": "Conta 5301",
             "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/f3790613-dcf0-4181-a043-a15d89f62940/ReportSectione7387e1bf575bf112d0f?ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737&experience=power-bi"
+          }
+        ]
+      }
+    },
+    "Manutenção": {
+      "INDICADORES": {
+        "EHS": [
+          {
+            "texto": "SAFE",
+            "href": "https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/aed84dd5-d942-4b85-b74c-24db35029cc1/c6bbd2102ea35d938993?experience=power-bi"
+          }
+        ],
+        "QUALIDADE": [],
+        "PRODUTIVIDADE": [
+          {
+            "texto": "Acessar PI Vision",
+            "href": "https://brsza022/PIVision/#/Displays/335/Production-IC"
+          },
+          {
+            "texto": "Finder",
+            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/4d74646f-4a15-4848-ae5e-956d832c06ee?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&hint=1eb1c1b9-888c-4ee3-8816-019c30f85c03&sourcetime=1696801207491&source=portal#"
+          },
+          {
+            "texto": "Knife Control (BCM)",
+            "href": "https://brsza022/PIVision/#/Displays/1298/Knife-Control"
+          },
+          {
+            "texto": "SCORECARD",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=1b2ed3ce-c83c-4705-9864-ff51bd823c3c&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+          },
+          {
+            "texto": "Supervisores W2",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=6c68fe81-dc10-4c73-9de6-ee9968a3eca0&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+          },
+          {
+            "texto": "PITSTOP Performance",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=d5595112-3b5b-415a-b0e4-96370ae55346&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+          },
+          {
+            "texto": "Portal 5s",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=ce78a6a4-651e-45f1-a0dc-cc9c9a9fa3ce&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+          },
+          {
+            "texto": "Follow Predial",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=d75b7ed8-c98a-4241-a919-78803bd89ba8&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+          }
+        ],
+        "PESSOAS": [],
+        "CUSTOS": [
+          {
+            "texto": "Lean Energy",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=42a6af23-15d2-46b6-8236-4e2e22e3eba6&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+          }
+        ]
+      },
+      "INFORMAÇÃO": {
+        "EHS": [],
+        "QUALIDADE": [],
+        "PRODUTIVIDADE": [
+          {
+            "texto": "Plano de Produção",
+            "href": "https://kimberlyclark.sharepoint.com/sites/C83/Planos%20de%20Produo/Forms/AllItems.aspx?InitialTabId=Ribbon%2ERead&VisibilityContext=WSSTabPersistence"
+          },
+          {
+            "texto": "TroubleShooting ADH",
+            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/62284a1f-595a-4f3f-b800-be85ec20ec0a?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&hint=c904fe81-de99-4b92-8ca9-65d52df9efae&sourcetime=1715008204646&source=portal"
+          },
+          {
+            "texto": "Histórico-SAP",
+            "href": "https://app.powerbi.com/groups/3f7be7e7-12ff-4912-84db-494f385528c1/reports/b870910a-1803-465d-ba1c-defeee157c3c/ReportSectiona8c4dfd8bf9f9e940892?experience=power-bi"
+          },
+          {
+            "texto": "CENTRAL DE AÇÕES",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=be39b50a-a4d8-42f3-9260-d05f4621afe8&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+          },
+          {
+            "texto": "PM09 MONITORING",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=435e10f1-6f77-45df-8187-4cfa7777386c&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+          },
+          {
+            "texto": "Pitstop Register",
+            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/f3ef644d-3c37-4964-bd64-20f108e89a4c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&hint=06d768f1-5be8-49ef-950b-11c5f1093db2&sourcetime=1764940866189&source=portal#"
+          },
+          {
+            "texto": "Predial Chamado",
+            "href": "https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/15fb6751-0ede-491d-9171-3f3a9508690c?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&sourcetime=1741962640054&source=portal"
+          },
+          {
+            "texto": "Violet",
+            "href": "https://clark-iq.kcc.com/violet"
+          }
+        ],
+        "PESSOAS": [
+          {
+            "texto": "Reconhecer um Colega",
+            "href": "https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Suzano%20%20Estrelas%20do%20Ms/AllItems.aspx"
+          },
+          {
+            "texto": "LPLCC Assist",
+            "href": "https://m365.cloud.microsoft/chat/?titleId=T_a684e816-5b3b-702e-90c0-330b1078bf54&source=embedded-builder"
+          },
+          {
+            "texto": "LISTA PRESENÇA",
+            "href": "https://kimberlyclark.sharepoint.com/:f:/r/Sites/H945/Suzano/Manuten%C3%A7%C3%A3o/000-Centraliza%C3%A7%C3%A3o%20AFC-BCC/02%20-%20BCC/20%20-%20Lista%20de%20Presen%C3%A7a%20Eletr%C3%B4nica?csf=1&web=1&e=iua9SN"
+          },
+          {
+            "texto": "LPLCC",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=c0089c41-64b8-498d-8ed3-60dea49a6d6a&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+          },
+          {
+            "texto": "PRÁTICA DE VALOR",
+            "href": "https://kimberlyclark.sharepoint.com/:f:/r/Sites/H945/Suzano/Manuten%C3%A7%C3%A3o/000-Centraliza%C3%A7%C3%A3o%20AFC-BCC/06%20-%20Padr%C3%B5es%20de%20Planejamento%20e%20Programa%C3%A7%C3%A3o%20SZ/07%20-%20RECONHECIMENTOS?d=we6cec36a244f4a97921bcdd11cc51671&csf=1&web=1&e=c7qMlw"
+          }
+        ],
+        "CUSTOS": []
+      },
+      "PREDITIVA": {
+        "EHS": [],
+        "QUALIDADE": [],
+        "PRODUTIVIDADE": [
+          {
+            "texto": "KPI de Lubrificação",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=a25dd4ed-708e-4022-9b1a-5056f1a8c02e&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+          },
+          {
+            "texto": "KPI de Inspeção",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=a4b81b2b-2506-47f8-b723-a8723f804340&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+          },
+          {
+            "texto": "Dash Adesivos",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=d8931380-a106-49c8-9a04-450603d48393&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+          },
+          {
+            "texto": "CEF",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=41aab8bd-e304-4098-b17e-5500685ccad9&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+          },
+          {
+            "texto": "Dash PCM",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=1ffd51b0-f1a3-433f-bd67-1eab02d9fb14&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
+          },
+          {
+            "texto": "Dash Vibração",
+            "href": "https://app.powerbi.com/groups/3f7be7e7-12ff-4912-84db-494f385528c1/reports/b594fb36-9ee1-4051-ab4e-8d8e5a729054/ReportSectiona8c4dfd8bf9f9e940892?experience=power-bi"
+          }
+        ],
+        "PESSOAS": [],
+        "CUSTOS": []
+      },
+      "CRONOGRAMA": {
+        "EHS": [],
+        "QUALIDADE": [],
+        "PRODUTIVIDADE": [
+          {
+            "texto": "Calendário de Paradas",
+            "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B0A090B6A-D01A-4DCF-836F-A1A6F7E90797%7D&file=CRONOGRAMA%20PARADAS%202025.xlsx&action=default&mobileredirect=true"
+          },
+          {
+            "texto": "Calendário Manutenção",
+            "href": "https://kimberlyclark-my.sharepoint.com/:x:/r/personal/michele_s_bueno_kcc_com/Documents/Desktop/Calend%C3%A1rio%20Manuten%C3%A7%C3%A3o.xlsx?d=wa798efe5c90d44c8a04dbfc1d047c10c&csf=1&web=1&e=c99BsM"
+          }
+        ],
+        "PESSOAS": [
+          {
+            "texto": "Calendário Férias",
+            "href": "https://kimberlyclark.sharepoint.com/:x:/r/sites/Y8286/_layouts/15/Doc.aspx?sourcedoc=%7B4AF65B7D-A329-4AF6-83B0-B34B6A32C89E%7D&file=CRONOGRAMA%20F%25u00c9RIAS%202024_AFC_BCC_rev01.xlsx&action=default&mobileredirect=true"
+          }
+        ],
+        "CUSTOS": []
+      },
+      "CUSTOS": {
+        "EHS": [],
+        "QUALIDADE": [],
+        "PRODUTIVIDADE": [],
+        "PESSOAS": [],
+        "CUSTOS": [
+          {
+            "texto": "Custo Máquinas",
+            "href": "https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/Suzano/Manuten%C3%A7%C3%A3o/000-Centraliza%C3%A7%C3%A3o%20AFC-BCC/04%20-%20Custos/CUSTO%20GERAL%20-%20M%C3%8AS%20ATUAL.xlsm?d=w5ca2b4bd9e514502aa6fd66351e95d8b&csf=1&web=1&e=Gitvz7"
+          },
+          {
+            "texto": "CONSUMIVEIS",
+            "href": "https://app.powerbi.com/reportEmbed?reportId=372d0e4b-2214-4746-aacf-fb2f7091bfc1&autoAuth=true&ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737"
           }
         ]
       }

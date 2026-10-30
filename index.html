@@ -134,7 +134,7 @@
                 var data = JSON.parse(await response.text());
                 engine = DataEngine.create(data);
                 document.getElementById('loading').classList.add('hidden');
-                showCategorias();
+                if (!aplicarDeepLink()) showCategorias();
             } catch (error) {
                 showError('Erro ao carregar dados: ' + error.message);
             }
@@ -147,9 +147,64 @@
             el.classList.remove('hidden');
         }
 
+        /* ---------- deep link ----------
+         * index.html#categoria=<categoria>&maquina=<maq>[&maquina=<maq2>]
+         * Abre direto a categoria (e as máquinas) indicadas. A comparação ignora
+         * maiúsculas e acentos. Sem hash, ou com categoria inexistente, abre a
+         * tela inicial. A navegação mantém o hash atualizado (link compartilhável).
+         */
+        function chave(s) {
+            return String(s == null ? '' : s).normalize('NFD').replace(/[̀-ͯ]/g, '').trim().toLowerCase();
+        }
+
+        function acharNome(lista, nome) {
+            if (lista.indexOf(nome) !== -1) return nome;
+            var k = chave(nome);
+            for (var i = 0; i < lista.length; i++) { if (chave(lista[i]) === k) return lista[i]; }
+            return null;
+        }
+
+        function lerHash() {
+            var h = (location.hash || '').replace(/^#\/?/, '');
+            if (!h) return null;
+            var p = new URLSearchParams(h);
+            var maqs = [];
+            p.getAll('maquina').forEach(function (v) {
+                v.split(',').forEach(function (m) { if (m.trim()) maqs.push(m.trim()); });
+            });
+            return { categoria: p.get('categoria'), maquinas: maqs };
+        }
+
+        function aplicarDeepLink() {
+            var link = lerHash();
+            if (!link || !link.categoria) return false;
+            var cat = acharNome(engine.listCategorias(), link.categoria);
+            if (!cat) return false;
+            var existentes = engine.listMaquinas(cat);
+            var maqs = [];
+            link.maquinas.forEach(function (m) {
+                var nome = acharNome(existentes, m);
+                if (nome && maqs.indexOf(nome) === -1) maqs.push(nome);
+            });
+            selecionarCategoria(cat, maqs);
+            return true;
+        }
+
+        function atualizarHash() {
+            if (!window.history || !history.replaceState) return;
+            var h = '';
+            if (categoriaAtual) {
+                h = '#categoria=' + encodeURIComponent(categoriaAtual) + maquinasSelecionadas.map(function (m) {
+                    return '&maquina=' + encodeURIComponent(m);
+                }).join('');
+            }
+            try { history.replaceState(null, '', location.pathname + location.search + h); } catch (e) { /* ignora */ }
+        }
+
         function showCategorias() {
             categoriaAtual = null;
             maquinasSelecionadas = [];
+            atualizarHash();
             document.getElementById('conteudo').classList.add('hidden');
             document.getElementById('categoriaSelection').classList.remove('hidden');
             document.getElementById('searchBox').classList.add('hidden');
@@ -168,7 +223,7 @@
             });
         }
 
-        function selecionarCategoria(cat) {
+        function selecionarCategoria(cat, maqsIniciais) {
             categoriaAtual = cat;
             maquinasSelecionadas = [];
             document.getElementById('categoriaSelection').classList.add('hidden');
@@ -179,14 +234,21 @@
 
             var chips = document.getElementById('maquinaChips');
             chips.innerHTML = '';
-            engine.listMaquinas(cat).forEach(function (maq) {
+            var lista = engine.listMaquinas(cat);
+            // pré-seleção (deep link): mantém a ordem pedida, que é a ordem dos subtítulos nas colunas
+            var iniciais = (maqsIniciais || []).filter(function (m) { return lista.indexOf(m) !== -1; });
+            if (!iniciais.length && lista.length === 1) iniciais = lista.slice();
+            lista.forEach(function (maq) {
                 var c = document.createElement('button');
                 c.className = 'chip';
                 c.textContent = maq;
                 c.onclick = function () { toggleMaquina(maq, c); };
+                if (iniciais.indexOf(maq) !== -1) c.classList.add('active');
                 chips.appendChild(c);
             });
+            maquinasSelecionadas = iniciais.slice();
             renderColunas();
+            atualizarHash();
         }
 
         function toggleMaquina(maq, chipEl) {
@@ -194,6 +256,7 @@
             if (i === -1) { maquinasSelecionadas.push(maq); chipEl.classList.add('active'); }
             else { maquinasSelecionadas.splice(i, 1); chipEl.classList.remove('active'); }
             renderColunas();
+            atualizarHash();
         }
 
         function renderColunas() {
@@ -252,6 +315,10 @@
 
         document.getElementById('backBtn').addEventListener('click', showCategorias);
         document.getElementById('searchBox').addEventListener('input', renderColunas);
+        window.addEventListener('hashchange', function () {
+            if (!engine) return;
+            if (!aplicarDeepLink()) showCategorias();
+        });
 
         loadJSON();
     </script>
